@@ -1,0 +1,8 @@
+{
+  "footer": {
+    "copyright": "This is a example of @panter/translate usage"
+  },
+  "draft": {
+    "indicator": "Draft Mode: Changes are currently visible only to you. Complete your edits and publish via the administration panel to make this content public."
+  }
+}
