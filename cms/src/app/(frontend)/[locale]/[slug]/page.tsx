@@ -25,13 +25,15 @@ export default async function Page({ params }: PageProps) {
   const { hero, layout } = page
 
   return (
-    <article className="container mx-auto">
-      {draft && <LivePreviewListener />}
-      {page._status === "draft" && <DraftIndicator />}
-      <h1>{page.title}</h1>
-      <RenderHero {...hero} />
-      <RenderBlocks blocks={layout} />
-    </article>
+    <main className="py-4 md:py-8">
+      <article className="container">
+        {draft && <LivePreviewListener />}
+        {page._status === "draft" && <DraftIndicator />}
+        <h1>{page.title}</h1>
+        <RenderHero {...hero} />
+        <RenderBlocks blocks={layout} />
+      </article>
+    </main>
   )
 }
 
