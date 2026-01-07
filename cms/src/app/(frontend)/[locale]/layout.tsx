@@ -3,8 +3,11 @@ import "./globals.css"
 
 import { Footer } from "@/Footer/Component"
 import { Header } from "@/Header/Component"
+import { ThemeProvider } from "@/components/theme-provider"
 import { hasLocale } from "@/i18n"
 import { ALL_LOCALE_CODES, translateConfig } from "@/i18n/config"
+import { fontSans } from "@/lib/fonts"
+import { cn } from "@/lib/utils"
 import { createOpenGraph } from "@/utils/createOpenGraph"
 import { getURL } from "@/utils/getURL"
 import { NextIntlClientProvider } from "@panter/translate/next-intl/provider"
@@ -32,12 +35,14 @@ export default async function RootLayout({
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
-      <body>
-        <NextIntlClientProvider config={translateConfig}>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+      <body className={cn(fontSans.variable, "font-sans antialiased")}>
+        <ThemeProvider>
+          <NextIntlClientProvider config={translateConfig}>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

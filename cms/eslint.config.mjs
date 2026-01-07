@@ -38,6 +38,15 @@ export default defineConfig(
           plugins: ["prettier-plugin-tailwindcss"],
         },
       ],
+      "no-restricted-syntax": [
+        "warn",
+        {
+          selector:
+            "JSXAttribute[name.name='className'] Literal[value=/(?:^|\\s)(?:p|m|gap|pt|pb|pl|pr|px|py|mt|mb|ml|mr|mx|my|space-[xy]|w|h)-\\[\\d+(?:px|rem|em)\\]/]",
+          message:
+            "Avoid arbitrary spacing values (p-[20px], gap-[1rem]). Use design tokens instead (p-4, gap-6).",
+        },
+      ],
     },
   },
   globalIgnores([
