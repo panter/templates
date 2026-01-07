@@ -1,22 +1,41 @@
 "use client"
 
 import { CMSLink } from "@/components/Link"
-import type { Header as HeaderType } from "@/payload-types"
-import { SearchIcon } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import type { Header } from "@/payload-types"
+import { cn } from "@/utils/ui"
 
-export function HeaderNav({ data }: { data: HeaderType }) {
-  const navItems = data?.navItems || []
+type NavItem = NonNullable<Header["navItems"]>[number]
+
+type HeaderNavProps = {
+  navItems: NavItem[]
+  mobile?: boolean
+  onNavigate?: () => void
+}
+
+export function HeaderNav({ navItems, mobile, onNavigate }: HeaderNavProps) {
+  if (navItems.length === 0) {
+    return null
+  }
 
   return (
-    <nav className="flex items-center gap-3">
-      {navItems.map(({ link }, i) => {
-        return <CMSLink key={i} {...link} appearance="link" />
-      })}
-      <Link href="/search">
-        <span className="sr-only">Search</span>
-        <SearchIcon className="text-primary w-5" />
-      </Link>
+    <nav
+      data-slot="header-nav"
+      className={cn("flex", mobile ? "flex-col gap-1" : "items-center gap-1")}
+    >
+      {navItems.map(({ link }, i) => (
+        <Button
+          key={i}
+          variant="ghost"
+          size={mobile ? "default" : "sm"}
+          className={cn(mobile && "justify-start")}
+          asChild
+        >
+          <CMSLink {...link} appearance="inline" onClick={onNavigate}>
+            {link.label}
+          </CMSLink>
+        </Button>
+      ))}
     </nav>
   )
 }

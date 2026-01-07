@@ -35,7 +35,7 @@ export default async function RootLayout({
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
-      <body className={cn(fontSans.variable, "font-sans antialiased")}>
+      <body className={cn(fontSans.variable, "flex min-h-screen flex-col font-sans antialiased")}>
         <ThemeProvider>
           <NextIntlClientProvider config={translateConfig}>
             <Header />

@@ -14,6 +14,7 @@ export function CMSLink(props: CMSLinkType) {
     className,
     label,
     newTab,
+    onClick,
     reference,
     size: sizeFromProps,
     url,
@@ -31,7 +32,7 @@ export function CMSLink(props: CMSLinkType) {
   /* Ensure we don't break any styles set by richText */
   if (appearance === "inline") {
     return (
-      <Link className={cn(className)} href={href || url || ""} {...newTabProps}>
+      <Link className={cn(className)} href={href || url || ""} onClick={onClick} {...newTabProps}>
         {label && label}
         {children && children}
       </Link>
@@ -40,7 +41,7 @@ export function CMSLink(props: CMSLinkType) {
 
   return (
     <Button asChild className={className} size={size} variant={appearance}>
-      <Link className={cn(className)} href={href || url || ""} {...newTabProps}>
+      <Link className={cn(className)} href={href || url || ""} onClick={onClick} {...newTabProps}>
         {label && label}
         {children && children}
       </Link>
@@ -56,6 +57,7 @@ type CMSLinkType = {
   className?: string
   label?: string | null
   newTab?: boolean | null
+  onClick?: () => void
   reference?: {
     relationTo: "pages"
     value: Page | number

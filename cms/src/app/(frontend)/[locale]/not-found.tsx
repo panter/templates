@@ -1,5 +1,4 @@
-import { FileQuestion, Home, ArrowLeft } from "lucide-react"
-
+import { FileQuestion, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -23,12 +22,6 @@ export default function NotFound() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-2">
-          <Button variant="outline" asChild>
-            <a href="javascript:history.back()">
-              <ArrowLeft />
-              Go back
-            </a>
-          </Button>
           <Button asChild>
             <Link href="/">
               <Home />

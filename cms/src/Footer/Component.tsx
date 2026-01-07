@@ -1,31 +1,41 @@
 import { CMSLink } from "@/components/Link"
 import { Logo } from "@/components/Logo"
+import { Separator } from "@/components/ui/separator"
 import type { Footer } from "@/payload-types"
 import { getCachedGlobal } from "@/utils/globals"
-import { getTranslations } from "@panter/translate/next-intl/server"
 import Link from "next/link"
 
 export async function Footer() {
   const footerData: Footer = await getCachedGlobal("footer", 1)
-  const t = await getTranslations("footer")
-
   const navItems = footerData?.navItems || []
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-border dark:bg-card mt-auto border-t bg-black text-white">
-      <div className="container mx-auto flex flex-col gap-8 py-8 md:flex-row md:justify-between">
-        <Link className="flex items-center" href="/">
-          <Logo />
-        </Link>
+    <footer data-slot="footer" className="bg-muted mt-auto border-t">
+      <div className="container py-8">
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <Link href="/" className="flex shrink-0 items-center">
+            <Logo />
+          </Link>
 
-        {t("copyright")}
+          {navItems.length > 0 && (
+            <nav className="flex flex-wrap gap-4 md:gap-6">
+              {navItems.map(({ link }, i) => (
+                <CMSLink
+                  key={i}
+                  {...link}
+                  appearance="inline"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+                />
+              ))}
+            </nav>
+          )}
+        </div>
 
-        <div className="flex flex-col-reverse items-start gap-4 md:flex-row md:items-center">
-          <nav className="flex flex-col gap-4 md:flex-row">
-            {navItems.map(({ link }, i) => {
-              return <CMSLink className="text-white" key={i} {...link} />
-            })}
-          </nav>
+        <Separator className="my-6" />
+
+        <div className="text-muted-foreground flex flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between">
+          <p>© {currentYear} Your Company. All rights reserved.</p>
         </div>
       </div>
     </footer>
