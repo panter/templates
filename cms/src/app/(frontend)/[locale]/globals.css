@@ -16,6 +16,7 @@
   /* -------- Layout -------- */
   --radius: 0.5rem;
   --container-max-width: 90rem;
+  --container-prose-max-width: 60ch;
 
   /* -------- Breakpoints -------- */
   --breakpoint-sm: 640px;
@@ -736,7 +737,8 @@
   }
 
   .prose-container {
-    @apply mx-auto w-full max-w-[48rem] px-[var(--container-padding)];
+    @apply mx-auto w-full px-[var(--container-padding)];
+    max-width: var(--container-prose-max-width);
   }
 
   /* Grid layout */
