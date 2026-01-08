@@ -1,4 +1,4 @@
-import { admin } from "@/access/admin"
+import { admin } from "@/payload/access/admin"
 import path from "path"
 import type { CollectionConfig } from "payload"
 import { fileURLToPath } from "url"
@@ -44,7 +44,7 @@ export const Media: CollectionConfig = {
     beforeChange: [createPlaceholder],
   },
   upload: {
-    staticDir: path.resolve(dirname, "../../../public/media"),
+    staticDir: path.resolve(dirname, "../../../../public/media"),
     adminThumbnail: "thumbnail",
     focalPoint: true,
     imageSizes: [

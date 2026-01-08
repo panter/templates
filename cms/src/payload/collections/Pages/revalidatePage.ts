@@ -1,7 +1,7 @@
 import { ALL_LOCALE_CODES } from "@/i18n/config"
 import { revalidatePath, revalidateTag } from "next/cache"
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook, Payload } from "payload"
-import type { Page } from "../../payload-types"
+import type { Page } from "../../../payload-types"
 
 export const revalidatePage: CollectionAfterChangeHook<Page> = async ({
   doc,

@@ -3,7 +3,7 @@ import { cn } from "@/utils/ui"
 import type { MediaBlock as MediaBlockProps } from "@/payload-types"
 import { collectionOrNull } from "@/utils/collections"
 import type { StaticImageData } from "next/image"
-import { Media } from "../../components/Media"
+import { Media } from "../../../components/Media"
 
 export function MediaBlock({
   captionClassName,

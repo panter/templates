@@ -1,6 +1,6 @@
-import { admin } from "@/access/admin"
-import { anyone } from "@/access/anyone"
-import { hero } from "@/heros/config"
+import { admin } from "@/payload/access/admin"
+import { anyone } from "@/payload/access/anyone"
+import { hero } from "@/payload/heros/config"
 import {
   MetaDescriptionField,
   MetaImageField,
@@ -15,7 +15,7 @@ import { CallToAction } from "../../blocks/CallToAction/config"
 import { Content } from "../../blocks/Content/config"
 import { MediaBlock } from "../../blocks/MediaBlock/config"
 import { populatePublishedAt } from "./populatePublishedAt"
-import { generatePreviewPath } from "../../utils/generatePreviewPath"
+import { generatePreviewPath } from "../../../utils/generatePreviewPath"
 import { revalidateDelete, revalidatePage } from "./revalidatePage"
 
 export const Pages: CollectionConfig<"pages"> = {

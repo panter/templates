@@ -1,4 +1,4 @@
-import { defaultLexical } from "@/fields/defaultLexical"
+import { defaultLexical } from "@/payload/fields/defaultLexical"
 import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres"
 import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob"
 import path from "path"
@@ -6,12 +6,12 @@ import type { PayloadRequest } from "payload"
 import { buildConfig } from "payload"
 import sharp from "sharp"
 import { fileURLToPath } from "url"
-import { Media } from "./collections/Media"
-import { Pages } from "./collections/Pages"
-import { Footer } from "./Footer/config"
-import { Header } from "./Header/config"
+import { Media } from "./payload/collections/Media"
+import { Pages } from "./payload/collections/Pages"
+import { Footer } from "./payload/Footer/config"
+import { Header } from "./payload/Header/config"
 import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
-import { plugins } from "./plugins"
+import { plugins } from "./payload/plugins"
 import { getURL } from "./utils/getURL"
 import { resendAdapter } from "@payloadcms/email-resend"
 
@@ -73,6 +73,7 @@ export default buildConfig({
   editor: defaultLexical,
 
   db: vercelPostgresAdapter({
+    migrationDir: path.resolve(dirname, "payload/migrations"),
     pool: {
       connectionString: process.env.POSTGRES_URL || "",
     },
@@ -127,7 +128,5 @@ export default buildConfig({
         return authHeader === `Bearer ${process.env.CRON_SECRET}`
       },
     },
-
-    tasks: [],
   },
 })

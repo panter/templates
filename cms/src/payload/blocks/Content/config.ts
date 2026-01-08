@@ -1,4 +1,4 @@
-import { link } from "@/fields/link"
+import { link } from "@/payload/fields/link"
 import {
   FixedToolbarFeature,
   HeadingFeature,

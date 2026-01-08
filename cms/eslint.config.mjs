@@ -54,7 +54,7 @@ export default defineConfig(
     "out/**",
     "build/**",
     "next-env.d.ts",
-    "src/migrations/",
+    "src/payload/migrations/",
     "**/importMap.js",
   ]),
   prettierPlugin,

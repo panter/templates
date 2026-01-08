@@ -1,6 +1,6 @@
-import { BannerBlock } from "@/blocks/Banner/Component"
-import { CallToActionBlock } from "@/blocks/CallToAction/Component"
-import { MediaBlock } from "@/blocks/MediaBlock/Component"
+import { BannerBlock } from "@/payload/blocks/Banner/Component"
+import { CallToActionBlock } from "@/payload/blocks/CallToAction/Component"
+import { MediaBlock } from "@/payload/blocks/MediaBlock/Component"
 import type {
   BannerBlock as BannerBlockProps,
   CallToActionBlock as CTABlockProps,

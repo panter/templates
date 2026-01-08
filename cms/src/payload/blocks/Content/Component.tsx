@@ -1,7 +1,7 @@
 import RichText from "@/components/RichText"
 import { cn } from "@/utils/ui"
 import type { ContentBlock as ContentBlockProps } from "@/payload-types"
-import { CMSLink } from "../../components/Link"
+import { CMSLink } from "../../../components/Link"
 
 export function ContentBlock(props: ContentBlockProps) {
   const { columns } = props

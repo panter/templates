@@ -1,8 +1,8 @@
 import "@panter/translate/style.css"
 import "./globals.css"
 
-import { Footer } from "@/Footer/Component"
-import { Header } from "@/Header/Component"
+import { Footer } from "@/payload/Footer/Component"
+import { Header } from "@/payload/Header/Component"
 import { ThemeProvider } from "@/components/theme-provider"
 import { hasLocale } from "@/i18n"
 import { ALL_LOCALE_CODES, translateConfig } from "@/i18n/config"
