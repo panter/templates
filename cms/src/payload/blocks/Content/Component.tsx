@@ -7,29 +7,23 @@ export function ContentBlock(props: ContentBlockProps) {
   const { columns } = props
 
   const colsSpanClasses = {
-    full: "12",
-    half: "6",
-    oneThird: "4",
-    twoThirds: "8",
+    full: "6",
+    twoThirds: "4",
+    half: "3",
+    oneThird: "2",
   }
 
   return (
-    <div className="container my-16">
-      <div className="grid grid-cols-4 gap-x-16 gap-y-8 lg:grid-cols-12">
+    <div className="container my-8">
+      <div className="grid grid-cols-6 gap-x-16 gap-y-8">
         {columns &&
           columns.length > 0 &&
           columns.map((col, index) => {
             const { enableLink, link, richText, size } = col
 
             return (
-              <div
-                className={cn(`col-span-4 lg:col-span-${colsSpanClasses[size!]}`, {
-                  "md:col-span-2": size !== "full",
-                })}
-                key={index}
-              >
+              <div className={cn(`col-span-6 md:col-span-${colsSpanClasses[size!]}`)} key={index}>
                 {richText && <RichText data={richText} enableGutter={false} />}
-
                 {enableLink && <CMSLink {...link} />}
               </div>
             )

@@ -16,7 +16,7 @@ export function RenderBlocks({ blocks }: { blocks: Page["layout"][0][] }) {
         const Block = blockComponents[block.blockType]
 
         return (
-          <div className="my-16" key={index}>
+          <div key={index}>
             {/* @ts-expect-error block props should be correct at this point */}
             <Block {...block} />
           </div>
