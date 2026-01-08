@@ -1,7 +1,3 @@
-# work in progress
-
-![wait plz](https://www.meme-arsenal.com/memes/f35608196bd9e999253bef01413ae994.jpg)
-
 # Tech Manifesto for Panter Solutions
 
 Tech Manifesto is a set of practices, guidelines, ways for achieving efficiency and satisfaction inside a group.
@@ -52,13 +48,6 @@ Project Tech Lead role:
 - The template saves us lot of time when creating new projects and configures 95% of infra (Vercel)
 - The template gives us conventions for free
 - Many features are already properly configured in the template
-  - Auth
-  - i18n
-  - UI framework
-  - background jobs
-  - date manipulation library
-  - <https://resend.com/>
-  - Email templates with React rendering
 
 ## 3. Seeds
 
@@ -69,7 +58,7 @@ Instead we either:
 1. Create database branch in Neon and use it locally
 2. Pull production db to local db with `scripts/db-pull-prod.sh`
 
-When we are in development phase and we want to provide some production data, we can push local state into production with `scripts/danger/db-push-local-to-prod.sh`. Other devs then can pull production data to their local db.
+When we are in development phase and we want to provide some production data, we push local state into production with `scripts/danger/db-push-local-to-prod.sh`. Other devs then can pull production data to their local db.
 
 ### Reasons
 
@@ -99,26 +88,13 @@ All projects are deployed to Panter's github.
 - No pipeline configuration is required -> one click and "it just works"
 - Regular project costs are $40/month. In development phase: `$20 + (number of devs) * $20` per month
 - Next.js apps works best with Vercel
-- Good UI/UX for managing the hosting
+- Good UX for managing the hosting
 - Database branching gives us production data on review branches
 
 # Notes
 
 Ideas:
 
-1. Create Vercel starter template
-   - [x] add i18n (with @panter/translate)
-   - [x] add shadcn/ui
-   - [x] add day-js
-   - [x] add draft mode for pages
-   - [x] add SEO plugin
-   - [x] add blurred placeholder images for media
-   - [x] add sitemaps
-   - [x] add emails
-   - [ ] add few basic blocks
-   - [x] add example of payload jobs
-   - [x] add payload-better-auth
-   - [x] light dark mode switcher
 2. No seeds, if you need production data, create database branch and use it locally
 3. OKRs:
    - Developer Satisfaction - "lowering number of FUCKs per day"
@@ -130,28 +106,34 @@ Ideas:
 
 ## Clone button and URL
 
-### TODO: make custom buttons (cms, blank, ...)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?build-command=pnpm+run+ci&demo-description=Panter+Solution+App+starter&demo-image=%2F%2Fraw.githubusercontent.com%2Fpanter%2Ftemplates%2Frefs%2Fheads%2Fmain%2Fcms.png&demo-title=Payload+Website+Starter&demo-url=https%3A%2F%2Fpanter-solution-app-demo.vercel.app%2F&env=PAYLOAD_SECRET%2CCRON_SECRET%2CPREVIEW_SECRET%2CBETTER_AUTH_SECRET%2CRESEND_API_KEY%2CEMAIL_FROM_NAME%2CEMAIL_FROM_ADDRESS&from=templates%2Fcms&project-name=Panter+Solution+App&repository-name=panter-solution-app&repository-url=https%3A%2F%2Fgithub.com%2Fpanter%2Ftemplates%2Ftree%2Fmain%2Fcms&skippable-integrations=0&stores=%5B%7B%22type%22%3A%22integration%22%2C%22productSlug%22%3A%22neon%22%2C%22integrationSlug%22%3A%22neon%22%7D%2C%7B%22type%22%3A%22blob%22%7D%5D)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?build-command=pnpm%20run%20ci&demo-description=A%20production-ready%20website%20built%20with%20Payload%2C%20the%20only%20Next.js-native%20CMS.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1EyBgbstPv4d6NMwzldDyY%2F58d07399ce2a2bb51341125fe4f51572%2Fpayloadwebsitetempate_vercel_thumbnail.jpg&demo-title=Payload%20Website%20Starter&demo-url=https%3A%2F%2Fpayload-vercel-website-demo.vercel.app%2F&env=PAYLOAD_SECRET%2CCRON_SECRET%2CPREVIEW_SECRET&from=templates&project-name=Payload%20Website%20Starter&repository-name=payload-website-starter&repository-url=https%3A%2F%2Fgithub.com%2Fpayloadcms%2Fpayload%2Ftree%2Fmain%2Ftemplates%2Fwith-vercel-website&skippable-integrations=1&stores=%255B%257B%2522type%2522%253A%2522integration%2522%252C%2522productSlug%2522%253A%2522neon%2522%252C%2522integrationSlug%2522%253A%2522neon%2522%257D%252C%257B%2522type%2522%253A%2522blob%2522%257D%255D)
+<details>
 
+<summary>Customize button</summary>
+
+```ts
+// button generator
+const params = new URLSearchParams({
+  "build-command": "pnpm run ci",
+  "demo-description": "Panter Solution App starter",
+  "demo-image":
+    "//raw.githubusercontent.com/panter/templates/refs/heads/main/cms.png",
+  "demo-title": "Payload Website Starter",
+  "demo-url": "https://panter-solution-app-demo.vercel.app/",
+  env: "PAYLOAD_SECRET,CRON_SECRET,PREVIEW_SECRET,BETTER_AUTH_SECRET,RESEND_API_KEY,EMAIL_FROM_NAME,EMAIL_FROM_ADDRESS",
+  from: "templates/cms",
+  "project-name": "Panter Solution App",
+  "repository-name": "panter-solution-app",
+  "repository-url": "https://github.com/panter/templates/tree/main/cms",
+  "skippable-integrations": "0",
+  stores: `[{"type":"integration","productSlug":"neon","integrationSlug":"neon"},{"type":"blob"}]`,
+});
+
+console.log(`https://vercel.com/new/clone?${params}`);
 ```
-https://vercel.com/new/clone?
 
-build-command = pnpm run ci
-demo-description = A production-ready website built with Payload, the only Next.js-native CMS.
-demo-image = //images.ctfassets.net/e5382hct74si/1EyBgbstPv4d6NMwzldDyY/58d07399ce2a2bb51341125fe4f51572/payloadwebsitetempate_vercel_thumbnail.jpg
-demo-title = Payload Website Starter
-demo-url = https://payload-vercel-website-demo.vercel.app/
-env = PAYLOAD_SECRET,CRON_SECRET,PREVIEW_SECRET
-from = templates
-project-name = Payload Website Starter
-repository-name = payload-website-starter
-repository-url = https://github.com/payloadcms/payload/tree/main/templates/with-vercel-website
-skippable-integrations = 1
-stores = [{"type":"integration","productSlug":"neon","integrationSlug":"neon"},{"type":"blob"}]
-
-https://vercel.com/new/clone?build-command=pnpm%20run%20ci&demo-description=A%20production-ready%20website%20built%20with%20Payload%2C%20the%20only%20Next.js-native%20CMS.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1EyBgbstPv4d6NMwzldDyY%2F58d07399ce2a2bb51341125fe4f51572%2Fpayloadwebsitetempate_vercel_thumbnail.jpg&demo-title=Payload%20Website%20Starter&demo-url=https%3A%2F%2Fpayload-vercel-website-demo.vercel.app%2F&env=PAYLOAD_SECRET%2CCRON_SECRET%2CPREVIEW_SECRET&from=templates&project-name=Payload%20Website%20Starter&repository-name=payload-website-starter&repository-url=https%3A%2F%2Fgithub.com%2Fpayloadcms%2Fpayload%2Ftree%2Fmain%2Ftemplates%2Fyooooooooooo&skippable-integrations=1&stores=%255B%257B%2522type%2522%253A%2522integration%2522%252C%2522productSlug%2522%253A%2522neon%2522%252C%2522integrationSlug%2522%253A%2522neon%2522%257D%252C%257B%2522type%2522%253A%2522blob%2522%257D%255D
-```
+</details>
 
 ---
 
@@ -214,3 +196,7 @@ export const Export: CollectionConfig = {
 export const export = pgTable('export', {
 //           ^ Parsing error: 'export' is not allowed as a variable declaration name.
 ```
+
+# This is still work in progress
+
+![wait plz](https://www.meme-arsenal.com/memes/f35608196bd9e999253bef01413ae994.jpg)
