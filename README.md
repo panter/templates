@@ -106,8 +106,6 @@ Ideas:
 
 ## Clone button and URL
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?build-command=pnpm+run+ci&demo-description=Panter+Solution+App+starter&demo-image=%2F%2Fraw.githubusercontent.com%2Fpanter%2Ftemplates%2Frefs%2Fheads%2Fmain%2Fcms.png&demo-title=Payload+Website+Starter&demo-url=https%3A%2F%2Fpanter-solution-app-demo.vercel.app%2F&env=PAYLOAD_SECRET%2CCRON_SECRET%2CPREVIEW_SECRET%2CBETTER_AUTH_SECRET%2CRESEND_API_KEY%2CEMAIL_FROM_NAME%2CEMAIL_FROM_ADDRESS&from=templates%2Fcms&project-name=Panter+Solution+App&repository-name=panter-solution-app&repository-url=https%3A%2F%2Fgithub.com%2Fpanter%2Ftemplates%2Ftree%2Fmain%2Fcms&skippable-integrations=0&stores=%5B%7B%22type%22%3A%22integration%22%2C%22productSlug%22%3A%22neon%22%2C%22integrationSlug%22%3A%22neon%22%7D%2C%7B%22type%22%3A%22blob%22%7D%5D)
-
 <details>
 
 <summary>Customize button</summary>

@@ -1,5 +1,3 @@
-# TOOD: readme
-
 # Payload Website Template
 
 This is Panter's [Payload Website Template](https://github.com/panter/templates/cms). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
