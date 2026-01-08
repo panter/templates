@@ -4,7 +4,7 @@ import { Logo } from "@/components/Logo"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import type { Header } from "@/payload-types"
-import { MenuIcon, SearchIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { HeaderNav } from "./Nav"
@@ -29,22 +29,9 @@ export function HeaderClient({ data }: HeaderClientProps) {
 
         <div className="hidden items-center gap-2 md:flex">
           <HeaderNav navItems={navItems} />
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="/search">
-              <SearchIcon className="size-icon-md" />
-              <span className="sr-only">Search</span>
-            </Link>
-          </Button>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="/search">
-              <SearchIcon className="size-icon-md" />
-              <span className="sr-only">Search</span>
-            </Link>
-          </Button>
-
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
