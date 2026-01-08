@@ -8,12 +8,12 @@ import sharp from "sharp"
 import { fileURLToPath } from "url"
 import { Media } from "./collections/Media"
 import { Pages } from "./collections/Pages"
-import { Users } from "./collections/Users"
 import { Footer } from "./Footer/config"
 import { Header } from "./Header/config"
 import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
 import { plugins } from "./plugins"
 import { getURL } from "./utils/getURL"
+import { resendAdapter } from "@payloadcms/email-resend"
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -27,7 +27,7 @@ export default buildConfig({
       },
     },
     dashboard: {
-      // example of a custom dashboard:
+      // NOTE: example of a custom dashboard:
       defaultLayout: () => [
         { widgetSlug: "status-widget", width: "full" },
         { widgetSlug: "collections", width: "full" },
@@ -44,7 +44,6 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
-    user: Users.slug,
 
     livePreview: {
       breakpoints: [
@@ -84,7 +83,7 @@ export default buildConfig({
     locales: [...ALL_LOCALE_CODES],
   },
 
-  collections: [Pages, Media, Users],
+  collections: [Pages, Media],
   globals: [Header, Footer],
 
   serverURL: getURL(),
@@ -108,6 +107,12 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, "payload-types.ts"),
   },
+
+  email: resendAdapter({
+    apiKey: process.env.RESEND_API_KEY,
+    defaultFromAddress: process.env.EMAIL_FROM_ADDRESS,
+    defaultFromName: process.env.EMAIL_FROM_NAME,
+  }),
 
   jobs: {
     access: {

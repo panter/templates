@@ -114,9 +114,10 @@ Ideas:
    - [x] add SEO plugin
    - [x] add blurred placeholder images for media
    - [x] add sitemaps
+   - [x] add emails
    - [ ] add few basic blocks
    - [ ] add example of payload jobs
-   - [ ] add payload-better-auth
+   - [x] add payload-better-auth
    - [x] light dark mode switcher
 2. No seeds, if you need production data, create database branch and use it locally
 3. OKRs:

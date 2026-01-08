@@ -1,3 +1,4 @@
+import { sendEmailVerification, sendInvite, sendResetPassword } from "@/emails"
 import { getURL } from "@/utils/getURL"
 import { nextCookies } from "better-auth/next-js"
 import { admin, magicLink, multiSession } from "better-auth/plugins"
@@ -5,10 +6,12 @@ import type { BetterAuthPlugin as BetterAuthPluginType } from "better-auth/types
 import type { BetterAuthOptions, PayloadAuthOptions } from "payload-auth/better-auth"
 
 export const betterAuthPlugins = [
-  // ... add/change your better auth plugins here ...
+  // NOTE: ... add/change your better auth plugins here ...
+
   magicLink({
-    sendMagicLink: async ({ email, token, url }, request) => {
-      console.log("Send magic link for user: ", email, token, url)
+    sendMagicLink: async () => {
+      // NOTE: implement sending change email verification
+      throw new Error("Magic link email not implemented")
     },
   }),
   admin(),
@@ -17,19 +20,25 @@ export const betterAuthPlugins = [
 ] satisfies BetterAuthPluginType[]
 
 export const betterAuthOptions = {
+  advanced: {
+    cookiePrefix: "auth",
+  },
   appName: "app",
   baseURL: getURL(),
   trustedOrigins: [getURL()],
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: true,
-    autoSignIn: false,
-    async sendResetPassword({ user, url }) {
-      console.log("Send reset password for user: ", user.id, "at url", url)
+    revokeSessionsOnPasswordReset: true,
+    disableSignUp: false,
+    autoSignIn: true,
+    resetPasswordTokenExpiresIn: 60 * 60, // 1 hour
+    sendResetPassword: async (args) => {
+      await sendResetPassword(args)
     },
   },
   socialProviders: {
-    // ... add social providers here ...
+    // NOTE: ... add social providers here ...
     // e.g.:
     // google: {
     //   clientId: process.env.GOOGLE_CLIENT_ID,
@@ -39,34 +48,37 @@ export const betterAuthOptions = {
   emailVerification: {
     sendOnSignUp: true,
     autoSignInAfterVerification: true,
-    async sendVerificationEmail({ user, url }) {
-      console.log("Send verification email for user: ", url)
+    sendVerificationEmail: async (args) => {
+      await sendEmailVerification(args)
     },
   },
   plugins: betterAuthPlugins,
   user: {
     changeEmail: {
-      enabled: true,
-      sendChangeEmailVerification: async ({ user, newEmail, url, token }) => {
-        console.log("Send change email verification for user: ", user, newEmail, url, token)
+      enabled: false,
+      sendChangeEmailVerification: async () => {
+        // NOTE: implement sending change email verification
+        throw new Error("Change email verification not implemented")
       },
     },
     deleteUser: {
-      enabled: true,
-      sendDeleteAccountVerification: async ({ user, url, token }) => {
-        // Send delete account verification
+      enabled: false,
+      sendDeleteAccountVerification: async () => {
+        // NOTE: implement sending delete account verification
+        throw new Error("Delete account verification not implemented")
       },
-      beforeDelete: async (user) => {
+      beforeDelete: async () => {
         // Perform actions before user deletion
       },
-      afterDelete: async (user) => {
+      afterDelete: async () => {
         // Perform cleanup after user deletion
       },
     },
   },
   session: {
     cookieCache: {
-      enabled: true,
+      // NOTE: revoked session will still have access until cookie cache expires if enabled
+      enabled: false,
       maxAge: 5 * 60, // Cache duration in seconds
     },
   },
@@ -80,21 +92,21 @@ export const betterAuthOptions = {
 
 export type ConstructedBetterAuthOptions = typeof betterAuthOptions
 
-// TODO: revoke all sessions does not work
-// TODO: impersonate throws error
+// TODO: impersonate feature is not working: https://github.com/payload-auth/payload-auth/issues/128
 
 export const betterAuthPluginOptions = {
   debug: {
     logTables: false,
     enableDebugLogs: false,
   },
+  // NOTE: use passkey for admins to get additional security:
   // admin: {
   //   loginMethods: ["passkey"],
   // },
   disableDefaultPayloadAuth: true,
   hidePluginCollections: false,
   users: {
-    slug: "users", // not required, this is the default anyways
+    slug: "users",
     hidden: false,
     adminRoles: ["admin"],
     defaultRole: "user",
@@ -112,8 +124,16 @@ export const betterAuthPluginOptions = {
     slug: "verifications",
   },
   adminInvitations: {
-    sendInviteEmail: async ({ payload, email, url }) => {
-      console.log("Send admin invite: ", email, url)
+    sendInviteEmail: async ({ email, url }) => {
+      const result = await sendInvite({ email, url })
+
+      if (result.error) {
+        return {
+          success: false,
+          message: result.error.message,
+        }
+      }
+
       return {
         success: true,
       }
