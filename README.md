@@ -116,7 +116,7 @@ Ideas:
    - [x] add sitemaps
    - [x] add emails
    - [ ] add few basic blocks
-   - [ ] add example of payload jobs
+   - [x] add example of payload jobs
    - [x] add payload-better-auth
    - [x] light dark mode switcher
 2. No seeds, if you need production data, create database branch and use it locally
