@@ -6,6 +6,7 @@ export const ALL_LOCALE_CODES = [DEFAULT_LOCALE, "de", "fr", "it"] as const
 export const translateConfig: TranslateConfig = {
   messagesPath: "./src/i18n/messages",
   locales: [...ALL_LOCALE_CODES],
+  // NOTE: create your own project at: https://translate.panter.ch/admin/collections/projects/create
   project: "pan-template-cms",
   enabled: process.env.NODE_ENV !== "production",
 }
