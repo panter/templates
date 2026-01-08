@@ -31,9 +31,7 @@ export function HeaderNav({ navItems, mobile, onNavigate }: HeaderNavProps) {
           className={cn(mobile && "justify-start")}
           asChild
         >
-          <CMSLink {...link} appearance="inline" onClick={onNavigate}>
-            {link.label}
-          </CMSLink>
+          <CMSLink {...link} appearance="inline" onClick={onNavigate} />
         </Button>
       ))}
     </nav>

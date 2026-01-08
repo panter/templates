@@ -22,8 +22,8 @@ import { SlugField as SlugField_3817bf644402e67bfe6577f60ef982de } from '@payloa
 import { FolderTableCell as FolderTableCell_ab83ff7e88da8d3530831f296ec4756a } from '@payloadcms/ui/rsc'
 import { FolderField as FolderField_ab83ff7e88da8d3530831f296ec4756a } from '@payloadcms/ui/rsc'
 import { FolderTypeField as FolderTypeField_3817bf644402e67bfe6577f60ef982de } from '@payloadcms/ui'
-import { RowLabel as RowLabel_ec255a65fa6fa8d1faeb09cf35284224 } from '@/Header/RowLabel'
-import { RowLabel as RowLabel_1f6ff6ff633e3695d348f4f3c58f1466 } from '@/Footer/RowLabel'
+import { RowLabel as RowLabel_ef1777998f20cb87d581e9fb460d55bb } from '@/payload/Header/RowLabel'
+import { RowLabel as RowLabel_b1d02ac03d11f7b38650c3919ff7a625 } from '@/payload/Footer/RowLabel'
 import { LogoutButton as LogoutButton_5a568d0e24198ca3140489e0d330f424 } from 'payload-auth/better-auth/plugin/client'
 import { LogoIcon as LogoIcon_df49de0f7084fc0cb7806385219edf47 } from '@/components/LogoIcon'
 import { Logo as Logo_2b7e2e151f989fb419ce3009e56b903e } from '@/components/Logo'
@@ -61,8 +61,8 @@ export const importMap = {
   "@payloadcms/ui/rsc#FolderTableCell": FolderTableCell_ab83ff7e88da8d3530831f296ec4756a,
   "@payloadcms/ui/rsc#FolderField": FolderField_ab83ff7e88da8d3530831f296ec4756a,
   "@payloadcms/ui#FolderTypeField": FolderTypeField_3817bf644402e67bfe6577f60ef982de,
-  "@/Header/RowLabel#RowLabel": RowLabel_ec255a65fa6fa8d1faeb09cf35284224,
-  "@/Footer/RowLabel#RowLabel": RowLabel_1f6ff6ff633e3695d348f4f3c58f1466,
+  "@/payload/Header/RowLabel#RowLabel": RowLabel_ef1777998f20cb87d581e9fb460d55bb,
+  "@/payload/Footer/RowLabel#RowLabel": RowLabel_b1d02ac03d11f7b38650c3919ff7a625,
   "payload-auth/better-auth/plugin/client#LogoutButton": LogoutButton_5a568d0e24198ca3140489e0d330f424,
   "@/components/LogoIcon#LogoIcon": LogoIcon_df49de0f7084fc0cb7806385219edf47,
   "@/components/Logo#Logo": Logo_2b7e2e151f989fb419ce3009e56b903e,

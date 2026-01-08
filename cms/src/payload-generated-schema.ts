@@ -122,7 +122,7 @@ export const enum__pages_v_published_locale = pgEnum(
 );
 export const enum_payload_jobs_log_task_slug = pgEnum(
   "enum_payload_jobs_log_task_slug",
-  ["inline", "schedulePublish"],
+  ["inline", "processPayment", "schedulePublish"],
 );
 export const enum_payload_jobs_log_state = pgEnum(
   "enum_payload_jobs_log_state",
@@ -130,7 +130,7 @@ export const enum_payload_jobs_log_state = pgEnum(
 );
 export const enum_payload_jobs_task_slug = pgEnum(
   "enum_payload_jobs_task_slug",
-  ["inline", "schedulePublish"],
+  ["inline", "processPayment", "schedulePublish"],
 );
 export const enum_payload_folders_folder_type = pgEnum(
   "enum_payload_folders_folder_type",

@@ -14,6 +14,7 @@ import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
 import { plugins } from "./payload/plugins"
 import { getURL } from "./utils/getURL"
 import { resendAdapter } from "@payloadcms/email-resend"
+import { processPaymentTask } from "./payload/tasks/processPayment"
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -76,6 +77,7 @@ export default buildConfig({
     migrationDir: path.resolve(dirname, "payload/migrations"),
     pool: {
       connectionString: process.env.POSTGRES_URL || "",
+      max: 500,
     },
   }),
 
@@ -116,6 +118,26 @@ export default buildConfig({
   }),
 
   jobs: {
+    jobsCollectionOverrides: ({ defaultJobsCollection }) => {
+      if (!defaultJobsCollection.admin) {
+        defaultJobsCollection.admin = {}
+      }
+
+      defaultJobsCollection.admin.hidden = false
+      defaultJobsCollection.admin.defaultColumns = [
+        "id",
+        "input",
+        "taskSlug",
+        "workflowSlug",
+        "queue",
+        "waitUntil",
+        "processing",
+        "totalTried",
+        "error",
+      ]
+      return defaultJobsCollection
+    },
+
     access: {
       run: ({ req }: { req: PayloadRequest }): boolean => {
         // Allow logged in users to execute this endpoint (default)
@@ -128,5 +150,7 @@ export default buildConfig({
         return authHeader === `Bearer ${process.env.CRON_SECRET}`
       },
     },
+
+    tasks: [processPaymentTask],
   },
 })

@@ -128,6 +128,7 @@ export interface Config {
   };
   jobs: {
     tasks: {
+      processPayment: TaskProcessPayment;
       schedulePublish: TaskSchedulePublish;
       inline: {
         input: unknown;
@@ -703,7 +704,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'schedulePublish';
+        taskSlug: 'inline' | 'processPayment' | 'schedulePublish';
         taskID: string;
         input?:
           | {
@@ -736,7 +737,7 @@ export interface PayloadJob {
         id?: string | null;
       }[]
     | null;
-  taskSlug?: ('inline' | 'schedulePublish') | null;
+  taskSlug?: ('inline' | 'processPayment' | 'schedulePublish') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -1286,6 +1287,17 @@ export interface FooterSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskProcessPayment".
+ */
+export interface TaskProcessPayment {
+  input: {
+    externalPaymentId: string;
+    orderId: string;
+  };
+  output?: unknown;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
