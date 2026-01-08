@@ -3,12 +3,14 @@ import { Logo } from "@/components/Logo"
 import { Separator } from "@/components/ui/separator"
 import type { Footer } from "@/payload-types"
 import { getCachedGlobal } from "@/utils/globals"
+import { getTranslations } from "@panter/translate/next-intl/server"
 import Link from "next/link"
 
 export async function Footer() {
   const footerData: Footer = await getCachedGlobal("footer", 1)
   const navItems = footerData?.navItems || []
   const currentYear = new Date().getFullYear()
+  const t = await getTranslations("footer")
 
   return (
     <footer data-slot="footer" className="bg-muted mt-auto border-t">
@@ -35,7 +37,7 @@ export async function Footer() {
         <Separator className="my-6" />
 
         <div className="text-muted-foreground flex flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between">
-          <p>© {currentYear} Your Company. All rights reserved.</p>
+          <p>{t("copyright", { currentYear })}</p>
         </div>
       </div>
     </footer>

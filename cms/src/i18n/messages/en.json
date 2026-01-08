@@ -1,6 +1,6 @@
 {
   "footer": {
-    "copyright": "This is a example of @panter/translate usage"
+    "copyright": "© {currentYear} Your Company. All rights reserved."
   },
   "draft": {
     "indicator": "Draft Mode: Changes are currently visible only to you. Complete your edits and publish via the administration panel to make this content public."

@@ -1,6 +1,6 @@
 {
   "footer": {
-    "copyright": "Voici un exemple d'utilisation de @panter/translate"
+    "copyright": "© {currentYear} Votre entreprise. Tous droits réservés."
   },
   "draft": {
     "indicator": "Mode brouillon : les modifications ne sont actuellement visibles que par vous. Terminez vos modifications et publiez-les via le panneau d'administration pour rendre ce contenu public."
