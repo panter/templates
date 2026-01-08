@@ -14,7 +14,7 @@ import { Banner } from "../../blocks/Banner/config"
 import { CallToAction } from "../../blocks/CallToAction/config"
 import { Content } from "../../blocks/Content/config"
 import { MediaBlock } from "../../blocks/MediaBlock/config"
-import { populatePublishedAt } from "../../hooks/populatePublishedAt"
+import { populatePublishedAt } from "./populatePublishedAt"
 import { generatePreviewPath } from "../../utils/generatePreviewPath"
 import { revalidateDelete, revalidatePage } from "./revalidatePage"
 
