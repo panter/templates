@@ -39,9 +39,8 @@ Project Tech Lead role:
 
 ## 2. Project Setup
 
-- All projects are created with ours Vercel template ...INSERT LINK....
+- All projects are created with ours Vercel template by clicking on Deploy button: <https://github.com/panter/templates/tree/main/cms#readme>
 - The template is **updated** on regular basis as a part of "Review of this Tech Manifesto"
-- We do **NOT** create seeds.
 
 ### Reasons
 
@@ -84,6 +83,7 @@ All projects are deployed to Panter's github.
 
 ### Reasons
 
+- Using the template
 - Vercel pipelines are fast (< 3 minutes)
 - No pipeline configuration is required -> one click and "it just works"
 - Regular project costs are $40/month. In development phase: `$20 + (number of devs) * $20` per month
@@ -91,49 +91,15 @@ All projects are deployed to Panter's github.
 - Good UX for managing the hosting
 - Database branching gives us production data on review branches
 
-# Notes
+## 4. We don't reinvent the wheel
 
-Ideas:
+When we develop a feature and we identify that this feature might be useful for future projects, we add the implementation into the template either as a Payload plugin or just as a piece of code.
 
-2. No seeds, if you need production data, create database branch and use it locally
-3. OKRs:
-   - Developer Satisfaction - "lowering number of FUCKs per day"
-   - Deployment time < 5 mins
-   - Consistent tech stack -> Minimizing onboarding times on Payload projects, "small project -> onboarding takes only few minutes"
-4. Estimations are revisited after project is finished -> we will learn from under/over estimations. e.g. calendar export was estimated to 5days, we spent 8days -> why -> how do we improve this in future? is it a good idea for a plugin? etc.
-5. We do mobile apps with WebView (PWA-like), no full native apps, limited app stores support
-6. We create plugins from features that will be re-usable.
+### Reasons
 
-## Clone button and URL
-
-<details>
-
-<summary>Customize button</summary>
-
-```ts
-// button generator
-const params = new URLSearchParams({
-  "build-command": "pnpm run ci",
-  "demo-description": "Panter Solution App starter",
-  "demo-image":
-    "//raw.githubusercontent.com/panter/templates/refs/heads/main/cms.png",
-  "demo-title": "Payload Website Starter",
-  "demo-url": "https://panter-solution-app-demo.vercel.app/",
-  env: "PAYLOAD_SECRET,CRON_SECRET,PREVIEW_SECRET,BETTER_AUTH_SECRET,RESEND_API_KEY,EMAIL_FROM_NAME,EMAIL_FROM_ADDRESS",
-  from: "templates/cms",
-  "project-name": "Panter Solution App",
-  "repository-name": "panter-solution-app",
-  "repository-url": "https://github.com/panter/templates/tree/main/cms",
-  "skippable-integrations": "0",
-  stores: `[{"type":"integration","productSlug":"neon","integrationSlug":"neon"},{"type":"blob"}]`,
-});
-
-console.log(`https://vercel.com/new/clone?${params}`);
-```
-
-</details>
-
----
+- Re-usability of features gives efficiency boost
+- Continuously improving features by backporting improvements
+- Consistent implementation of same features
 
 # Footgun Experiences
 
@@ -194,6 +160,36 @@ export const Export: CollectionConfig = {
 export const export = pgTable('export', {
 //           ^ Parsing error: 'export' is not allowed as a variable declaration name.
 ```
+
+---
+
+## Deploy Button Link
+
+<details>
+
+<summary>Customize button</summary>
+
+```ts
+const params = new URLSearchParams({
+  "build-command": "pnpm run ci",
+  "demo-description": "Panter Solution App starter",
+  "demo-image":
+    "//raw.githubusercontent.com/panter/templates/refs/heads/main/cms.png",
+  "demo-title": "Payload Website Starter",
+  "demo-url": "https://panter-solution-app-demo.vercel.app/",
+  env: "PAYLOAD_SECRET,CRON_SECRET,PREVIEW_SECRET,BETTER_AUTH_SECRET,RESEND_API_KEY,EMAIL_FROM_NAME,EMAIL_FROM_ADDRESS",
+  from: "templates/cms",
+  "project-name": "Panter Solution App",
+  "repository-name": "panter-solution-app",
+  "repository-url": "https://github.com/panter/templates/tree/main/cms",
+  "skippable-integrations": "0",
+  stores: `[{"type":"integration","productSlug":"neon","integrationSlug":"neon"},{"type":"blob"}]`,
+});
+
+console.log(`https://vercel.com/new/clone?${params}`);
+```
+
+</details>
 
 # This is still work in progress
 
