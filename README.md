@@ -66,7 +66,7 @@ When we are in development phase and we want to provide some production data, we
 - Seed data does not reflect production state, using prod data gives more accurate results of new features testing
 - Pulling production data is straightforward
 
-## 3. Github for repo and project boards
+## 5. Github for repo and project boards
 
 All projects are deployed to Panter's github.
 
@@ -75,7 +75,7 @@ All projects are deployed to Panter's github.
 - Provides zero infrastructure overhead -> smooth connection with Vercel
 - Provides tools for AI code reviews (Copilot)
 
-## 4. Vercel for hosting
+## 6. Vercel for hosting
 
 - We deploy projects to Vercel
 - **We always use Vercel Template for new projects**
@@ -91,7 +91,7 @@ All projects are deployed to Panter's github.
 - Good UX for managing the hosting
 - Database branching gives us production data on review branches
 
-## 4. We don't reinvent the wheel
+## 7. We don't reinvent the wheel
 
 When we develop a feature and we identify that this feature might be useful for future projects, we add the implementation into the template either as a Payload plugin or just as a piece of code.
 
@@ -100,6 +100,20 @@ When we develop a feature and we identify that this feature might be useful for 
 - Re-usability of features gives efficiency boost
 - Continuously improving features by backporting improvements
 - Consistent implementation of same features
+
+## 8. Pull Requests
+
+- We link issue with pull request
+- We first ask automation tool (Claude, Code Rabbit, Copilot, ...) for a review and then we ask for human review
+- We always request a review from a team member and inform them with a message "plz review"
+- Reviewer tests the new feature in Preview environment
+- When alone on project, we can ask for a review in Panter Solutions circle
+
+### Reasons
+
+- Project specific knowledge sharing
+- Catching bugs before they happen
+- "Eat your own dog food" in an environment with production data thanks to database branching
 
 # Footgun Experiences
 
