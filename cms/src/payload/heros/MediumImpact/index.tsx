@@ -9,7 +9,7 @@ import RichText from "@/components/RichText"
 export function MediumImpactHero({ links, media, richText }: Page["hero"]) {
   return (
     <div className="">
-      <div className="container mb-8">
+      <div className="mb-8">
         {richText && <RichText className="mb-6" data={richText} enableGutter={false} />}
 
         {Array.isArray(links) && links.length > 0 && (
@@ -24,7 +24,7 @@ export function MediumImpactHero({ links, media, richText }: Page["hero"]) {
           </ul>
         )}
       </div>
-      <div className="container">
+      <div>
         {media && typeof media === "object" && (
           <div>
             <Media

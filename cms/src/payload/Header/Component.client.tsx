@@ -8,6 +8,7 @@ import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { HeaderNav } from "./Nav"
+import { ThemeControls } from "@/app/styleguide/components/ThemeControls"
 
 type HeaderClientProps = {
   data: Header
@@ -29,6 +30,7 @@ export function HeaderClient({ data }: HeaderClientProps) {
 
         <div className="hidden items-center gap-2 md:flex">
           <HeaderNav navItems={navItems} />
+          <ThemeControls />
         </div>
 
         <div className="flex items-center gap-2 md:hidden">

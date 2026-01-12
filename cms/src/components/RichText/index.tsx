@@ -40,7 +40,6 @@ const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) 
         imgClassName="m-0"
         {...node.fields}
         captionClassName="mx-auto max-w-[48rem]"
-        enableGutter={false}
       />
     ),
     cta: ({ node }) => <CallToActionBlock {...node.fields} />,

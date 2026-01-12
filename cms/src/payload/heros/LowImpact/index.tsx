@@ -16,7 +16,7 @@ type LowImpactHeroType =
 
 export function LowImpactHero({ children, richText }: LowImpactHeroType) {
   return (
-    <div className="container mt-8">
+    <div className="mt-8">
       <div className="max-w-[48rem]">
         {children || (richText && <RichText data={richText} enableGutter={false} />)}
       </div>

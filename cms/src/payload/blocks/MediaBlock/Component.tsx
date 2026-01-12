@@ -8,7 +8,6 @@ import { Media } from "../../../components/Media"
 export function MediaBlock({
   captionClassName,
   className,
-  enableGutter = true,
   imgClassName,
   media,
   staticImage,
@@ -16,22 +15,13 @@ export function MediaBlock({
   breakout?: boolean
   captionClassName?: string
   className?: string
-  enableGutter?: boolean
   imgClassName?: string
   staticImage?: StaticImageData
 }) {
   const caption = collectionOrNull(media)?.caption
 
   return (
-    <div
-      className={cn(
-        "",
-        {
-          container: enableGutter,
-        },
-        className,
-      )}
-    >
+    <div className={className}>
       {(media || staticImage) && (
         <Media
           imgClassName={cn("border border-border rounded-[0.8rem]", imgClassName)}

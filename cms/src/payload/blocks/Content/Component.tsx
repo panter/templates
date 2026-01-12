@@ -14,7 +14,7 @@ export function ContentBlock(props: ContentBlockProps) {
   }
 
   return (
-    <div className="container my-8">
+    <div className="my-8">
       <div className="grid grid-cols-6 gap-x-16 gap-y-8">
         {columns &&
           columns.length > 0 &&

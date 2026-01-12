@@ -39,7 +39,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const { hero, layout } = page
 
   return (
-    <main className="py-4 md:py-8">
+    <main>
       <article className="container">
         {draft && <LivePreviewListener />}
         {page._status === "draft" && <DraftIndicator />}
