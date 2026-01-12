@@ -4,6 +4,8 @@ import InviteUser from "./InviteUser"
 import ResetPassword from "./ResetPassword"
 import UserVerification from "./UserVerification"
 
+// TODO: setup localization https://react.email/docs/guides/internationalization/react-intl
+
 export async function sendResetPassword({ user, url }: { user: User; url: string }) {
   return await sendEmail({
     to: user.email,

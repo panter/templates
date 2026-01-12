@@ -17,10 +17,11 @@
     "ci": "payload migrate && pnpm build"
   },
   "dependencies": {
+    "@c15t/nextjs": "^1.8.2",
+    "@c15t/translations": "^1.8.0",
     "@hookform/resolvers": "^5.2.2",
     "@panter/translate": "^0.0.45",
     "@payloadcms/db-vercel-postgres": "3.70.0",
-    "@payloadcms/email-resend": "3.70.0",
     "@payloadcms/live-preview-react": "3.70.0",
     "@payloadcms/next": "3.70.0",
     "@payloadcms/plugin-seo": "3.70.0",

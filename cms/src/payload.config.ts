@@ -13,7 +13,6 @@ import { Header } from "./payload/Header/config"
 import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
 import { plugins } from "./payload/plugins"
 import { getURL } from "./utils/getURL"
-import { resendAdapter } from "@payloadcms/email-resend"
 import { processPaymentTask } from "./payload/tasks/processPayment"
 
 const filename = fileURLToPath(import.meta.url)
@@ -79,6 +78,9 @@ export default buildConfig({
       connectionString: process.env.POSTGRES_URL || "",
       max: 500,
     },
+    // NOTE: setting to false to avoid accidental db schema changes in production
+    // feel free to set to true in development with a local db or with your database branch
+    push: false,
   }),
 
   localization: {
@@ -111,11 +113,8 @@ export default buildConfig({
     outputFile: path.resolve(dirname, "payload-types.ts"),
   },
 
-  email: resendAdapter({
-    apiKey: process.env.RESEND_API_KEY,
-    defaultFromAddress: process.env.EMAIL_FROM_ADDRESS,
-    defaultFromName: process.env.EMAIL_FROM_NAME,
-  }),
+  // NOTE: we use src/lib/email.ts for emailing
+  email: undefined,
 
   jobs: {
     jobsCollectionOverrides: ({ defaultJobsCollection }) => {

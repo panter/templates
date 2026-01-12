@@ -5,7 +5,7 @@ declare global {
       DATABASE_URI: string
       VERCEL_PROJECT_PRODUCTION_URL: string
       BETTER_AUTH_SECRET: string
-      RESEND_API_KEY: string
+      RESEND_API_KEY: string | undefined
       EMAIL_FROM_ADDRESS: string
       EMAIL_FROM_NAME: string
     }
