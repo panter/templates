@@ -9,8 +9,8 @@ This Tech Manifesto is reviewed at minimum **every month** or when there is a ne
 Everyone in this group can make changes which will be reviewed by others from the group. The review process is done like in a regular Pull Request:
 
 1. Changes are presented - pull request is created by author
-2. Reviewers adds their concerns (review comments)
-3. Author discusses and/or adjust changes to remove the concerns
+2. Reviewers add their concerns (review comments)
+3. Author discusses and/or adjusts changes to remove the concerns
 4. When the solution is "safe enough to try" we merge the changes
 5. Old projects are NOT required to be altered to meet new changes although new features must follow new rules
 
@@ -23,8 +23,8 @@ Project Tech Lead role:
 - Is assigned by voting in project team
 - Everyone in the circle must be Project Tech Lead at some point -> same person must not be Project Tech Lead twice in a row
 - Steers and invites to tech discussions in the project
-- Share his approach as the last one in discussions -> lets everyone speak first
-- Participatively involves everyone in project team discussions by asking questions which leads people to realization of overseen concerns/issues -> listen to people, involve teamwork, don't be one-man show
+- Share their approach as the last one in discussions -> lets everyone speak first
+- Participatively involves everyone in project team discussions by asking questions which lead people to realization of overlooked concerns/issues -> listen to people, involve teamwork, don't be a one-man show
 - Regularly checks if project aligns with Tech Manifesto
 - Takes responsibility for tech decisions -> Can decline project teams' decisions / has last word in decisions.
 - Is always set as member in Vercel project ($20/month)
@@ -39,12 +39,12 @@ Project Tech Lead role:
 
 ## 2. Project Setup
 
-- All projects are created with ours Vercel template by clicking on Deploy button: <https://github.com/panter/templates/tree/main/cms#readme>
+- All projects are created with our Vercel template by clicking on the Deploy button: <https://github.com/panter/templates/tree/main/cms#readme>
 - The template is **updated** on regular basis as a part of "Review of this Tech Manifesto"
 
 ### Reasons
 
-- The template saves us lot of time when creating new projects and configures 95% of infra (Vercel)
+- The template saves us a lot of time when creating new projects and configures 95% of the infra (Vercel)
 - The template gives us conventions for free
 - Many features are already properly configured in the template
 
@@ -55,27 +55,27 @@ We do **NOT** create seeds.
 Instead we either:
 
 1. Create database branch in Neon and use it locally
-2. Pull production db to local db with `scripts/db-pull-prod.sh`
+2. Pull production DB to local DB with `scripts/db-pull-prod.sh`
 
-When we are in development phase and we want to provide some production data, we push local state into production with `scripts/danger/db-push-local-to-prod.sh`. Other devs then can pull production data to their local db.
+When we are in the development phase and we want to provide some production data, we push local state into production with `scripts/danger/db-push-local-to-prod.sh`. Other devs can then pull production data to their local DB.
 
 ### Reasons
 
 - Seeds get deprecated quickly -> increases maintenance efforts
 - Their implementation requires effort
-- Seed data does not reflect production state, using prod data gives more accurate results of new features testing
+- Seed data does not reflect production state; using prod data gives more accurate results for new features testing
 - Pulling production data is straightforward
 
-## 5. Github for repo and project boards
+## 4. Github for repo and project boards
 
-All projects are deployed to Panter's github.
+All projects are deployed to Panter's GitHub.
 
 ### Reasons
 
 - Provides zero infrastructure overhead -> smooth connection with Vercel
 - Provides tools for AI code reviews (Copilot)
 
-## 6. Vercel for hosting
+## 5. Vercel for hosting
 
 - We deploy projects to Vercel
 - **We always use Vercel Template for new projects**
@@ -87,21 +87,21 @@ All projects are deployed to Panter's github.
 - Vercel pipelines are fast (< 3 minutes)
 - No pipeline configuration is required -> one click and "it just works"
 - Regular project costs are $40/month. In development phase: `$20 + (number of devs) * $20` per month
-- Next.js apps works best with Vercel
+- Next.js apps work best with Vercel
 - Good UX for managing the hosting
 - Database branching gives us production data on review branches
 
-## 7. We don't reinvent the wheel
+## 6. We don't reinvent the wheel
 
 When we develop a feature and we identify that this feature might be useful for future projects, we add the implementation into the template either as a Payload plugin or just as a piece of code.
 
 ### Reasons
 
-- Re-usability of features gives efficiency boost
-- Continuously improving features by backporting improvements
+- Re-usability of features gives an efficiency boost
+- Continuous improvement of features by backporting improvements
 - Consistent implementation of same features
 
-## 8. Pull Requests
+## 7. Pull Requests
 
 - We link issue with pull request
 - We first ask automation tool (Claude, Code Rabbit, Copilot, ...) for a review and then we ask for human review
@@ -158,7 +158,7 @@ const query: Where = {
 
 ## Do not name your collection export
 
-The name of your collection ends up in generated db schema. And `export` is a reserved JS keyword.
+The name of your collection ends up in the generated DB schema. And `export` is a reserved JS keyword.
 
 ```tsx
 import { CollectionConfig } from "payload";
