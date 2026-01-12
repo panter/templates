@@ -8,6 +8,7 @@ declare global {
       RESEND_API_KEY: string | undefined
       EMAIL_FROM_ADDRESS: string
       EMAIL_FROM_NAME: string
+      NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: string | undefined
     }
   }
 }

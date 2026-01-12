@@ -50,7 +50,11 @@ You will be prompted to add the following secret values to your project. These s
 
 `BETTER_AUTH_SECRET` - used by Better Auth integration
 
-`RESEND_API_KEY` - TODO: try integration and describe how to
+`RESEND_API_KEY` - used by emailing system, if not provided, emails are printed to console.
+
+`EMAIL_FROM_NAME` and `EMAIL_FROM_ADDRESS` represents sender's email address and name
+
+`NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` - if provided, cookie consent automatically adds google tag manager script
 
 > secret keys can be generated with `openssl rand -base64 32`
 
@@ -152,7 +156,7 @@ We have configured [Scheduled Publish](https://payloadcms.com/docs/versions/draf
 
 #### Local development
 
-Ideally we recommend running a local copy of your database so that schema updates are as fast as possible. By default the Postgres adapter has `push: true` for development environments. This will let you add, modify and remove fields and collections without needing to run any data migrations.
+Ideally we recommend running a local copy of your database so that schema updates are as fast as possible - set db adapter to `push: true` for your local environment. This will let you add, modify and remove fields and collections without needing to run any data migrations.
 
 If your database is pointed to production you will want to set `push: false` otherwise you will risk losing data or having your migrations out of sync.
 

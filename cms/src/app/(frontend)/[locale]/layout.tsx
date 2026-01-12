@@ -15,6 +15,7 @@ import type { Metadata } from "next"
 import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import type { PropsWithChildren } from "react"
+import { CookieConsentProvider } from "@/providers/CookieConsentProvider"
 
 export default async function RootLayout({
   children,
@@ -38,9 +39,11 @@ export default async function RootLayout({
       <body className={cn(fontSans.variable, "flex min-h-screen flex-col font-sans antialiased")}>
         <ThemeProvider>
           <NextIntlClientProvider config={translateConfig}>
-            <Header />
-            {children}
-            <Footer />
+            <CookieConsentProvider>
+              <Header />
+              {children}
+              <Footer />
+            </CookieConsentProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
