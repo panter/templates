@@ -1,9 +1,13 @@
 import { sendEmailVerification, sendInvite, sendResetPassword } from "@/emails"
+import type { Locale } from "@/i18n"
+import { DEFAULT_LOCALE } from "@/i18n/config"
 import { getURL } from "@/utils/getURL"
 import { nextCookies } from "better-auth/next-js"
 import { admin, magicLink, multiSession } from "better-auth/plugins"
 import type { BetterAuthPlugin as BetterAuthPluginType } from "better-auth/types"
 import type { BetterAuthOptions, PayloadAuthOptions } from "payload-auth/better-auth"
+import { getUserPreference } from "../preferences"
+import { getCurrentUser } from "."
 
 export const betterAuthPlugins = [
   // NOTE: ... add/change your better auth plugins here ...
@@ -34,7 +38,9 @@ export const betterAuthOptions = {
     autoSignIn: true,
     resetPasswordTokenExpiresIn: 60 * 60, // 1 hour
     sendResetPassword: async (args) => {
-      await sendResetPassword(args)
+      const userId = parseInt(args.user.id, 10)
+      const locale = (await getUserPreference<Locale>(userId, "locale")) ?? DEFAULT_LOCALE
+      await sendResetPassword({ ...args, locale })
     },
   },
   socialProviders: {
@@ -49,7 +55,9 @@ export const betterAuthOptions = {
     sendOnSignUp: true,
     autoSignInAfterVerification: true,
     sendVerificationEmail: async (args) => {
-      await sendEmailVerification(args)
+      const userId = parseInt(args.user.id, 10)
+      const locale = (await getUserPreference<Locale>(userId, "locale")) ?? DEFAULT_LOCALE
+      await sendEmailVerification({ ...args, locale })
     },
   },
   plugins: betterAuthPlugins,
@@ -125,7 +133,11 @@ export const betterAuthPluginOptions = {
   },
   adminInvitations: {
     sendInviteEmail: async ({ email, url }) => {
-      const result = await sendInvite({ email, url })
+      const me = await getCurrentUser()
+      const locale =
+        (me ? await getUserPreference<Locale>(me.id, "locale") : undefined) ?? DEFAULT_LOCALE
+
+      const result = await sendInvite({ email, url, locale })
 
       if (result.error) {
         return {

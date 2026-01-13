@@ -1,0 +1,35 @@
+{
+  "inviteUser": {
+    "preview": "Sie wurden eingeladen, unserer Plattform beizutreten",
+    "title": "Sie wurden <strong>eingeladen</strong>",
+    "hello": "Hallo,",
+    "youHaveBeenInvited": "Sie wurden eingeladen, unserer Plattform beizutreten. Wir freuen uns, Sie an Bord zu haben!",
+    "clickTheButtonBelow": "Klicken Sie auf die Schaltfläche unten, um Ihre Einladung anzunehmen und Ihr Konto zu erstellen.",
+    "acceptInvitation": "Einladung annehmen",
+    "orCopyAndPaste": "oder kopieren Sie diese URL und fügen Sie sie in Ihren Browser ein: ",
+    "notExpectingThisEmail": "Wenn Sie diese Einladung nicht erwartet haben, können Sie diese E-Mail ignorieren. Es wird kein Konto erstellt, es sei denn, Sie klicken auf den obigen Link.",
+    "questions": "Wenn Sie Fragen haben oder Unterstützung benötigen, zögern Sie bitte nicht, unser Support-Team zu kontaktieren."
+  },
+  "resetPassword": {
+    "preview": "Setzen Sie Ihr Passwort zurück",
+    "title": "Setzen Sie Ihr Passwort zurück",
+    "hello": "Hallo {name},",
+    "requestReceived": "Wir haben eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto erhalten, das mit <strong>{email}</strong> verknüpft ist.",
+    "buttonText": "Passwort zurücksetzen",
+    "orCopyAndPaste": "oder kopieren Sie diese URL und fügen Sie sie in Ihren Browser ein: ",
+    "expirationNotice": "<strong>Wichtig:</strong> Dieser Link läuft aus Sicherheitsgründen in 1 Stunde ab.",
+    "didntRequest": "Wenn Sie keine Passwortzurücksetzung angefordert haben, können Sie diese E-Mail ignorieren. Ihr Passwort wird nicht geändert, es sei denn, Sie klicken auf den obigen Link und erstellen ein neues.",
+    "securityWarning": "Aus Sicherheitsgründen sollten Sie diesen Link niemals mit anderen teilen. Wenn Sie Bedenken bezüglich der Sicherheit Ihres Kontos haben, wenden Sie sich bitte an den Support."
+  },
+  "userVerification": {
+    "preview": "Bestätigen Sie Ihre E-Mail-Adresse",
+    "title": "Bestätigen Sie Ihre E-Mail-Adresse",
+    "hello": "Hallo {name},",
+    "thankYou": "Vielen Dank für Ihre Anmeldung! Bitte bestätigen Sie Ihre E-Mail-Adresse <strong>{email}</strong>, um Ihre Registrierung abzuschließen und Ihr Konto zu aktivieren.",
+    "buttonText": "E-Mail-Adresse bestätigen",
+    "orCopyAndPaste": "oder kopieren Sie diese URL und fügen Sie sie in Ihren Browser ein: ",
+    "expirationNotice": "<strong>Wichtig:</strong> Dieser Bestätigungslink läuft aus Sicherheitsgründen in 24 Stunden ab.",
+    "didntCreate": "Wenn Sie kein Konto erstellt haben, können Sie diese E-Mail ignorieren. Kein Konto wird aktiviert, es sei denn, Sie klicken auf den Bestätigungslink oben.",
+    "needHelp": "Wenn Sie Probleme bei der Bestätigung Ihrer E-Mail haben oder Unterstützung benötigen, kontaktieren Sie bitte unser Support-Team."
+  }
+}

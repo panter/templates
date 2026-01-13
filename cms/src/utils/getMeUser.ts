@@ -2,6 +2,8 @@ import { cookies } from "next/headers"
 import type { User } from "../payload-types"
 import { getURL } from "./getURL"
 
+// TODO: use better auth instead
+
 export async function getMeUser() {
   const cookieStore = await cookies()
   const token = cookieStore.get("payload-token")?.value

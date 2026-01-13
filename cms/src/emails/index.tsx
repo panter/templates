@@ -1,31 +1,29 @@
 import { sendEmail } from "@/lib/email"
-import type { User } from "better-auth"
+import type { ComponentProps } from "react"
 import InviteUser from "./InviteUser"
 import ResetPassword from "./ResetPassword"
 import UserVerification from "./UserVerification"
 
-// TODO: setup localization https://react.email/docs/guides/internationalization/react-intl
-
-export async function sendResetPassword({ user, url }: { user: User; url: string }) {
+export async function sendResetPassword(props: ComponentProps<typeof ResetPassword>) {
   return await sendEmail({
-    to: user.email,
+    to: props.user.email,
     subject: "Reset your password",
-    react: <ResetPassword user={user} url={url} />,
+    react: <ResetPassword {...props} />,
   })
 }
 
-export async function sendInvite({ email, url }: { email: string; url: string }) {
+export async function sendInvite(props: ComponentProps<typeof InviteUser> & { email: string }) {
   return await sendEmail({
-    to: email,
+    to: props.email,
     subject: "You've been invited to join our platform",
-    react: <InviteUser url={url} />,
+    react: <InviteUser {...props} />,
   })
 }
 
-export async function sendEmailVerification({ user, url }: { user: User; url: string }) {
+export async function sendEmailVerification(props: ComponentProps<typeof UserVerification>) {
   return await sendEmail({
-    to: user.email,
+    to: props.user.email,
     subject: "Verify your email address",
-    react: <UserVerification url={url} user={user} />,
+    react: <UserVerification {...props} />,
   })
 }

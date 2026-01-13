@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n"
+import { DEFAULT_LOCALE } from "@/i18n/config"
 import {
   Button,
   Container,
@@ -12,11 +14,21 @@ import {
 import type { User } from "better-auth"
 import type { ComponentProps } from "react"
 import { EmailLayout } from "./EmailLayout"
+import { getEmailMessages } from "./getEmailMessages"
 
-export default function ResetPassword({ user, url }: { user: User; url: string }) {
+export default async function ResetPassword({
+  user,
+  url,
+  locale,
+}: {
+  user: User
+  url: string
+  locale: Locale
+}) {
+  const { t } = await getEmailMessages(locale, "resetPassword")
   return (
     <EmailLayout>
-      <Preview>Reset your password</Preview>
+      <Preview>{t("preview")}</Preview>
       <Container className="mx-auto my-10 max-w-116 rounded border border-solid border-gray-200 p-5">
         <Section className="mt-8">
           {user.image && (
@@ -31,14 +43,13 @@ export default function ResetPassword({ user, url }: { user: User; url: string }
         </Section>
 
         <Heading className="mx-0 my-7.5 p-0 text-center text-[24px] font-normal text-black">
-          Reset your password
+          {t("title")}
         </Heading>
 
-        <Text className="text-[14px] leading-6 text-black">Hello {user.name || "there"},</Text>
+        <Text className="text-[14px] leading-6 text-black">{t("hello", { name: user.name })}</Text>
 
         <Text className="text-[14px] leading-6 text-black">
-          We received a request to reset the password for your account associated with{" "}
-          <strong>{user.email}</strong>.
+          {t("requestReceived", { email: user.email })}
         </Text>
 
         <Section className="mt-8 mb-8 text-center">
@@ -46,32 +57,24 @@ export default function ResetPassword({ user, url }: { user: User; url: string }
             className="bg-primary rounded px-5 py-3 text-center text-[12px] font-semibold text-white no-underline"
             href={url}
           >
-            Reset Password
+            {t("buttonText")}
           </Button>
         </Section>
 
         <Text className="text-[14px] leading-6 text-black">
-          or copy and paste this URL into your browser:{" "}
+          {t("orCopyAndPaste")}
           <Link href={url} className="break-all text-blue-600 no-underline">
             {url}
           </Link>
         </Text>
 
-        <Text className="text-[14px] leading-6 text-black">
-          <strong>Important:</strong> This link will expire in 1 hour for security reasons.
-        </Text>
+        <Text className="text-[14px] leading-6 text-black">{t("expirationNotice")}</Text>
 
         <Hr className="mx-0 my-6.5 w-full border border-solid border-gray-200" />
 
-        <Text className="text-[12px] leading-6 text-gray-400">
-          If you didn&apos;t request a password reset, you can safely ignore this email. Your
-          password will not be changed unless you click the link above and create a new one.
-        </Text>
+        <Text className="text-[12px] leading-6 text-gray-400">{t("didntRequest")}</Text>
 
-        <Text className="text-[12px] leading-6 text-gray-400">
-          For security reasons, never share this link with anyone. If you&apos;re concerned about
-          your account&apos;s safety, please contact support.
-        </Text>
+        <Text className="text-[12px] leading-6 text-gray-400">{t("securityWarning")}</Text>
       </Container>
     </EmailLayout>
   )
@@ -88,4 +91,5 @@ ResetPassword.PreviewProps = {
     createdAt: new Date(),
   },
   url: "https://example.com/verify?token=eydalgb2JhbC5tZXRhZGF0YS5lbWFpbC50b2tlbiAnMTIzNDU2Nzg5MCcgOyB9",
+  locale: DEFAULT_LOCALE,
 } satisfies ComponentProps<typeof ResetPassword>

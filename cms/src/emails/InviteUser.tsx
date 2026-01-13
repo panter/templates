@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n"
+import { DEFAULT_LOCALE } from "@/i18n/config"
 import {
   Button,
   Container,
@@ -9,13 +11,16 @@ import {
   Section,
   Text,
 } from "@react-email/components"
-import { EmailLayout } from "./EmailLayout"
 import type { ComponentProps } from "react"
+import { EmailLayout } from "./EmailLayout"
+import { getEmailMessages } from "./getEmailMessages"
 
-export default function InviteUser({ url }: { url: string }) {
+export default async function InviteUser({ url, locale }: { url: string; locale: Locale }) {
+  const { t } = await getEmailMessages(locale, "inviteUser")
+
   return (
     <EmailLayout>
-      <Preview>You&apos;ve been invited to join our platform</Preview>
+      <Preview>{t("preview")}</Preview>
       <Container className="mx-auto my-10 max-w-116 rounded border border-solid border-gray-200 p-5">
         <Section className="mt-8">
           <Img
@@ -28,30 +33,26 @@ export default function InviteUser({ url }: { url: string }) {
         </Section>
 
         <Heading className="mx-0 my-7.5 p-0 text-center text-[24px] font-normal text-black">
-          You&apos;ve been <strong>invited</strong>
+          {t("title")}
         </Heading>
 
-        <Text className="text-[14px] leading-6 text-black">Hello,</Text>
+        <Text className="text-[14px] leading-6 text-black">{t("hello")}</Text>
 
-        <Text className="text-[14px] leading-6 text-black">
-          You&apos;ve been invited to join our platform. We&apos;re excited to have you on board!
-        </Text>
+        <Text className="text-[14px] leading-6 text-black">{t("youHaveBeenInvited")}</Text>
 
-        <Text className="text-[14px] leading-6 text-black">
-          Click the button below to accept your invitation and create your account.
-        </Text>
+        <Text className="text-[14px] leading-6 text-black">{t("clickTheButtonBelow")}</Text>
 
         <Section className="mt-8 mb-8 text-center">
           <Button
             className="bg-primary rounded px-5 py-3 text-center text-[12px] font-semibold text-white no-underline"
             href={url}
           >
-            Accept Invitation
+            {t("acceptInvitation")}
           </Button>
         </Section>
 
         <Text className="text-[14px] leading-6 text-black">
-          or copy and paste this URL into your browser:{" "}
+          {t("orCopyAndPaste")}
           <Link href={url} className="break-all text-blue-600 no-underline">
             {url}
           </Link>
@@ -59,15 +60,9 @@ export default function InviteUser({ url }: { url: string }) {
 
         <Hr className="mx-0 my-6.5 w-full border border-solid border-gray-200" />
 
-        <Text className="text-[12px] leading-6 text-gray-400">
-          If you weren&apos;t expecting this invitation, you can safely ignore this email. No
-          account will be created unless you click the link above.
-        </Text>
+        <Text className="text-[12px] leading-6 text-gray-400">{t("notExpectingThisEmail")}</Text>
 
-        <Text className="text-[12px] leading-6 text-gray-400">
-          If you have any questions or need assistance, please don&apos;t hesitate to contact our
-          support team.
-        </Text>
+        <Text className="text-[12px] leading-6 text-gray-400">{t("questions")}</Text>
       </Container>
     </EmailLayout>
   )
@@ -75,4 +70,5 @@ export default function InviteUser({ url }: { url: string }) {
 
 InviteUser.PreviewProps = {
   url: "https://example.com/verify?token=eydalgb2JhbC5tZXRhZGF0YS5lbWFpbC50b2tlbiAnMTIzNDU2Nzg5MCcgOyB9",
+  locale: DEFAULT_LOCALE,
 } satisfies ComponentProps<typeof InviteUser>

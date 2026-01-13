@@ -76,6 +76,7 @@ export default buildConfig({
     migrationDir: path.resolve(dirname, "payload/migrations"),
     pool: {
       connectionString: process.env.POSTGRES_URL || "",
+      // TODO: this might be causing "Pulling data from database" spam
       max: 500,
     },
     // NOTE: setting to false to avoid accidental db schema changes in production
