@@ -29,7 +29,7 @@ Project Tech Lead role:
 - Takes responsibility for tech decisions -> Can decline project teams' decisions / has last word in decisions.
 - Is always set as member in Vercel project ($20/month)
 - Changes all members in Vercel to Viewer Role when the project is finished to lower costs per seat
-- Makes sure the Vercel project has <maa@panter.ch> as Billing member in the project
+- Makes sure the Vercel project has <vercel@panter.ch> as Billing member in the project
 - Makes sure that "Dependabot security updates" and "Grouped security updates" are enabled on the repository
 
 ### Reasons
