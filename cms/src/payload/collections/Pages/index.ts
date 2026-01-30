@@ -14,6 +14,14 @@ import { Banner } from "../../blocks/Banner/config"
 import { CallToAction } from "../../blocks/CallToAction/config"
 import { Content } from "../../blocks/Content/config"
 import { MediaBlock } from "../../blocks/MediaBlock/config"
+import { LandingHero } from "../../blocks/LandingHero/config"
+import { LandingProblem } from "../../blocks/LandingProblem/config"
+import { LandingSolution } from "../../blocks/LandingSolution/config"
+import { LandingHowItWorks } from "../../blocks/LandingHowItWorks/config"
+import { LandingAudience } from "../../blocks/LandingAudience/config"
+import { LandingVision } from "../../blocks/LandingVision/config"
+import { LandingImpact } from "../../blocks/LandingImpact/config"
+import { LandingCta } from "../../blocks/LandingCta/config"
 import { populatePublishedAt } from "./populatePublishedAt"
 import { generatePreviewPath } from "../../../utils/generatePreviewPath"
 import { revalidateDelete, revalidatePage } from "./revalidatePage"
@@ -73,7 +81,20 @@ export const Pages: CollectionConfig<"pages"> = {
             {
               name: "layout",
               type: "blocks",
-              blocks: [CallToAction, Content, MediaBlock, Banner],
+              blocks: [
+                CallToAction,
+                Content,
+                MediaBlock,
+                Banner,
+                LandingHero,
+                LandingProblem,
+                LandingSolution,
+                LandingHowItWorks,
+                LandingAudience,
+                LandingVision,
+                LandingImpact,
+                LandingCta,
+              ],
               required: true,
               admin: {
                 initCollapsed: true,

@@ -66,6 +66,255 @@ export const enum_pages_blocks_banner_style = pgEnum(
   "enum_pages_blocks_banner_style",
   ["info", "warning", "error", "success"],
 );
+export const enum_pages_blocks_landing_hero_links_link_type = pgEnum(
+  "enum_pages_blocks_landing_hero_links_link_type",
+  ["reference", "custom"],
+);
+export const enum_pages_blocks_landing_hero_links_link_appearance = pgEnum(
+  "enum_pages_blocks_landing_hero_links_link_appearance",
+  ["default", "outline"],
+);
+export const enum_pages_blocks_landing_problem_stat_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_problem_stat_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_solution_feature_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_solution_feature_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_how_it_works_steps_icon = pgEnum(
+  "enum_pages_blocks_landing_how_it_works_steps_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_how_it_works_feature_items_icon = pgEnum(
+  "enum_pages_blocks_landing_how_it_works_feature_items_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_audience_audience_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_audience_audience_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_vision_roadmap_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_vision_roadmap_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_impact_metric_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_impact_metric_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_cta_partner_cards_icon = pgEnum(
+  "enum_pages_blocks_landing_cta_partner_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum_pages_blocks_landing_cta_cta_box_links_link_type = pgEnum(
+  "enum_pages_blocks_landing_cta_cta_box_links_link_type",
+  ["reference", "custom"],
+);
+export const enum_pages_blocks_landing_cta_cta_box_links_link_appearance =
+  pgEnum("enum_pages_blocks_landing_cta_cta_box_links_link_appearance", [
+    "default",
+    "outline",
+  ]);
 export const enum_pages_hero_type = pgEnum("enum_pages_hero_type", [
   "none",
   "highImpact",
@@ -108,6 +357,253 @@ export const enum__pages_v_blocks_banner_style = pgEnum(
   "enum__pages_v_blocks_banner_style",
   ["info", "warning", "error", "success"],
 );
+export const enum__pages_v_blocks_landing_hero_links_link_type = pgEnum(
+  "enum__pages_v_blocks_landing_hero_links_link_type",
+  ["reference", "custom"],
+);
+export const enum__pages_v_blocks_landing_hero_links_link_appearance = pgEnum(
+  "enum__pages_v_blocks_landing_hero_links_link_appearance",
+  ["default", "outline"],
+);
+export const enum__pages_v_blocks_landing_problem_stat_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_problem_stat_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_solution_feature_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_solution_feature_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_how_it_works_steps_icon = pgEnum(
+  "enum__pages_v_blocks_landing_how_it_works_steps_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_how_it_works_feature_items_icon =
+  pgEnum("enum__pages_v_blocks_landing_how_it_works_feature_items_icon", [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ]);
+export const enum__pages_v_blocks_landing_audience_audience_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_audience_audience_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_vision_roadmap_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_vision_roadmap_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_impact_metric_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_impact_metric_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_cta_partner_cards_icon = pgEnum(
+  "enum__pages_v_blocks_landing_cta_partner_cards_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
+);
+export const enum__pages_v_blocks_landing_cta_cta_box_links_link_type = pgEnum(
+  "enum__pages_v_blocks_landing_cta_cta_box_links_link_type",
+  ["reference", "custom"],
+);
+export const enum__pages_v_blocks_landing_cta_cta_box_links_link_appearance =
+  pgEnum("enum__pages_v_blocks_landing_cta_cta_box_links_link_appearance", [
+    "default",
+    "outline",
+  ]);
 export const enum__pages_v_version_hero_type = pgEnum(
   "enum__pages_v_version_hero_type",
   ["none", "highImpact", "mediumImpact", "lowImpact"],
@@ -143,6 +639,39 @@ export const enum_header_nav_items_link_type = pgEnum(
 export const enum_footer_nav_items_link_type = pgEnum(
   "enum_footer_nav_items_link_type",
   ["reference", "custom"],
+);
+export const enum_landing_footer_nav_links_link_type = pgEnum(
+  "enum_landing_footer_nav_links_link_type",
+  ["reference", "custom"],
+);
+export const enum_landing_footer_brand_icon = pgEnum(
+  "enum_landing_footer_brand_icon",
+  [
+    "arrowRight",
+    "building",
+    "building2",
+    "camera",
+    "chartColumn",
+    "circleAlert",
+    "circleCheck",
+    "database",
+    "gitCompareArrows",
+    "globe",
+    "handshake",
+    "layers",
+    "lightbulb",
+    "plug",
+    "quote",
+    "recycle",
+    "rocket",
+    "shield",
+    "shoppingCart",
+    "sparkles",
+    "target",
+    "trendingUp",
+    "users",
+    "usersRound",
+  ],
 );
 
 export const users_role = pgTable(
@@ -539,6 +1068,1048 @@ export const pages_blocks_banner = pgTable(
   ],
 );
 
+export const pages_blocks_landing_hero_links = pgTable(
+  "pages_blocks_landing_hero_links",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    link_type:
+      enum_pages_blocks_landing_hero_links_link_type("link_type").default(
+        "reference",
+      ),
+    link_newTab: boolean("link_new_tab"),
+    link_url: varchar("link_url"),
+    link_label: varchar("link_label"),
+    link_appearance:
+      enum_pages_blocks_landing_hero_links_link_appearance(
+        "link_appearance",
+      ).default("default"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_hero_links_order_idx").on(columns._order),
+    index("pages_blocks_landing_hero_links_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_hero.id],
+      name: "pages_blocks_landing_hero_links_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_hero_stats = pgTable(
+  "pages_blocks_landing_hero_stats",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_hero_stats_order_idx").on(columns._order),
+    index("pages_blocks_landing_hero_stats_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_hero.id],
+      name: "pages_blocks_landing_hero_stats_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_hero_stats_locales = pgTable(
+  "pages_blocks_landing_hero_stats_locales",
+  {
+    value: varchar("value"),
+    label: varchar("label"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_hero_stats_locales_locale_parent_id_uni",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_hero_stats.id],
+      name: "pages_blocks_landing_hero_stats_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_hero = pgTable(
+  "pages_blocks_landing_hero",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_hero_order_idx").on(columns._order),
+    index("pages_blocks_landing_hero_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_hero_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_hero_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_hero_locales = pgTable(
+  "pages_blocks_landing_hero_locales",
+  {
+    badgeText: varchar("badge_text"),
+    heading: varchar("heading"),
+    headingAccent: varchar("heading_accent"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex("pages_blocks_landing_hero_locales_locale_parent_id_unique").on(
+      columns._locale,
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_hero.id],
+      name: "pages_blocks_landing_hero_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem_stat_cards = pgTable(
+  "pages_blocks_landing_problem_stat_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_problem_stat_cards_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_problem_stat_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_problem_stat_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_problem.id],
+      name: "pages_blocks_landing_problem_stat_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem_stat_cards_locales = pgTable(
+  "pages_blocks_landing_problem_stat_cards_locales",
+  {
+    value: varchar("value"),
+    label: varchar("label"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_problem_stat_cards_locales_locale_paren",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_problem_stat_cards.id],
+      name: "pages_blocks_landing_problem_stat_cards_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem_bullet_items = pgTable(
+  "pages_blocks_landing_problem_bullet_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_problem_bullet_items_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_problem_bullet_items_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_problem.id],
+      name: "pages_blocks_landing_problem_bullet_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem_bullet_items_locales = pgTable(
+  "pages_blocks_landing_problem_bullet_items_locales",
+  {
+    boldText: varchar("bold_text"),
+    text: varchar("text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_problem_bullet_items_locales_locale_par",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_problem_bullet_items.id],
+      name: "pages_blocks_landing_problem_bullet_items_locales_parent__fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem = pgTable(
+  "pages_blocks_landing_problem",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_problem_order_idx").on(columns._order),
+    index("pages_blocks_landing_problem_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_problem_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_problem_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_problem_locales = pgTable(
+  "pages_blocks_landing_problem_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_problem_locales_locale_parent_id_unique",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_problem.id],
+      name: "pages_blocks_landing_problem_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_solution_feature_cards = pgTable(
+  "pages_blocks_landing_solution_feature_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_solution_feature_cards_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_solution_feature_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_solution_feature_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_solution.id],
+      name: "pages_blocks_landing_solution_feature_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_solution_feature_cards_locales = pgTable(
+  "pages_blocks_landing_solution_feature_cards_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_solution_feature_cards_locales_locale_p",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_solution_feature_cards.id],
+      name: "pages_blocks_landing_solution_feature_cards_locales_paren_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_solution = pgTable(
+  "pages_blocks_landing_solution",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_solution_order_idx").on(columns._order),
+    index("pages_blocks_landing_solution_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_solution_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_solution_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_solution_locales = pgTable(
+  "pages_blocks_landing_solution_locales",
+  {
+    badgeText: varchar("badge_text"),
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_solution_locales_locale_parent_id_uniqu",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_solution.id],
+      name: "pages_blocks_landing_solution_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works_steps = pgTable(
+  "pages_blocks_landing_how_it_works_steps",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_how_it_works_steps_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_how_it_works_steps_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_how_it_works_steps_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_how_it_works.id],
+      name: "pages_blocks_landing_how_it_works_steps_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works_steps_locales = pgTable(
+  "pages_blocks_landing_how_it_works_steps_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_how_it_works_steps_locales_locale_paren",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_how_it_works_steps.id],
+      name: "pages_blocks_landing_how_it_works_steps_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works_feature_items = pgTable(
+  "pages_blocks_landing_how_it_works_feature_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_how_it_works_feature_items_icon(
+      "icon",
+    ).default("circleCheck"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_how_it_works_feature_items_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_how_it_works_feature_items_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_how_it_works.id],
+      name: "pages_blocks_landing_how_it_works_feature_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works_feature_items_locales = pgTable(
+  "pages_blocks_landing_how_it_works_feature_items_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_how_it_works_feature_items_locales_loca",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_how_it_works_feature_items.id],
+      name: "pages_blocks_landing_how_it_works_feature_items_locales_p_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works = pgTable(
+  "pages_blocks_landing_how_it_works",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_how_it_works_order_idx").on(columns._order),
+    index("pages_blocks_landing_how_it_works_parent_id_idx").on(
+      columns._parentID,
+    ),
+    index("pages_blocks_landing_how_it_works_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_how_it_works_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_how_it_works_locales = pgTable(
+  "pages_blocks_landing_how_it_works_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_how_it_works_locales_locale_parent_id_u",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_how_it_works.id],
+      name: "pages_blocks_landing_how_it_works_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_audience_audience_cards_items = pgTable(
+  "pages_blocks_landing_audience_audience_cards_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_audience_audience_cards_items_order_idx").on(
+      columns._order,
+    ),
+    index(
+      "pages_blocks_landing_audience_audience_cards_items_parent_id_idx",
+    ).on(columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_audience_audience_cards.id],
+      name: "pages_blocks_landing_audience_audience_cards_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_audience_audience_cards_items_locales =
+  pgTable(
+    "pages_blocks_landing_audience_audience_cards_items_locales",
+    {
+      text: varchar("text"),
+      id: serial("id").primaryKey(),
+      _locale: enum__locales("_locale").notNull(),
+      _parentID: varchar("_parent_id").notNull(),
+    },
+    (columns) => [
+      uniqueIndex(
+        "pages_blocks_landing_audience_audience_cards_items_locales_l",
+      ).on(columns._locale, columns._parentID),
+      foreignKey({
+        columns: [columns["_parentID"]],
+        foreignColumns: [pages_blocks_landing_audience_audience_cards_items.id],
+        name: "pages_blocks_landing_audience_audience_cards_items_locale_fk",
+      }).onDelete("cascade"),
+    ],
+  );
+
+export const pages_blocks_landing_audience_audience_cards = pgTable(
+  "pages_blocks_landing_audience_audience_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_audience_audience_cards_icon(
+      "icon",
+    ).default("circleCheck"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_audience_audience_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_audience_audience_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_audience.id],
+      name: "pages_blocks_landing_audience_audience_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_audience_audience_cards_locales = pgTable(
+  "pages_blocks_landing_audience_audience_cards_locales",
+  {
+    title: varchar("title"),
+    footer: varchar("footer"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_audience_audience_cards_locales_locale_",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_audience_audience_cards.id],
+      name: "pages_blocks_landing_audience_audience_cards_locales_pare_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_audience = pgTable(
+  "pages_blocks_landing_audience",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_audience_order_idx").on(columns._order),
+    index("pages_blocks_landing_audience_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_audience_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_audience_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_audience_locales = pgTable(
+  "pages_blocks_landing_audience_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_audience_locales_locale_parent_id_uniqu",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_audience.id],
+      name: "pages_blocks_landing_audience_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_roadmap_cards_items = pgTable(
+  "pages_blocks_landing_vision_roadmap_cards_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_vision_roadmap_cards_items_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_vision_roadmap_cards_items_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision_roadmap_cards.id],
+      name: "pages_blocks_landing_vision_roadmap_cards_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_roadmap_cards_items_locales = pgTable(
+  "pages_blocks_landing_vision_roadmap_cards_items_locales",
+  {
+    text: varchar("text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_vision_roadmap_cards_items_locales_loca",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision_roadmap_cards_items.id],
+      name: "pages_blocks_landing_vision_roadmap_cards_items_locales_p_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_roadmap_cards = pgTable(
+  "pages_blocks_landing_vision_roadmap_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_vision_roadmap_cards_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_vision_roadmap_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_vision_roadmap_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision.id],
+      name: "pages_blocks_landing_vision_roadmap_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_roadmap_cards_locales = pgTable(
+  "pages_blocks_landing_vision_roadmap_cards_locales",
+  {
+    phase: varchar("phase"),
+    badge: varchar("badge"),
+    title: varchar("title"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_vision_roadmap_cards_locales_locale_par",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision_roadmap_cards.id],
+      name: "pages_blocks_landing_vision_roadmap_cards_locales_parent__fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_pillars = pgTable(
+  "pages_blocks_landing_vision_pillars",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_vision_pillars_order_idx").on(columns._order),
+    index("pages_blocks_landing_vision_pillars_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision.id],
+      name: "pages_blocks_landing_vision_pillars_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_pillars_locales = pgTable(
+  "pages_blocks_landing_vision_pillars_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_vision_pillars_locales_locale_parent_id",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision_pillars.id],
+      name: "pages_blocks_landing_vision_pillars_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision = pgTable(
+  "pages_blocks_landing_vision",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_vision_order_idx").on(columns._order),
+    index("pages_blocks_landing_vision_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_vision_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_vision_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_vision_locales = pgTable(
+  "pages_blocks_landing_vision_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    badgeText: varchar("badge_text"),
+    pillarsHeading: varchar("pillars_heading"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_vision_locales_locale_parent_id_unique",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_vision.id],
+      name: "pages_blocks_landing_vision_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact_metric_cards = pgTable(
+  "pages_blocks_landing_impact_metric_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_impact_metric_cards_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_impact_metric_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_impact_metric_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_impact.id],
+      name: "pages_blocks_landing_impact_metric_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact_metric_cards_locales = pgTable(
+  "pages_blocks_landing_impact_metric_cards_locales",
+  {
+    value: varchar("value"),
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_impact_metric_cards_locales_locale_pare",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_impact_metric_cards.id],
+      name: "pages_blocks_landing_impact_metric_cards_locales_parent_i_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact_status_boxes = pgTable(
+  "pages_blocks_landing_impact_status_boxes",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+  },
+  (columns) => [
+    index("pages_blocks_landing_impact_status_boxes_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_impact_status_boxes_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_impact.id],
+      name: "pages_blocks_landing_impact_status_boxes_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact_status_boxes_locales = pgTable(
+  "pages_blocks_landing_impact_status_boxes_locales",
+  {
+    label: varchar("label"),
+    text: varchar("text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_impact_status_boxes_locales_locale_pare",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_impact_status_boxes.id],
+      name: "pages_blocks_landing_impact_status_boxes_locales_parent_i_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact = pgTable(
+  "pages_blocks_landing_impact",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_impact_order_idx").on(columns._order),
+    index("pages_blocks_landing_impact_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_impact_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_impact_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_impact_locales = pgTable(
+  "pages_blocks_landing_impact_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    testimonial_quote: varchar("testimonial_quote"),
+    testimonial_authorName: varchar("testimonial_author_name"),
+    testimonial_authorRole: varchar("testimonial_author_role"),
+    testimonial_organization: varchar("testimonial_organization"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_impact_locales_locale_parent_id_unique",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_impact.id],
+      name: "pages_blocks_landing_impact_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_cta_partner_cards = pgTable(
+  "pages_blocks_landing_cta_partner_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    icon: enum_pages_blocks_landing_cta_partner_cards_icon("icon").default(
+      "circleCheck",
+    ),
+  },
+  (columns) => [
+    index("pages_blocks_landing_cta_partner_cards_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_cta_partner_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_cta.id],
+      name: "pages_blocks_landing_cta_partner_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_cta_partner_cards_locales = pgTable(
+  "pages_blocks_landing_cta_partner_cards_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "pages_blocks_landing_cta_partner_cards_locales_locale_parent",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_cta_partner_cards.id],
+      name: "pages_blocks_landing_cta_partner_cards_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_cta_cta_box_links = pgTable(
+  "pages_blocks_landing_cta_cta_box_links",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    link_type:
+      enum_pages_blocks_landing_cta_cta_box_links_link_type(
+        "link_type",
+      ).default("reference"),
+    link_newTab: boolean("link_new_tab"),
+    link_url: varchar("link_url"),
+    link_label: varchar("link_label"),
+    link_appearance:
+      enum_pages_blocks_landing_cta_cta_box_links_link_appearance(
+        "link_appearance",
+      ).default("default"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_cta_cta_box_links_order_idx").on(
+      columns._order,
+    ),
+    index("pages_blocks_landing_cta_cta_box_links_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_cta.id],
+      name: "pages_blocks_landing_cta_cta_box_links_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_cta = pgTable(
+  "pages_blocks_landing_cta",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: varchar("id").primaryKey(),
+    email: varchar("email"),
+    phone: varchar("phone"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("pages_blocks_landing_cta_order_idx").on(columns._order),
+    index("pages_blocks_landing_cta_parent_id_idx").on(columns._parentID),
+    index("pages_blocks_landing_cta_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages.id],
+      name: "pages_blocks_landing_cta_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const pages_blocks_landing_cta_locales = pgTable(
+  "pages_blocks_landing_cta_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    ctaBox_heading: varchar("cta_box_heading"),
+    ctaBox_description: varchar("cta_box_description"),
+    contactText: varchar("contact_text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: varchar("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex("pages_blocks_landing_cta_locales_locale_parent_id_unique").on(
+      columns._locale,
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [pages_blocks_landing_cta.id],
+      name: "pages_blocks_landing_cta_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
 export const pages = pgTable(
   "pages",
   {
@@ -820,6 +2391,1082 @@ export const _pages_v_blocks_banner = pgTable(
       columns: [columns["_parentID"]],
       foreignColumns: [_pages_v.id],
       name: "_pages_v_blocks_banner_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_hero_links = pgTable(
+  "_pages_v_blocks_landing_hero_links",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    link_type:
+      enum__pages_v_blocks_landing_hero_links_link_type("link_type").default(
+        "reference",
+      ),
+    link_newTab: boolean("link_new_tab"),
+    link_url: varchar("link_url"),
+    link_label: varchar("link_label"),
+    link_appearance:
+      enum__pages_v_blocks_landing_hero_links_link_appearance(
+        "link_appearance",
+      ).default("default"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_hero_links_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_hero_links_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_hero.id],
+      name: "_pages_v_blocks_landing_hero_links_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_hero_stats = pgTable(
+  "_pages_v_blocks_landing_hero_stats",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_hero_stats_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_hero_stats_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_hero.id],
+      name: "_pages_v_blocks_landing_hero_stats_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_hero_stats_locales = pgTable(
+  "_pages_v_blocks_landing_hero_stats_locales",
+  {
+    value: varchar("value"),
+    label: varchar("label"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_hero_stats_locales_locale_parent_id_",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_hero_stats.id],
+      name: "_pages_v_blocks_landing_hero_stats_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_hero = pgTable(
+  "_pages_v_blocks_landing_hero",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_hero_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_hero_parent_id_idx").on(columns._parentID),
+    index("_pages_v_blocks_landing_hero_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_hero_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_hero_locales = pgTable(
+  "_pages_v_blocks_landing_hero_locales",
+  {
+    badgeText: varchar("badge_text"),
+    heading: varchar("heading"),
+    headingAccent: varchar("heading_accent"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_hero_locales_locale_parent_id_unique",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_hero.id],
+      name: "_pages_v_blocks_landing_hero_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem_stat_cards = pgTable(
+  "_pages_v_blocks_landing_problem_stat_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_problem_stat_cards_icon("icon").default(
+      "circleCheck",
+    ),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_problem_stat_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_problem_stat_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_problem.id],
+      name: "_pages_v_blocks_landing_problem_stat_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem_stat_cards_locales = pgTable(
+  "_pages_v_blocks_landing_problem_stat_cards_locales",
+  {
+    value: varchar("value"),
+    label: varchar("label"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_problem_stat_cards_locales_locale_pa",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_problem_stat_cards.id],
+      name: "_pages_v_blocks_landing_problem_stat_cards_locales_parent_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem_bullet_items = pgTable(
+  "_pages_v_blocks_landing_problem_bullet_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_problem_bullet_items_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_problem_bullet_items_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_problem.id],
+      name: "_pages_v_blocks_landing_problem_bullet_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem_bullet_items_locales = pgTable(
+  "_pages_v_blocks_landing_problem_bullet_items_locales",
+  {
+    boldText: varchar("bold_text"),
+    text: varchar("text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_problem_bullet_items_locales_locale_",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_problem_bullet_items.id],
+      name: "_pages_v_blocks_landing_problem_bullet_items_locales_pare_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem = pgTable(
+  "_pages_v_blocks_landing_problem",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_problem_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_problem_parent_id_idx").on(
+      columns._parentID,
+    ),
+    index("_pages_v_blocks_landing_problem_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_problem_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_problem_locales = pgTable(
+  "_pages_v_blocks_landing_problem_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_problem_locales_locale_parent_id_uni",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_problem.id],
+      name: "_pages_v_blocks_landing_problem_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_solution_feature_cards = pgTable(
+  "_pages_v_blocks_landing_solution_feature_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_solution_feature_cards_icon(
+      "icon",
+    ).default("circleCheck"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_solution_feature_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_solution_feature_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_solution.id],
+      name: "_pages_v_blocks_landing_solution_feature_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_solution_feature_cards_locales = pgTable(
+  "_pages_v_blocks_landing_solution_feature_cards_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_solution_feature_cards_locales_local",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_solution_feature_cards.id],
+      name: "_pages_v_blocks_landing_solution_feature_cards_locales_pa_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_solution = pgTable(
+  "_pages_v_blocks_landing_solution",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_solution_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_solution_parent_id_idx").on(
+      columns._parentID,
+    ),
+    index("_pages_v_blocks_landing_solution_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_solution_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_solution_locales = pgTable(
+  "_pages_v_blocks_landing_solution_locales",
+  {
+    badgeText: varchar("badge_text"),
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_solution_locales_locale_parent_id_un",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_solution.id],
+      name: "_pages_v_blocks_landing_solution_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_how_it_works_steps = pgTable(
+  "_pages_v_blocks_landing_how_it_works_steps",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_how_it_works_steps_icon("icon").default(
+      "circleCheck",
+    ),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_how_it_works_steps_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_how_it_works_steps_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_how_it_works.id],
+      name: "_pages_v_blocks_landing_how_it_works_steps_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_how_it_works_steps_locales = pgTable(
+  "_pages_v_blocks_landing_how_it_works_steps_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_how_it_works_steps_locales_locale_pa",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_how_it_works_steps.id],
+      name: "_pages_v_blocks_landing_how_it_works_steps_locales_parent_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_how_it_works_feature_items = pgTable(
+  "_pages_v_blocks_landing_how_it_works_feature_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_how_it_works_feature_items_icon(
+      "icon",
+    ).default("circleCheck"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_how_it_works_feature_items_order_idx").on(
+      columns._order,
+    ),
+    index(
+      "_pages_v_blocks_landing_how_it_works_feature_items_parent_id_idx",
+    ).on(columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_how_it_works.id],
+      name: "_pages_v_blocks_landing_how_it_works_feature_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_how_it_works_feature_items_locales =
+  pgTable(
+    "_pages_v_blocks_landing_how_it_works_feature_items_locales",
+    {
+      title: varchar("title"),
+      description: varchar("description"),
+      id: serial("id").primaryKey(),
+      _locale: enum__locales("_locale").notNull(),
+      _parentID: integer("_parent_id").notNull(),
+    },
+    (columns) => [
+      uniqueIndex(
+        "_pages_v_blocks_landing_how_it_works_feature_items_locales_l",
+      ).on(columns._locale, columns._parentID),
+      foreignKey({
+        columns: [columns["_parentID"]],
+        foreignColumns: [_pages_v_blocks_landing_how_it_works_feature_items.id],
+        name: "_pages_v_blocks_landing_how_it_works_feature_items_locale_fk",
+      }).onDelete("cascade"),
+    ],
+  );
+
+export const _pages_v_blocks_landing_how_it_works = pgTable(
+  "_pages_v_blocks_landing_how_it_works",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_how_it_works_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_how_it_works_parent_id_idx").on(
+      columns._parentID,
+    ),
+    index("_pages_v_blocks_landing_how_it_works_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_how_it_works_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_how_it_works_locales = pgTable(
+  "_pages_v_blocks_landing_how_it_works_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_how_it_works_locales_locale_parent_i",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_how_it_works.id],
+      name: "_pages_v_blocks_landing_how_it_works_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_audience_audience_cards_items = pgTable(
+  "_pages_v_blocks_landing_audience_audience_cards_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_audience_audience_cards_items_order_idx").on(
+      columns._order,
+    ),
+    index(
+      "_pages_v_blocks_landing_audience_audience_cards_items_parent_id_idx",
+    ).on(columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_audience_audience_cards.id],
+      name: "_pages_v_blocks_landing_audience_audience_cards_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_audience_audience_cards_items_locales =
+  pgTable(
+    "_pages_v_blocks_landing_audience_audience_cards_items_locales",
+    {
+      text: varchar("text"),
+      id: serial("id").primaryKey(),
+      _locale: enum__locales("_locale").notNull(),
+      _parentID: integer("_parent_id").notNull(),
+    },
+    (columns) => [
+      uniqueIndex(
+        "_pages_v_blocks_landing_audience_audience_cards_items_locale",
+      ).on(columns._locale, columns._parentID),
+      foreignKey({
+        columns: [columns["_parentID"]],
+        foreignColumns: [
+          _pages_v_blocks_landing_audience_audience_cards_items.id,
+        ],
+        name: "_pages_v_blocks_landing_audience_audience_cards_items_loc_fk",
+      }).onDelete("cascade"),
+    ],
+  );
+
+export const _pages_v_blocks_landing_audience_audience_cards = pgTable(
+  "_pages_v_blocks_landing_audience_audience_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_audience_audience_cards_icon(
+      "icon",
+    ).default("circleCheck"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_audience_audience_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_audience_audience_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_audience.id],
+      name: "_pages_v_blocks_landing_audience_audience_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_audience_audience_cards_locales = pgTable(
+  "_pages_v_blocks_landing_audience_audience_cards_locales",
+  {
+    title: varchar("title"),
+    footer: varchar("footer"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_audience_audience_cards_locales_loca",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_audience_audience_cards.id],
+      name: "_pages_v_blocks_landing_audience_audience_cards_locales_p_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_audience = pgTable(
+  "_pages_v_blocks_landing_audience",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_audience_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_audience_parent_id_idx").on(
+      columns._parentID,
+    ),
+    index("_pages_v_blocks_landing_audience_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_audience_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_audience_locales = pgTable(
+  "_pages_v_blocks_landing_audience_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_audience_locales_locale_parent_id_un",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_audience.id],
+      name: "_pages_v_blocks_landing_audience_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_roadmap_cards_items = pgTable(
+  "_pages_v_blocks_landing_vision_roadmap_cards_items",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_vision_roadmap_cards_items_order_idx").on(
+      columns._order,
+    ),
+    index(
+      "_pages_v_blocks_landing_vision_roadmap_cards_items_parent_id_idx",
+    ).on(columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision_roadmap_cards.id],
+      name: "_pages_v_blocks_landing_vision_roadmap_cards_items_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_roadmap_cards_items_locales =
+  pgTable(
+    "_pages_v_blocks_landing_vision_roadmap_cards_items_locales",
+    {
+      text: varchar("text"),
+      id: serial("id").primaryKey(),
+      _locale: enum__locales("_locale").notNull(),
+      _parentID: integer("_parent_id").notNull(),
+    },
+    (columns) => [
+      uniqueIndex(
+        "_pages_v_blocks_landing_vision_roadmap_cards_items_locales_l",
+      ).on(columns._locale, columns._parentID),
+      foreignKey({
+        columns: [columns["_parentID"]],
+        foreignColumns: [_pages_v_blocks_landing_vision_roadmap_cards_items.id],
+        name: "_pages_v_blocks_landing_vision_roadmap_cards_items_locale_fk",
+      }).onDelete("cascade"),
+    ],
+  );
+
+export const _pages_v_blocks_landing_vision_roadmap_cards = pgTable(
+  "_pages_v_blocks_landing_vision_roadmap_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_vision_roadmap_cards_icon(
+      "icon",
+    ).default("circleCheck"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_vision_roadmap_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_vision_roadmap_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision.id],
+      name: "_pages_v_blocks_landing_vision_roadmap_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_roadmap_cards_locales = pgTable(
+  "_pages_v_blocks_landing_vision_roadmap_cards_locales",
+  {
+    phase: varchar("phase"),
+    badge: varchar("badge"),
+    title: varchar("title"),
+    subtitle: varchar("subtitle"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_vision_roadmap_cards_locales_locale_",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision_roadmap_cards.id],
+      name: "_pages_v_blocks_landing_vision_roadmap_cards_locales_pare_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_pillars = pgTable(
+  "_pages_v_blocks_landing_vision_pillars",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_vision_pillars_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_vision_pillars_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision.id],
+      name: "_pages_v_blocks_landing_vision_pillars_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_pillars_locales = pgTable(
+  "_pages_v_blocks_landing_vision_pillars_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_vision_pillars_locales_locale_parent",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision_pillars.id],
+      name: "_pages_v_blocks_landing_vision_pillars_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision = pgTable(
+  "_pages_v_blocks_landing_vision",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_vision_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_vision_parent_id_idx").on(columns._parentID),
+    index("_pages_v_blocks_landing_vision_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_vision_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_vision_locales = pgTable(
+  "_pages_v_blocks_landing_vision_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    badgeText: varchar("badge_text"),
+    pillarsHeading: varchar("pillars_heading"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_vision_locales_locale_parent_id_uniq",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_vision.id],
+      name: "_pages_v_blocks_landing_vision_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact_metric_cards = pgTable(
+  "_pages_v_blocks_landing_impact_metric_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_impact_metric_cards_icon("icon").default(
+      "circleCheck",
+    ),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_impact_metric_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_impact_metric_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_impact.id],
+      name: "_pages_v_blocks_landing_impact_metric_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact_metric_cards_locales = pgTable(
+  "_pages_v_blocks_landing_impact_metric_cards_locales",
+  {
+    value: varchar("value"),
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_impact_metric_cards_locales_locale_p",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_impact_metric_cards.id],
+      name: "_pages_v_blocks_landing_impact_metric_cards_locales_paren_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact_status_boxes = pgTable(
+  "_pages_v_blocks_landing_impact_status_boxes",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_impact_status_boxes_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_impact_status_boxes_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_impact.id],
+      name: "_pages_v_blocks_landing_impact_status_boxes_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact_status_boxes_locales = pgTable(
+  "_pages_v_blocks_landing_impact_status_boxes_locales",
+  {
+    label: varchar("label"),
+    text: varchar("text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_impact_status_boxes_locales_locale_p",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_impact_status_boxes.id],
+      name: "_pages_v_blocks_landing_impact_status_boxes_locales_paren_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact = pgTable(
+  "_pages_v_blocks_landing_impact",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_impact_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_impact_parent_id_idx").on(columns._parentID),
+    index("_pages_v_blocks_landing_impact_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_impact_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_impact_locales = pgTable(
+  "_pages_v_blocks_landing_impact_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    testimonial_quote: varchar("testimonial_quote"),
+    testimonial_authorName: varchar("testimonial_author_name"),
+    testimonial_authorRole: varchar("testimonial_author_role"),
+    testimonial_organization: varchar("testimonial_organization"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_impact_locales_locale_parent_id_uniq",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_impact.id],
+      name: "_pages_v_blocks_landing_impact_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_cta_partner_cards = pgTable(
+  "_pages_v_blocks_landing_cta_partner_cards",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    icon: enum__pages_v_blocks_landing_cta_partner_cards_icon("icon").default(
+      "circleCheck",
+    ),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_cta_partner_cards_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_cta_partner_cards_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_cta.id],
+      name: "_pages_v_blocks_landing_cta_partner_cards_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_cta_partner_cards_locales = pgTable(
+  "_pages_v_blocks_landing_cta_partner_cards_locales",
+  {
+    title: varchar("title"),
+    description: varchar("description"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_cta_partner_cards_locales_locale_par",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_cta_partner_cards.id],
+      name: "_pages_v_blocks_landing_cta_partner_cards_locales_parent__fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_cta_cta_box_links = pgTable(
+  "_pages_v_blocks_landing_cta_cta_box_links",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: serial("id").primaryKey(),
+    link_type:
+      enum__pages_v_blocks_landing_cta_cta_box_links_link_type(
+        "link_type",
+      ).default("reference"),
+    link_newTab: boolean("link_new_tab"),
+    link_url: varchar("link_url"),
+    link_label: varchar("link_label"),
+    link_appearance:
+      enum__pages_v_blocks_landing_cta_cta_box_links_link_appearance(
+        "link_appearance",
+      ).default("default"),
+    _uuid: varchar("_uuid"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_cta_cta_box_links_order_idx").on(
+      columns._order,
+    ),
+    index("_pages_v_blocks_landing_cta_cta_box_links_parent_id_idx").on(
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_cta.id],
+      name: "_pages_v_blocks_landing_cta_cta_box_links_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_cta = pgTable(
+  "_pages_v_blocks_landing_cta",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    _path: text("_path").notNull(),
+    id: serial("id").primaryKey(),
+    email: varchar("email"),
+    phone: varchar("phone"),
+    _uuid: varchar("_uuid"),
+    blockName: varchar("block_name"),
+  },
+  (columns) => [
+    index("_pages_v_blocks_landing_cta_order_idx").on(columns._order),
+    index("_pages_v_blocks_landing_cta_parent_id_idx").on(columns._parentID),
+    index("_pages_v_blocks_landing_cta_path_idx").on(columns._path),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v.id],
+      name: "_pages_v_blocks_landing_cta_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const _pages_v_blocks_landing_cta_locales = pgTable(
+  "_pages_v_blocks_landing_cta_locales",
+  {
+    heading: varchar("heading"),
+    subtitle: varchar("subtitle"),
+    ctaBox_heading: varchar("cta_box_heading"),
+    ctaBox_description: varchar("cta_box_description"),
+    contactText: varchar("contact_text"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex(
+      "_pages_v_blocks_landing_cta_locales_locale_parent_id_unique",
+    ).on(columns._locale, columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [_pages_v_blocks_landing_cta.id],
+      name: "_pages_v_blocks_landing_cta_locales_parent_id_fk",
     }).onDelete("cascade"),
   ],
 );
@@ -1536,6 +4183,95 @@ export const footer_rels = pgTable(
   ],
 );
 
+export const landing_footer_nav_links = pgTable(
+  "landing_footer_nav_links",
+  {
+    _order: integer("_order").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+    id: varchar("id").primaryKey(),
+    link_type:
+      enum_landing_footer_nav_links_link_type("link_type").default("reference"),
+    link_newTab: boolean("link_new_tab"),
+    link_url: varchar("link_url"),
+    link_label: varchar("link_label").notNull(),
+  },
+  (columns) => [
+    index("landing_footer_nav_links_order_idx").on(columns._order),
+    index("landing_footer_nav_links_parent_id_idx").on(columns._parentID),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [landing_footer.id],
+      name: "landing_footer_nav_links_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const landing_footer = pgTable("landing_footer", {
+  id: serial("id").primaryKey(),
+  brandIcon:
+    enum_landing_footer_brand_icon("brand_icon").default("circleCheck"),
+  updatedAt: timestamp("updated_at", {
+    mode: "string",
+    withTimezone: true,
+    precision: 3,
+  }),
+  createdAt: timestamp("created_at", {
+    mode: "string",
+    withTimezone: true,
+    precision: 3,
+  }),
+});
+
+export const landing_footer_locales = pgTable(
+  "landing_footer_locales",
+  {
+    brandName: varchar("brand_name"),
+    copyrightText: varchar("copyright_text"),
+    tagline: varchar("tagline"),
+    id: serial("id").primaryKey(),
+    _locale: enum__locales("_locale").notNull(),
+    _parentID: integer("_parent_id").notNull(),
+  },
+  (columns) => [
+    uniqueIndex("landing_footer_locales_locale_parent_id_unique").on(
+      columns._locale,
+      columns._parentID,
+    ),
+    foreignKey({
+      columns: [columns["_parentID"]],
+      foreignColumns: [landing_footer.id],
+      name: "landing_footer_locales_parent_id_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
+export const landing_footer_rels = pgTable(
+  "landing_footer_rels",
+  {
+    id: serial("id").primaryKey(),
+    order: integer("order"),
+    parent: integer("parent_id").notNull(),
+    path: varchar("path").notNull(),
+    pagesID: integer("pages_id"),
+  },
+  (columns) => [
+    index("landing_footer_rels_order_idx").on(columns.order),
+    index("landing_footer_rels_parent_idx").on(columns.parent),
+    index("landing_footer_rels_path_idx").on(columns.path),
+    index("landing_footer_rels_pages_id_idx").on(columns.pagesID),
+    foreignKey({
+      columns: [columns["parent"]],
+      foreignColumns: [landing_footer.id],
+      name: "landing_footer_rels_parent_fk",
+    }).onDelete("cascade"),
+    foreignKey({
+      columns: [columns["pagesID"]],
+      foreignColumns: [pages.id],
+      name: "landing_footer_rels_pages_fk",
+    }).onDelete("cascade"),
+  ],
+);
+
 export const relations_users_role = relations(users_role, ({ one }) => ({
   parent: one(users, {
     fields: [users_role.parent],
@@ -1653,6 +4389,582 @@ export const relations_pages_blocks_banner = relations(
     }),
   }),
 );
+export const relations_pages_blocks_landing_hero_links = relations(
+  pages_blocks_landing_hero_links,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_hero, {
+      fields: [pages_blocks_landing_hero_links._parentID],
+      references: [pages_blocks_landing_hero.id],
+      relationName: "links",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_hero_stats_locales = relations(
+  pages_blocks_landing_hero_stats_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_hero_stats, {
+      fields: [pages_blocks_landing_hero_stats_locales._parentID],
+      references: [pages_blocks_landing_hero_stats.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_hero_stats = relations(
+  pages_blocks_landing_hero_stats,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_hero, {
+      fields: [pages_blocks_landing_hero_stats._parentID],
+      references: [pages_blocks_landing_hero.id],
+      relationName: "stats",
+    }),
+    _locales: many(pages_blocks_landing_hero_stats_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_hero_locales = relations(
+  pages_blocks_landing_hero_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_hero, {
+      fields: [pages_blocks_landing_hero_locales._parentID],
+      references: [pages_blocks_landing_hero.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_hero = relations(
+  pages_blocks_landing_hero,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_hero._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingHero",
+    }),
+    _locales: many(pages_blocks_landing_hero_locales, {
+      relationName: "_locales",
+    }),
+    links: many(pages_blocks_landing_hero_links, {
+      relationName: "links",
+    }),
+    stats: many(pages_blocks_landing_hero_stats, {
+      relationName: "stats",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_problem_stat_cards_locales =
+  relations(pages_blocks_landing_problem_stat_cards_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_problem_stat_cards, {
+      fields: [pages_blocks_landing_problem_stat_cards_locales._parentID],
+      references: [pages_blocks_landing_problem_stat_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_problem_stat_cards = relations(
+  pages_blocks_landing_problem_stat_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_problem, {
+      fields: [pages_blocks_landing_problem_stat_cards._parentID],
+      references: [pages_blocks_landing_problem.id],
+      relationName: "statCards",
+    }),
+    _locales: many(pages_blocks_landing_problem_stat_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_problem_bullet_items_locales =
+  relations(pages_blocks_landing_problem_bullet_items_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_problem_bullet_items, {
+      fields: [pages_blocks_landing_problem_bullet_items_locales._parentID],
+      references: [pages_blocks_landing_problem_bullet_items.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_problem_bullet_items = relations(
+  pages_blocks_landing_problem_bullet_items,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_problem, {
+      fields: [pages_blocks_landing_problem_bullet_items._parentID],
+      references: [pages_blocks_landing_problem.id],
+      relationName: "bulletItems",
+    }),
+    _locales: many(pages_blocks_landing_problem_bullet_items_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_problem_locales = relations(
+  pages_blocks_landing_problem_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_problem, {
+      fields: [pages_blocks_landing_problem_locales._parentID],
+      references: [pages_blocks_landing_problem.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_problem = relations(
+  pages_blocks_landing_problem,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_problem._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingProblem",
+    }),
+    _locales: many(pages_blocks_landing_problem_locales, {
+      relationName: "_locales",
+    }),
+    statCards: many(pages_blocks_landing_problem_stat_cards, {
+      relationName: "statCards",
+    }),
+    bulletItems: many(pages_blocks_landing_problem_bullet_items, {
+      relationName: "bulletItems",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_solution_feature_cards_locales =
+  relations(pages_blocks_landing_solution_feature_cards_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_solution_feature_cards, {
+      fields: [pages_blocks_landing_solution_feature_cards_locales._parentID],
+      references: [pages_blocks_landing_solution_feature_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_solution_feature_cards = relations(
+  pages_blocks_landing_solution_feature_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_solution, {
+      fields: [pages_blocks_landing_solution_feature_cards._parentID],
+      references: [pages_blocks_landing_solution.id],
+      relationName: "featureCards",
+    }),
+    _locales: many(pages_blocks_landing_solution_feature_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_solution_locales = relations(
+  pages_blocks_landing_solution_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_solution, {
+      fields: [pages_blocks_landing_solution_locales._parentID],
+      references: [pages_blocks_landing_solution.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_solution = relations(
+  pages_blocks_landing_solution,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_solution._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingSolution",
+    }),
+    _locales: many(pages_blocks_landing_solution_locales, {
+      relationName: "_locales",
+    }),
+    featureCards: many(pages_blocks_landing_solution_feature_cards, {
+      relationName: "featureCards",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_how_it_works_steps_locales =
+  relations(pages_blocks_landing_how_it_works_steps_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_how_it_works_steps, {
+      fields: [pages_blocks_landing_how_it_works_steps_locales._parentID],
+      references: [pages_blocks_landing_how_it_works_steps.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_how_it_works_steps = relations(
+  pages_blocks_landing_how_it_works_steps,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_how_it_works, {
+      fields: [pages_blocks_landing_how_it_works_steps._parentID],
+      references: [pages_blocks_landing_how_it_works.id],
+      relationName: "steps",
+    }),
+    _locales: many(pages_blocks_landing_how_it_works_steps_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_how_it_works_feature_items_locales =
+  relations(
+    pages_blocks_landing_how_it_works_feature_items_locales,
+    ({ one }) => ({
+      _parentID: one(pages_blocks_landing_how_it_works_feature_items, {
+        fields: [
+          pages_blocks_landing_how_it_works_feature_items_locales._parentID,
+        ],
+        references: [pages_blocks_landing_how_it_works_feature_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_how_it_works_feature_items =
+  relations(
+    pages_blocks_landing_how_it_works_feature_items,
+    ({ one, many }) => ({
+      _parentID: one(pages_blocks_landing_how_it_works, {
+        fields: [pages_blocks_landing_how_it_works_feature_items._parentID],
+        references: [pages_blocks_landing_how_it_works.id],
+        relationName: "featureItems",
+      }),
+      _locales: many(pages_blocks_landing_how_it_works_feature_items_locales, {
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_how_it_works_locales = relations(
+  pages_blocks_landing_how_it_works_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_how_it_works, {
+      fields: [pages_blocks_landing_how_it_works_locales._parentID],
+      references: [pages_blocks_landing_how_it_works.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_how_it_works = relations(
+  pages_blocks_landing_how_it_works,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_how_it_works._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingHowItWorks",
+    }),
+    _locales: many(pages_blocks_landing_how_it_works_locales, {
+      relationName: "_locales",
+    }),
+    steps: many(pages_blocks_landing_how_it_works_steps, {
+      relationName: "steps",
+    }),
+    featureItems: many(pages_blocks_landing_how_it_works_feature_items, {
+      relationName: "featureItems",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_audience_audience_cards_items_locales =
+  relations(
+    pages_blocks_landing_audience_audience_cards_items_locales,
+    ({ one }) => ({
+      _parentID: one(pages_blocks_landing_audience_audience_cards_items, {
+        fields: [
+          pages_blocks_landing_audience_audience_cards_items_locales._parentID,
+        ],
+        references: [pages_blocks_landing_audience_audience_cards_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_audience_audience_cards_items =
+  relations(
+    pages_blocks_landing_audience_audience_cards_items,
+    ({ one, many }) => ({
+      _parentID: one(pages_blocks_landing_audience_audience_cards, {
+        fields: [pages_blocks_landing_audience_audience_cards_items._parentID],
+        references: [pages_blocks_landing_audience_audience_cards.id],
+        relationName: "items",
+      }),
+      _locales: many(
+        pages_blocks_landing_audience_audience_cards_items_locales,
+        {
+          relationName: "_locales",
+        },
+      ),
+    }),
+  );
+export const relations_pages_blocks_landing_audience_audience_cards_locales =
+  relations(
+    pages_blocks_landing_audience_audience_cards_locales,
+    ({ one }) => ({
+      _parentID: one(pages_blocks_landing_audience_audience_cards, {
+        fields: [
+          pages_blocks_landing_audience_audience_cards_locales._parentID,
+        ],
+        references: [pages_blocks_landing_audience_audience_cards.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_audience_audience_cards = relations(
+  pages_blocks_landing_audience_audience_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_audience, {
+      fields: [pages_blocks_landing_audience_audience_cards._parentID],
+      references: [pages_blocks_landing_audience.id],
+      relationName: "audienceCards",
+    }),
+    _locales: many(pages_blocks_landing_audience_audience_cards_locales, {
+      relationName: "_locales",
+    }),
+    items: many(pages_blocks_landing_audience_audience_cards_items, {
+      relationName: "items",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_audience_locales = relations(
+  pages_blocks_landing_audience_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_audience, {
+      fields: [pages_blocks_landing_audience_locales._parentID],
+      references: [pages_blocks_landing_audience.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_audience = relations(
+  pages_blocks_landing_audience,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_audience._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingAudience",
+    }),
+    _locales: many(pages_blocks_landing_audience_locales, {
+      relationName: "_locales",
+    }),
+    audienceCards: many(pages_blocks_landing_audience_audience_cards, {
+      relationName: "audienceCards",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_vision_roadmap_cards_items_locales =
+  relations(
+    pages_blocks_landing_vision_roadmap_cards_items_locales,
+    ({ one }) => ({
+      _parentID: one(pages_blocks_landing_vision_roadmap_cards_items, {
+        fields: [
+          pages_blocks_landing_vision_roadmap_cards_items_locales._parentID,
+        ],
+        references: [pages_blocks_landing_vision_roadmap_cards_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_vision_roadmap_cards_items =
+  relations(
+    pages_blocks_landing_vision_roadmap_cards_items,
+    ({ one, many }) => ({
+      _parentID: one(pages_blocks_landing_vision_roadmap_cards, {
+        fields: [pages_blocks_landing_vision_roadmap_cards_items._parentID],
+        references: [pages_blocks_landing_vision_roadmap_cards.id],
+        relationName: "items",
+      }),
+      _locales: many(pages_blocks_landing_vision_roadmap_cards_items_locales, {
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations_pages_blocks_landing_vision_roadmap_cards_locales =
+  relations(pages_blocks_landing_vision_roadmap_cards_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_vision_roadmap_cards, {
+      fields: [pages_blocks_landing_vision_roadmap_cards_locales._parentID],
+      references: [pages_blocks_landing_vision_roadmap_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_vision_roadmap_cards = relations(
+  pages_blocks_landing_vision_roadmap_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_vision, {
+      fields: [pages_blocks_landing_vision_roadmap_cards._parentID],
+      references: [pages_blocks_landing_vision.id],
+      relationName: "roadmapCards",
+    }),
+    _locales: many(pages_blocks_landing_vision_roadmap_cards_locales, {
+      relationName: "_locales",
+    }),
+    items: many(pages_blocks_landing_vision_roadmap_cards_items, {
+      relationName: "items",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_vision_pillars_locales = relations(
+  pages_blocks_landing_vision_pillars_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_vision_pillars, {
+      fields: [pages_blocks_landing_vision_pillars_locales._parentID],
+      references: [pages_blocks_landing_vision_pillars.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_vision_pillars = relations(
+  pages_blocks_landing_vision_pillars,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_vision, {
+      fields: [pages_blocks_landing_vision_pillars._parentID],
+      references: [pages_blocks_landing_vision.id],
+      relationName: "pillars",
+    }),
+    _locales: many(pages_blocks_landing_vision_pillars_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_vision_locales = relations(
+  pages_blocks_landing_vision_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_vision, {
+      fields: [pages_blocks_landing_vision_locales._parentID],
+      references: [pages_blocks_landing_vision.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_vision = relations(
+  pages_blocks_landing_vision,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_vision._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingVision",
+    }),
+    _locales: many(pages_blocks_landing_vision_locales, {
+      relationName: "_locales",
+    }),
+    roadmapCards: many(pages_blocks_landing_vision_roadmap_cards, {
+      relationName: "roadmapCards",
+    }),
+    pillars: many(pages_blocks_landing_vision_pillars, {
+      relationName: "pillars",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_impact_metric_cards_locales =
+  relations(pages_blocks_landing_impact_metric_cards_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_impact_metric_cards, {
+      fields: [pages_blocks_landing_impact_metric_cards_locales._parentID],
+      references: [pages_blocks_landing_impact_metric_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_impact_metric_cards = relations(
+  pages_blocks_landing_impact_metric_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_impact, {
+      fields: [pages_blocks_landing_impact_metric_cards._parentID],
+      references: [pages_blocks_landing_impact.id],
+      relationName: "metricCards",
+    }),
+    _locales: many(pages_blocks_landing_impact_metric_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_impact_status_boxes_locales =
+  relations(pages_blocks_landing_impact_status_boxes_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_impact_status_boxes, {
+      fields: [pages_blocks_landing_impact_status_boxes_locales._parentID],
+      references: [pages_blocks_landing_impact_status_boxes.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_impact_status_boxes = relations(
+  pages_blocks_landing_impact_status_boxes,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_impact, {
+      fields: [pages_blocks_landing_impact_status_boxes._parentID],
+      references: [pages_blocks_landing_impact.id],
+      relationName: "statusBoxes",
+    }),
+    _locales: many(pages_blocks_landing_impact_status_boxes_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_impact_locales = relations(
+  pages_blocks_landing_impact_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_impact, {
+      fields: [pages_blocks_landing_impact_locales._parentID],
+      references: [pages_blocks_landing_impact.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_impact = relations(
+  pages_blocks_landing_impact,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_impact._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingImpact",
+    }),
+    _locales: many(pages_blocks_landing_impact_locales, {
+      relationName: "_locales",
+    }),
+    metricCards: many(pages_blocks_landing_impact_metric_cards, {
+      relationName: "metricCards",
+    }),
+    statusBoxes: many(pages_blocks_landing_impact_status_boxes, {
+      relationName: "statusBoxes",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_cta_partner_cards_locales =
+  relations(pages_blocks_landing_cta_partner_cards_locales, ({ one }) => ({
+    _parentID: one(pages_blocks_landing_cta_partner_cards, {
+      fields: [pages_blocks_landing_cta_partner_cards_locales._parentID],
+      references: [pages_blocks_landing_cta_partner_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations_pages_blocks_landing_cta_partner_cards = relations(
+  pages_blocks_landing_cta_partner_cards,
+  ({ one, many }) => ({
+    _parentID: one(pages_blocks_landing_cta, {
+      fields: [pages_blocks_landing_cta_partner_cards._parentID],
+      references: [pages_blocks_landing_cta.id],
+      relationName: "partnerCards",
+    }),
+    _locales: many(pages_blocks_landing_cta_partner_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_cta_cta_box_links = relations(
+  pages_blocks_landing_cta_cta_box_links,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_cta, {
+      fields: [pages_blocks_landing_cta_cta_box_links._parentID],
+      references: [pages_blocks_landing_cta.id],
+      relationName: "ctaBox_links",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_cta_locales = relations(
+  pages_blocks_landing_cta_locales,
+  ({ one }) => ({
+    _parentID: one(pages_blocks_landing_cta, {
+      fields: [pages_blocks_landing_cta_locales._parentID],
+      references: [pages_blocks_landing_cta.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_pages_blocks_landing_cta = relations(
+  pages_blocks_landing_cta,
+  ({ one, many }) => ({
+    _parentID: one(pages, {
+      fields: [pages_blocks_landing_cta._parentID],
+      references: [pages.id],
+      relationName: "_blocks_landingCta",
+    }),
+    _locales: many(pages_blocks_landing_cta_locales, {
+      relationName: "_locales",
+    }),
+    partnerCards: many(pages_blocks_landing_cta_partner_cards, {
+      relationName: "partnerCards",
+    }),
+    ctaBox_links: many(pages_blocks_landing_cta_cta_box_links, {
+      relationName: "ctaBox_links",
+    }),
+  }),
+);
 export const relations_pages_locales = relations(pages_locales, ({ one }) => ({
   _parentID: one(pages, {
     fields: [pages_locales._parentID],
@@ -1697,6 +5009,30 @@ export const relations_pages = relations(pages, ({ one, many }) => ({
   }),
   _blocks_banner: many(pages_blocks_banner, {
     relationName: "_blocks_banner",
+  }),
+  _blocks_landingHero: many(pages_blocks_landing_hero, {
+    relationName: "_blocks_landingHero",
+  }),
+  _blocks_landingProblem: many(pages_blocks_landing_problem, {
+    relationName: "_blocks_landingProblem",
+  }),
+  _blocks_landingSolution: many(pages_blocks_landing_solution, {
+    relationName: "_blocks_landingSolution",
+  }),
+  _blocks_landingHowItWorks: many(pages_blocks_landing_how_it_works, {
+    relationName: "_blocks_landingHowItWorks",
+  }),
+  _blocks_landingAudience: many(pages_blocks_landing_audience, {
+    relationName: "_blocks_landingAudience",
+  }),
+  _blocks_landingVision: many(pages_blocks_landing_vision, {
+    relationName: "_blocks_landingVision",
+  }),
+  _blocks_landingImpact: many(pages_blocks_landing_impact, {
+    relationName: "_blocks_landingImpact",
+  }),
+  _blocks_landingCta: many(pages_blocks_landing_cta, {
+    relationName: "_blocks_landingCta",
   }),
   _locales: many(pages_locales, {
     relationName: "_locales",
@@ -1786,6 +5122,605 @@ export const relations__pages_v_blocks_banner = relations(
     }),
   }),
 );
+export const relations__pages_v_blocks_landing_hero_links = relations(
+  _pages_v_blocks_landing_hero_links,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_hero, {
+      fields: [_pages_v_blocks_landing_hero_links._parentID],
+      references: [_pages_v_blocks_landing_hero.id],
+      relationName: "links",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_hero_stats_locales = relations(
+  _pages_v_blocks_landing_hero_stats_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_hero_stats, {
+      fields: [_pages_v_blocks_landing_hero_stats_locales._parentID],
+      references: [_pages_v_blocks_landing_hero_stats.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_hero_stats = relations(
+  _pages_v_blocks_landing_hero_stats,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_hero, {
+      fields: [_pages_v_blocks_landing_hero_stats._parentID],
+      references: [_pages_v_blocks_landing_hero.id],
+      relationName: "stats",
+    }),
+    _locales: many(_pages_v_blocks_landing_hero_stats_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_hero_locales = relations(
+  _pages_v_blocks_landing_hero_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_hero, {
+      fields: [_pages_v_blocks_landing_hero_locales._parentID],
+      references: [_pages_v_blocks_landing_hero.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_hero = relations(
+  _pages_v_blocks_landing_hero,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_hero._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingHero",
+    }),
+    _locales: many(_pages_v_blocks_landing_hero_locales, {
+      relationName: "_locales",
+    }),
+    links: many(_pages_v_blocks_landing_hero_links, {
+      relationName: "links",
+    }),
+    stats: many(_pages_v_blocks_landing_hero_stats, {
+      relationName: "stats",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_problem_stat_cards_locales =
+  relations(_pages_v_blocks_landing_problem_stat_cards_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_problem_stat_cards, {
+      fields: [_pages_v_blocks_landing_problem_stat_cards_locales._parentID],
+      references: [_pages_v_blocks_landing_problem_stat_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_problem_stat_cards = relations(
+  _pages_v_blocks_landing_problem_stat_cards,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_problem, {
+      fields: [_pages_v_blocks_landing_problem_stat_cards._parentID],
+      references: [_pages_v_blocks_landing_problem.id],
+      relationName: "statCards",
+    }),
+    _locales: many(_pages_v_blocks_landing_problem_stat_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_problem_bullet_items_locales =
+  relations(
+    _pages_v_blocks_landing_problem_bullet_items_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_problem_bullet_items, {
+        fields: [
+          _pages_v_blocks_landing_problem_bullet_items_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_problem_bullet_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_problem_bullet_items = relations(
+  _pages_v_blocks_landing_problem_bullet_items,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_problem, {
+      fields: [_pages_v_blocks_landing_problem_bullet_items._parentID],
+      references: [_pages_v_blocks_landing_problem.id],
+      relationName: "bulletItems",
+    }),
+    _locales: many(_pages_v_blocks_landing_problem_bullet_items_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_problem_locales = relations(
+  _pages_v_blocks_landing_problem_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_problem, {
+      fields: [_pages_v_blocks_landing_problem_locales._parentID],
+      references: [_pages_v_blocks_landing_problem.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_problem = relations(
+  _pages_v_blocks_landing_problem,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_problem._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingProblem",
+    }),
+    _locales: many(_pages_v_blocks_landing_problem_locales, {
+      relationName: "_locales",
+    }),
+    statCards: many(_pages_v_blocks_landing_problem_stat_cards, {
+      relationName: "statCards",
+    }),
+    bulletItems: many(_pages_v_blocks_landing_problem_bullet_items, {
+      relationName: "bulletItems",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_solution_feature_cards_locales =
+  relations(
+    _pages_v_blocks_landing_solution_feature_cards_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_solution_feature_cards, {
+        fields: [
+          _pages_v_blocks_landing_solution_feature_cards_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_solution_feature_cards.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_solution_feature_cards =
+  relations(
+    _pages_v_blocks_landing_solution_feature_cards,
+    ({ one, many }) => ({
+      _parentID: one(_pages_v_blocks_landing_solution, {
+        fields: [_pages_v_blocks_landing_solution_feature_cards._parentID],
+        references: [_pages_v_blocks_landing_solution.id],
+        relationName: "featureCards",
+      }),
+      _locales: many(_pages_v_blocks_landing_solution_feature_cards_locales, {
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_solution_locales = relations(
+  _pages_v_blocks_landing_solution_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_solution, {
+      fields: [_pages_v_blocks_landing_solution_locales._parentID],
+      references: [_pages_v_blocks_landing_solution.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_solution = relations(
+  _pages_v_blocks_landing_solution,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_solution._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingSolution",
+    }),
+    _locales: many(_pages_v_blocks_landing_solution_locales, {
+      relationName: "_locales",
+    }),
+    featureCards: many(_pages_v_blocks_landing_solution_feature_cards, {
+      relationName: "featureCards",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_how_it_works_steps_locales =
+  relations(_pages_v_blocks_landing_how_it_works_steps_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_how_it_works_steps, {
+      fields: [_pages_v_blocks_landing_how_it_works_steps_locales._parentID],
+      references: [_pages_v_blocks_landing_how_it_works_steps.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_how_it_works_steps = relations(
+  _pages_v_blocks_landing_how_it_works_steps,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_how_it_works, {
+      fields: [_pages_v_blocks_landing_how_it_works_steps._parentID],
+      references: [_pages_v_blocks_landing_how_it_works.id],
+      relationName: "steps",
+    }),
+    _locales: many(_pages_v_blocks_landing_how_it_works_steps_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_how_it_works_feature_items_locales =
+  relations(
+    _pages_v_blocks_landing_how_it_works_feature_items_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_how_it_works_feature_items, {
+        fields: [
+          _pages_v_blocks_landing_how_it_works_feature_items_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_how_it_works_feature_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_how_it_works_feature_items =
+  relations(
+    _pages_v_blocks_landing_how_it_works_feature_items,
+    ({ one, many }) => ({
+      _parentID: one(_pages_v_blocks_landing_how_it_works, {
+        fields: [_pages_v_blocks_landing_how_it_works_feature_items._parentID],
+        references: [_pages_v_blocks_landing_how_it_works.id],
+        relationName: "featureItems",
+      }),
+      _locales: many(
+        _pages_v_blocks_landing_how_it_works_feature_items_locales,
+        {
+          relationName: "_locales",
+        },
+      ),
+    }),
+  );
+export const relations__pages_v_blocks_landing_how_it_works_locales = relations(
+  _pages_v_blocks_landing_how_it_works_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_how_it_works, {
+      fields: [_pages_v_blocks_landing_how_it_works_locales._parentID],
+      references: [_pages_v_blocks_landing_how_it_works.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_how_it_works = relations(
+  _pages_v_blocks_landing_how_it_works,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_how_it_works._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingHowItWorks",
+    }),
+    _locales: many(_pages_v_blocks_landing_how_it_works_locales, {
+      relationName: "_locales",
+    }),
+    steps: many(_pages_v_blocks_landing_how_it_works_steps, {
+      relationName: "steps",
+    }),
+    featureItems: many(_pages_v_blocks_landing_how_it_works_feature_items, {
+      relationName: "featureItems",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_audience_audience_cards_items_locales =
+  relations(
+    _pages_v_blocks_landing_audience_audience_cards_items_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_audience_audience_cards_items, {
+        fields: [
+          _pages_v_blocks_landing_audience_audience_cards_items_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_audience_audience_cards_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_audience_audience_cards_items =
+  relations(
+    _pages_v_blocks_landing_audience_audience_cards_items,
+    ({ one, many }) => ({
+      _parentID: one(_pages_v_blocks_landing_audience_audience_cards, {
+        fields: [
+          _pages_v_blocks_landing_audience_audience_cards_items._parentID,
+        ],
+        references: [_pages_v_blocks_landing_audience_audience_cards.id],
+        relationName: "items",
+      }),
+      _locales: many(
+        _pages_v_blocks_landing_audience_audience_cards_items_locales,
+        {
+          relationName: "_locales",
+        },
+      ),
+    }),
+  );
+export const relations__pages_v_blocks_landing_audience_audience_cards_locales =
+  relations(
+    _pages_v_blocks_landing_audience_audience_cards_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_audience_audience_cards, {
+        fields: [
+          _pages_v_blocks_landing_audience_audience_cards_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_audience_audience_cards.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_audience_audience_cards =
+  relations(
+    _pages_v_blocks_landing_audience_audience_cards,
+    ({ one, many }) => ({
+      _parentID: one(_pages_v_blocks_landing_audience, {
+        fields: [_pages_v_blocks_landing_audience_audience_cards._parentID],
+        references: [_pages_v_blocks_landing_audience.id],
+        relationName: "audienceCards",
+      }),
+      _locales: many(_pages_v_blocks_landing_audience_audience_cards_locales, {
+        relationName: "_locales",
+      }),
+      items: many(_pages_v_blocks_landing_audience_audience_cards_items, {
+        relationName: "items",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_audience_locales = relations(
+  _pages_v_blocks_landing_audience_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_audience, {
+      fields: [_pages_v_blocks_landing_audience_locales._parentID],
+      references: [_pages_v_blocks_landing_audience.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_audience = relations(
+  _pages_v_blocks_landing_audience,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_audience._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingAudience",
+    }),
+    _locales: many(_pages_v_blocks_landing_audience_locales, {
+      relationName: "_locales",
+    }),
+    audienceCards: many(_pages_v_blocks_landing_audience_audience_cards, {
+      relationName: "audienceCards",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_vision_roadmap_cards_items_locales =
+  relations(
+    _pages_v_blocks_landing_vision_roadmap_cards_items_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_vision_roadmap_cards_items, {
+        fields: [
+          _pages_v_blocks_landing_vision_roadmap_cards_items_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_vision_roadmap_cards_items.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_vision_roadmap_cards_items =
+  relations(
+    _pages_v_blocks_landing_vision_roadmap_cards_items,
+    ({ one, many }) => ({
+      _parentID: one(_pages_v_blocks_landing_vision_roadmap_cards, {
+        fields: [_pages_v_blocks_landing_vision_roadmap_cards_items._parentID],
+        references: [_pages_v_blocks_landing_vision_roadmap_cards.id],
+        relationName: "items",
+      }),
+      _locales: many(
+        _pages_v_blocks_landing_vision_roadmap_cards_items_locales,
+        {
+          relationName: "_locales",
+        },
+      ),
+    }),
+  );
+export const relations__pages_v_blocks_landing_vision_roadmap_cards_locales =
+  relations(
+    _pages_v_blocks_landing_vision_roadmap_cards_locales,
+    ({ one }) => ({
+      _parentID: one(_pages_v_blocks_landing_vision_roadmap_cards, {
+        fields: [
+          _pages_v_blocks_landing_vision_roadmap_cards_locales._parentID,
+        ],
+        references: [_pages_v_blocks_landing_vision_roadmap_cards.id],
+        relationName: "_locales",
+      }),
+    }),
+  );
+export const relations__pages_v_blocks_landing_vision_roadmap_cards = relations(
+  _pages_v_blocks_landing_vision_roadmap_cards,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_vision, {
+      fields: [_pages_v_blocks_landing_vision_roadmap_cards._parentID],
+      references: [_pages_v_blocks_landing_vision.id],
+      relationName: "roadmapCards",
+    }),
+    _locales: many(_pages_v_blocks_landing_vision_roadmap_cards_locales, {
+      relationName: "_locales",
+    }),
+    items: many(_pages_v_blocks_landing_vision_roadmap_cards_items, {
+      relationName: "items",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_vision_pillars_locales =
+  relations(_pages_v_blocks_landing_vision_pillars_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_vision_pillars, {
+      fields: [_pages_v_blocks_landing_vision_pillars_locales._parentID],
+      references: [_pages_v_blocks_landing_vision_pillars.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_vision_pillars = relations(
+  _pages_v_blocks_landing_vision_pillars,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_vision, {
+      fields: [_pages_v_blocks_landing_vision_pillars._parentID],
+      references: [_pages_v_blocks_landing_vision.id],
+      relationName: "pillars",
+    }),
+    _locales: many(_pages_v_blocks_landing_vision_pillars_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_vision_locales = relations(
+  _pages_v_blocks_landing_vision_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_vision, {
+      fields: [_pages_v_blocks_landing_vision_locales._parentID],
+      references: [_pages_v_blocks_landing_vision.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_vision = relations(
+  _pages_v_blocks_landing_vision,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_vision._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingVision",
+    }),
+    _locales: many(_pages_v_blocks_landing_vision_locales, {
+      relationName: "_locales",
+    }),
+    roadmapCards: many(_pages_v_blocks_landing_vision_roadmap_cards, {
+      relationName: "roadmapCards",
+    }),
+    pillars: many(_pages_v_blocks_landing_vision_pillars, {
+      relationName: "pillars",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_impact_metric_cards_locales =
+  relations(_pages_v_blocks_landing_impact_metric_cards_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_impact_metric_cards, {
+      fields: [_pages_v_blocks_landing_impact_metric_cards_locales._parentID],
+      references: [_pages_v_blocks_landing_impact_metric_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_impact_metric_cards = relations(
+  _pages_v_blocks_landing_impact_metric_cards,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_impact, {
+      fields: [_pages_v_blocks_landing_impact_metric_cards._parentID],
+      references: [_pages_v_blocks_landing_impact.id],
+      relationName: "metricCards",
+    }),
+    _locales: many(_pages_v_blocks_landing_impact_metric_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_impact_status_boxes_locales =
+  relations(_pages_v_blocks_landing_impact_status_boxes_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_impact_status_boxes, {
+      fields: [_pages_v_blocks_landing_impact_status_boxes_locales._parentID],
+      references: [_pages_v_blocks_landing_impact_status_boxes.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_impact_status_boxes = relations(
+  _pages_v_blocks_landing_impact_status_boxes,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_impact, {
+      fields: [_pages_v_blocks_landing_impact_status_boxes._parentID],
+      references: [_pages_v_blocks_landing_impact.id],
+      relationName: "statusBoxes",
+    }),
+    _locales: many(_pages_v_blocks_landing_impact_status_boxes_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_impact_locales = relations(
+  _pages_v_blocks_landing_impact_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_impact, {
+      fields: [_pages_v_blocks_landing_impact_locales._parentID],
+      references: [_pages_v_blocks_landing_impact.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_impact = relations(
+  _pages_v_blocks_landing_impact,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_impact._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingImpact",
+    }),
+    _locales: many(_pages_v_blocks_landing_impact_locales, {
+      relationName: "_locales",
+    }),
+    metricCards: many(_pages_v_blocks_landing_impact_metric_cards, {
+      relationName: "metricCards",
+    }),
+    statusBoxes: many(_pages_v_blocks_landing_impact_status_boxes, {
+      relationName: "statusBoxes",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_cta_partner_cards_locales =
+  relations(_pages_v_blocks_landing_cta_partner_cards_locales, ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_cta_partner_cards, {
+      fields: [_pages_v_blocks_landing_cta_partner_cards_locales._parentID],
+      references: [_pages_v_blocks_landing_cta_partner_cards.id],
+      relationName: "_locales",
+    }),
+  }));
+export const relations__pages_v_blocks_landing_cta_partner_cards = relations(
+  _pages_v_blocks_landing_cta_partner_cards,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v_blocks_landing_cta, {
+      fields: [_pages_v_blocks_landing_cta_partner_cards._parentID],
+      references: [_pages_v_blocks_landing_cta.id],
+      relationName: "partnerCards",
+    }),
+    _locales: many(_pages_v_blocks_landing_cta_partner_cards_locales, {
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_cta_cta_box_links = relations(
+  _pages_v_blocks_landing_cta_cta_box_links,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_cta, {
+      fields: [_pages_v_blocks_landing_cta_cta_box_links._parentID],
+      references: [_pages_v_blocks_landing_cta.id],
+      relationName: "ctaBox_links",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_cta_locales = relations(
+  _pages_v_blocks_landing_cta_locales,
+  ({ one }) => ({
+    _parentID: one(_pages_v_blocks_landing_cta, {
+      fields: [_pages_v_blocks_landing_cta_locales._parentID],
+      references: [_pages_v_blocks_landing_cta.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations__pages_v_blocks_landing_cta = relations(
+  _pages_v_blocks_landing_cta,
+  ({ one, many }) => ({
+    _parentID: one(_pages_v, {
+      fields: [_pages_v_blocks_landing_cta._parentID],
+      references: [_pages_v.id],
+      relationName: "_blocks_landingCta",
+    }),
+    _locales: many(_pages_v_blocks_landing_cta_locales, {
+      relationName: "_locales",
+    }),
+    partnerCards: many(_pages_v_blocks_landing_cta_partner_cards, {
+      relationName: "partnerCards",
+    }),
+    ctaBox_links: many(_pages_v_blocks_landing_cta_cta_box_links, {
+      relationName: "ctaBox_links",
+    }),
+  }),
+);
 export const relations__pages_v_locales = relations(
   _pages_v_locales,
   ({ one }) => ({
@@ -1838,6 +5773,30 @@ export const relations__pages_v = relations(_pages_v, ({ one, many }) => ({
   }),
   _blocks_banner: many(_pages_v_blocks_banner, {
     relationName: "_blocks_banner",
+  }),
+  _blocks_landingHero: many(_pages_v_blocks_landing_hero, {
+    relationName: "_blocks_landingHero",
+  }),
+  _blocks_landingProblem: many(_pages_v_blocks_landing_problem, {
+    relationName: "_blocks_landingProblem",
+  }),
+  _blocks_landingSolution: many(_pages_v_blocks_landing_solution, {
+    relationName: "_blocks_landingSolution",
+  }),
+  _blocks_landingHowItWorks: many(_pages_v_blocks_landing_how_it_works, {
+    relationName: "_blocks_landingHowItWorks",
+  }),
+  _blocks_landingAudience: many(_pages_v_blocks_landing_audience, {
+    relationName: "_blocks_landingAudience",
+  }),
+  _blocks_landingVision: many(_pages_v_blocks_landing_vision, {
+    relationName: "_blocks_landingVision",
+  }),
+  _blocks_landingImpact: many(_pages_v_blocks_landing_impact, {
+    relationName: "_blocks_landingImpact",
+  }),
+  _blocks_landingCta: many(_pages_v_blocks_landing_cta, {
+    relationName: "_blocks_landingCta",
   }),
   _locales: many(_pages_v_locales, {
     relationName: "_locales",
@@ -2037,6 +5996,55 @@ export const relations_footer = relations(footer, ({ many }) => ({
     relationName: "_rels",
   }),
 }));
+export const relations_landing_footer_nav_links = relations(
+  landing_footer_nav_links,
+  ({ one }) => ({
+    _parentID: one(landing_footer, {
+      fields: [landing_footer_nav_links._parentID],
+      references: [landing_footer.id],
+      relationName: "navLinks",
+    }),
+  }),
+);
+export const relations_landing_footer_locales = relations(
+  landing_footer_locales,
+  ({ one }) => ({
+    _parentID: one(landing_footer, {
+      fields: [landing_footer_locales._parentID],
+      references: [landing_footer.id],
+      relationName: "_locales",
+    }),
+  }),
+);
+export const relations_landing_footer_rels = relations(
+  landing_footer_rels,
+  ({ one }) => ({
+    parent: one(landing_footer, {
+      fields: [landing_footer_rels.parent],
+      references: [landing_footer.id],
+      relationName: "_rels",
+    }),
+    pagesID: one(pages, {
+      fields: [landing_footer_rels.pagesID],
+      references: [pages.id],
+      relationName: "pages",
+    }),
+  }),
+);
+export const relations_landing_footer = relations(
+  landing_footer,
+  ({ many }) => ({
+    navLinks: many(landing_footer_nav_links, {
+      relationName: "navLinks",
+    }),
+    _locales: many(landing_footer_locales, {
+      relationName: "_locales",
+    }),
+    _rels: many(landing_footer_rels, {
+      relationName: "_rels",
+    }),
+  }),
+);
 
 type DatabaseSchema = {
   enum__locales: typeof enum__locales;
@@ -2050,6 +6058,18 @@ type DatabaseSchema = {
   enum_pages_blocks_content_columns_link_type: typeof enum_pages_blocks_content_columns_link_type;
   enum_pages_blocks_content_columns_link_appearance: typeof enum_pages_blocks_content_columns_link_appearance;
   enum_pages_blocks_banner_style: typeof enum_pages_blocks_banner_style;
+  enum_pages_blocks_landing_hero_links_link_type: typeof enum_pages_blocks_landing_hero_links_link_type;
+  enum_pages_blocks_landing_hero_links_link_appearance: typeof enum_pages_blocks_landing_hero_links_link_appearance;
+  enum_pages_blocks_landing_problem_stat_cards_icon: typeof enum_pages_blocks_landing_problem_stat_cards_icon;
+  enum_pages_blocks_landing_solution_feature_cards_icon: typeof enum_pages_blocks_landing_solution_feature_cards_icon;
+  enum_pages_blocks_landing_how_it_works_steps_icon: typeof enum_pages_blocks_landing_how_it_works_steps_icon;
+  enum_pages_blocks_landing_how_it_works_feature_items_icon: typeof enum_pages_blocks_landing_how_it_works_feature_items_icon;
+  enum_pages_blocks_landing_audience_audience_cards_icon: typeof enum_pages_blocks_landing_audience_audience_cards_icon;
+  enum_pages_blocks_landing_vision_roadmap_cards_icon: typeof enum_pages_blocks_landing_vision_roadmap_cards_icon;
+  enum_pages_blocks_landing_impact_metric_cards_icon: typeof enum_pages_blocks_landing_impact_metric_cards_icon;
+  enum_pages_blocks_landing_cta_partner_cards_icon: typeof enum_pages_blocks_landing_cta_partner_cards_icon;
+  enum_pages_blocks_landing_cta_cta_box_links_link_type: typeof enum_pages_blocks_landing_cta_cta_box_links_link_type;
+  enum_pages_blocks_landing_cta_cta_box_links_link_appearance: typeof enum_pages_blocks_landing_cta_cta_box_links_link_appearance;
   enum_pages_hero_type: typeof enum_pages_hero_type;
   enum_pages_status: typeof enum_pages_status;
   enum__pages_v_version_hero_links_link_type: typeof enum__pages_v_version_hero_links_link_type;
@@ -2060,6 +6080,18 @@ type DatabaseSchema = {
   enum__pages_v_blocks_content_columns_link_type: typeof enum__pages_v_blocks_content_columns_link_type;
   enum__pages_v_blocks_content_columns_link_appearance: typeof enum__pages_v_blocks_content_columns_link_appearance;
   enum__pages_v_blocks_banner_style: typeof enum__pages_v_blocks_banner_style;
+  enum__pages_v_blocks_landing_hero_links_link_type: typeof enum__pages_v_blocks_landing_hero_links_link_type;
+  enum__pages_v_blocks_landing_hero_links_link_appearance: typeof enum__pages_v_blocks_landing_hero_links_link_appearance;
+  enum__pages_v_blocks_landing_problem_stat_cards_icon: typeof enum__pages_v_blocks_landing_problem_stat_cards_icon;
+  enum__pages_v_blocks_landing_solution_feature_cards_icon: typeof enum__pages_v_blocks_landing_solution_feature_cards_icon;
+  enum__pages_v_blocks_landing_how_it_works_steps_icon: typeof enum__pages_v_blocks_landing_how_it_works_steps_icon;
+  enum__pages_v_blocks_landing_how_it_works_feature_items_icon: typeof enum__pages_v_blocks_landing_how_it_works_feature_items_icon;
+  enum__pages_v_blocks_landing_audience_audience_cards_icon: typeof enum__pages_v_blocks_landing_audience_audience_cards_icon;
+  enum__pages_v_blocks_landing_vision_roadmap_cards_icon: typeof enum__pages_v_blocks_landing_vision_roadmap_cards_icon;
+  enum__pages_v_blocks_landing_impact_metric_cards_icon: typeof enum__pages_v_blocks_landing_impact_metric_cards_icon;
+  enum__pages_v_blocks_landing_cta_partner_cards_icon: typeof enum__pages_v_blocks_landing_cta_partner_cards_icon;
+  enum__pages_v_blocks_landing_cta_cta_box_links_link_type: typeof enum__pages_v_blocks_landing_cta_cta_box_links_link_type;
+  enum__pages_v_blocks_landing_cta_cta_box_links_link_appearance: typeof enum__pages_v_blocks_landing_cta_cta_box_links_link_appearance;
   enum__pages_v_version_hero_type: typeof enum__pages_v_version_hero_type;
   enum__pages_v_version_status: typeof enum__pages_v_version_status;
   enum__pages_v_published_locale: typeof enum__pages_v_published_locale;
@@ -2069,6 +6101,8 @@ type DatabaseSchema = {
   enum_payload_folders_folder_type: typeof enum_payload_folders_folder_type;
   enum_header_nav_items_link_type: typeof enum_header_nav_items_link_type;
   enum_footer_nav_items_link_type: typeof enum_footer_nav_items_link_type;
+  enum_landing_footer_nav_links_link_type: typeof enum_landing_footer_nav_links_link_type;
+  enum_landing_footer_brand_icon: typeof enum_landing_footer_brand_icon;
   users_role: typeof users_role;
   users: typeof users;
   sessions: typeof sessions;
@@ -2082,6 +6116,52 @@ type DatabaseSchema = {
   pages_blocks_content: typeof pages_blocks_content;
   pages_blocks_media_block: typeof pages_blocks_media_block;
   pages_blocks_banner: typeof pages_blocks_banner;
+  pages_blocks_landing_hero_links: typeof pages_blocks_landing_hero_links;
+  pages_blocks_landing_hero_stats: typeof pages_blocks_landing_hero_stats;
+  pages_blocks_landing_hero_stats_locales: typeof pages_blocks_landing_hero_stats_locales;
+  pages_blocks_landing_hero: typeof pages_blocks_landing_hero;
+  pages_blocks_landing_hero_locales: typeof pages_blocks_landing_hero_locales;
+  pages_blocks_landing_problem_stat_cards: typeof pages_blocks_landing_problem_stat_cards;
+  pages_blocks_landing_problem_stat_cards_locales: typeof pages_blocks_landing_problem_stat_cards_locales;
+  pages_blocks_landing_problem_bullet_items: typeof pages_blocks_landing_problem_bullet_items;
+  pages_blocks_landing_problem_bullet_items_locales: typeof pages_blocks_landing_problem_bullet_items_locales;
+  pages_blocks_landing_problem: typeof pages_blocks_landing_problem;
+  pages_blocks_landing_problem_locales: typeof pages_blocks_landing_problem_locales;
+  pages_blocks_landing_solution_feature_cards: typeof pages_blocks_landing_solution_feature_cards;
+  pages_blocks_landing_solution_feature_cards_locales: typeof pages_blocks_landing_solution_feature_cards_locales;
+  pages_blocks_landing_solution: typeof pages_blocks_landing_solution;
+  pages_blocks_landing_solution_locales: typeof pages_blocks_landing_solution_locales;
+  pages_blocks_landing_how_it_works_steps: typeof pages_blocks_landing_how_it_works_steps;
+  pages_blocks_landing_how_it_works_steps_locales: typeof pages_blocks_landing_how_it_works_steps_locales;
+  pages_blocks_landing_how_it_works_feature_items: typeof pages_blocks_landing_how_it_works_feature_items;
+  pages_blocks_landing_how_it_works_feature_items_locales: typeof pages_blocks_landing_how_it_works_feature_items_locales;
+  pages_blocks_landing_how_it_works: typeof pages_blocks_landing_how_it_works;
+  pages_blocks_landing_how_it_works_locales: typeof pages_blocks_landing_how_it_works_locales;
+  pages_blocks_landing_audience_audience_cards_items: typeof pages_blocks_landing_audience_audience_cards_items;
+  pages_blocks_landing_audience_audience_cards_items_locales: typeof pages_blocks_landing_audience_audience_cards_items_locales;
+  pages_blocks_landing_audience_audience_cards: typeof pages_blocks_landing_audience_audience_cards;
+  pages_blocks_landing_audience_audience_cards_locales: typeof pages_blocks_landing_audience_audience_cards_locales;
+  pages_blocks_landing_audience: typeof pages_blocks_landing_audience;
+  pages_blocks_landing_audience_locales: typeof pages_blocks_landing_audience_locales;
+  pages_blocks_landing_vision_roadmap_cards_items: typeof pages_blocks_landing_vision_roadmap_cards_items;
+  pages_blocks_landing_vision_roadmap_cards_items_locales: typeof pages_blocks_landing_vision_roadmap_cards_items_locales;
+  pages_blocks_landing_vision_roadmap_cards: typeof pages_blocks_landing_vision_roadmap_cards;
+  pages_blocks_landing_vision_roadmap_cards_locales: typeof pages_blocks_landing_vision_roadmap_cards_locales;
+  pages_blocks_landing_vision_pillars: typeof pages_blocks_landing_vision_pillars;
+  pages_blocks_landing_vision_pillars_locales: typeof pages_blocks_landing_vision_pillars_locales;
+  pages_blocks_landing_vision: typeof pages_blocks_landing_vision;
+  pages_blocks_landing_vision_locales: typeof pages_blocks_landing_vision_locales;
+  pages_blocks_landing_impact_metric_cards: typeof pages_blocks_landing_impact_metric_cards;
+  pages_blocks_landing_impact_metric_cards_locales: typeof pages_blocks_landing_impact_metric_cards_locales;
+  pages_blocks_landing_impact_status_boxes: typeof pages_blocks_landing_impact_status_boxes;
+  pages_blocks_landing_impact_status_boxes_locales: typeof pages_blocks_landing_impact_status_boxes_locales;
+  pages_blocks_landing_impact: typeof pages_blocks_landing_impact;
+  pages_blocks_landing_impact_locales: typeof pages_blocks_landing_impact_locales;
+  pages_blocks_landing_cta_partner_cards: typeof pages_blocks_landing_cta_partner_cards;
+  pages_blocks_landing_cta_partner_cards_locales: typeof pages_blocks_landing_cta_partner_cards_locales;
+  pages_blocks_landing_cta_cta_box_links: typeof pages_blocks_landing_cta_cta_box_links;
+  pages_blocks_landing_cta: typeof pages_blocks_landing_cta;
+  pages_blocks_landing_cta_locales: typeof pages_blocks_landing_cta_locales;
   pages: typeof pages;
   pages_locales: typeof pages_locales;
   pages_rels: typeof pages_rels;
@@ -2092,6 +6172,52 @@ type DatabaseSchema = {
   _pages_v_blocks_content: typeof _pages_v_blocks_content;
   _pages_v_blocks_media_block: typeof _pages_v_blocks_media_block;
   _pages_v_blocks_banner: typeof _pages_v_blocks_banner;
+  _pages_v_blocks_landing_hero_links: typeof _pages_v_blocks_landing_hero_links;
+  _pages_v_blocks_landing_hero_stats: typeof _pages_v_blocks_landing_hero_stats;
+  _pages_v_blocks_landing_hero_stats_locales: typeof _pages_v_blocks_landing_hero_stats_locales;
+  _pages_v_blocks_landing_hero: typeof _pages_v_blocks_landing_hero;
+  _pages_v_blocks_landing_hero_locales: typeof _pages_v_blocks_landing_hero_locales;
+  _pages_v_blocks_landing_problem_stat_cards: typeof _pages_v_blocks_landing_problem_stat_cards;
+  _pages_v_blocks_landing_problem_stat_cards_locales: typeof _pages_v_blocks_landing_problem_stat_cards_locales;
+  _pages_v_blocks_landing_problem_bullet_items: typeof _pages_v_blocks_landing_problem_bullet_items;
+  _pages_v_blocks_landing_problem_bullet_items_locales: typeof _pages_v_blocks_landing_problem_bullet_items_locales;
+  _pages_v_blocks_landing_problem: typeof _pages_v_blocks_landing_problem;
+  _pages_v_blocks_landing_problem_locales: typeof _pages_v_blocks_landing_problem_locales;
+  _pages_v_blocks_landing_solution_feature_cards: typeof _pages_v_blocks_landing_solution_feature_cards;
+  _pages_v_blocks_landing_solution_feature_cards_locales: typeof _pages_v_blocks_landing_solution_feature_cards_locales;
+  _pages_v_blocks_landing_solution: typeof _pages_v_blocks_landing_solution;
+  _pages_v_blocks_landing_solution_locales: typeof _pages_v_blocks_landing_solution_locales;
+  _pages_v_blocks_landing_how_it_works_steps: typeof _pages_v_blocks_landing_how_it_works_steps;
+  _pages_v_blocks_landing_how_it_works_steps_locales: typeof _pages_v_blocks_landing_how_it_works_steps_locales;
+  _pages_v_blocks_landing_how_it_works_feature_items: typeof _pages_v_blocks_landing_how_it_works_feature_items;
+  _pages_v_blocks_landing_how_it_works_feature_items_locales: typeof _pages_v_blocks_landing_how_it_works_feature_items_locales;
+  _pages_v_blocks_landing_how_it_works: typeof _pages_v_blocks_landing_how_it_works;
+  _pages_v_blocks_landing_how_it_works_locales: typeof _pages_v_blocks_landing_how_it_works_locales;
+  _pages_v_blocks_landing_audience_audience_cards_items: typeof _pages_v_blocks_landing_audience_audience_cards_items;
+  _pages_v_blocks_landing_audience_audience_cards_items_locales: typeof _pages_v_blocks_landing_audience_audience_cards_items_locales;
+  _pages_v_blocks_landing_audience_audience_cards: typeof _pages_v_blocks_landing_audience_audience_cards;
+  _pages_v_blocks_landing_audience_audience_cards_locales: typeof _pages_v_blocks_landing_audience_audience_cards_locales;
+  _pages_v_blocks_landing_audience: typeof _pages_v_blocks_landing_audience;
+  _pages_v_blocks_landing_audience_locales: typeof _pages_v_blocks_landing_audience_locales;
+  _pages_v_blocks_landing_vision_roadmap_cards_items: typeof _pages_v_blocks_landing_vision_roadmap_cards_items;
+  _pages_v_blocks_landing_vision_roadmap_cards_items_locales: typeof _pages_v_blocks_landing_vision_roadmap_cards_items_locales;
+  _pages_v_blocks_landing_vision_roadmap_cards: typeof _pages_v_blocks_landing_vision_roadmap_cards;
+  _pages_v_blocks_landing_vision_roadmap_cards_locales: typeof _pages_v_blocks_landing_vision_roadmap_cards_locales;
+  _pages_v_blocks_landing_vision_pillars: typeof _pages_v_blocks_landing_vision_pillars;
+  _pages_v_blocks_landing_vision_pillars_locales: typeof _pages_v_blocks_landing_vision_pillars_locales;
+  _pages_v_blocks_landing_vision: typeof _pages_v_blocks_landing_vision;
+  _pages_v_blocks_landing_vision_locales: typeof _pages_v_blocks_landing_vision_locales;
+  _pages_v_blocks_landing_impact_metric_cards: typeof _pages_v_blocks_landing_impact_metric_cards;
+  _pages_v_blocks_landing_impact_metric_cards_locales: typeof _pages_v_blocks_landing_impact_metric_cards_locales;
+  _pages_v_blocks_landing_impact_status_boxes: typeof _pages_v_blocks_landing_impact_status_boxes;
+  _pages_v_blocks_landing_impact_status_boxes_locales: typeof _pages_v_blocks_landing_impact_status_boxes_locales;
+  _pages_v_blocks_landing_impact: typeof _pages_v_blocks_landing_impact;
+  _pages_v_blocks_landing_impact_locales: typeof _pages_v_blocks_landing_impact_locales;
+  _pages_v_blocks_landing_cta_partner_cards: typeof _pages_v_blocks_landing_cta_partner_cards;
+  _pages_v_blocks_landing_cta_partner_cards_locales: typeof _pages_v_blocks_landing_cta_partner_cards_locales;
+  _pages_v_blocks_landing_cta_cta_box_links: typeof _pages_v_blocks_landing_cta_cta_box_links;
+  _pages_v_blocks_landing_cta: typeof _pages_v_blocks_landing_cta;
+  _pages_v_blocks_landing_cta_locales: typeof _pages_v_blocks_landing_cta_locales;
   _pages_v: typeof _pages_v;
   _pages_v_locales: typeof _pages_v_locales;
   _pages_v_rels: typeof _pages_v_rels;
@@ -2112,6 +6238,10 @@ type DatabaseSchema = {
   footer_nav_items: typeof footer_nav_items;
   footer: typeof footer;
   footer_rels: typeof footer_rels;
+  landing_footer_nav_links: typeof landing_footer_nav_links;
+  landing_footer: typeof landing_footer;
+  landing_footer_locales: typeof landing_footer_locales;
+  landing_footer_rels: typeof landing_footer_rels;
   relations_users_role: typeof relations_users_role;
   relations_users: typeof relations_users;
   relations_sessions: typeof relations_sessions;
@@ -2125,6 +6255,52 @@ type DatabaseSchema = {
   relations_pages_blocks_content: typeof relations_pages_blocks_content;
   relations_pages_blocks_media_block: typeof relations_pages_blocks_media_block;
   relations_pages_blocks_banner: typeof relations_pages_blocks_banner;
+  relations_pages_blocks_landing_hero_links: typeof relations_pages_blocks_landing_hero_links;
+  relations_pages_blocks_landing_hero_stats_locales: typeof relations_pages_blocks_landing_hero_stats_locales;
+  relations_pages_blocks_landing_hero_stats: typeof relations_pages_blocks_landing_hero_stats;
+  relations_pages_blocks_landing_hero_locales: typeof relations_pages_blocks_landing_hero_locales;
+  relations_pages_blocks_landing_hero: typeof relations_pages_blocks_landing_hero;
+  relations_pages_blocks_landing_problem_stat_cards_locales: typeof relations_pages_blocks_landing_problem_stat_cards_locales;
+  relations_pages_blocks_landing_problem_stat_cards: typeof relations_pages_blocks_landing_problem_stat_cards;
+  relations_pages_blocks_landing_problem_bullet_items_locales: typeof relations_pages_blocks_landing_problem_bullet_items_locales;
+  relations_pages_blocks_landing_problem_bullet_items: typeof relations_pages_blocks_landing_problem_bullet_items;
+  relations_pages_blocks_landing_problem_locales: typeof relations_pages_blocks_landing_problem_locales;
+  relations_pages_blocks_landing_problem: typeof relations_pages_blocks_landing_problem;
+  relations_pages_blocks_landing_solution_feature_cards_locales: typeof relations_pages_blocks_landing_solution_feature_cards_locales;
+  relations_pages_blocks_landing_solution_feature_cards: typeof relations_pages_blocks_landing_solution_feature_cards;
+  relations_pages_blocks_landing_solution_locales: typeof relations_pages_blocks_landing_solution_locales;
+  relations_pages_blocks_landing_solution: typeof relations_pages_blocks_landing_solution;
+  relations_pages_blocks_landing_how_it_works_steps_locales: typeof relations_pages_blocks_landing_how_it_works_steps_locales;
+  relations_pages_blocks_landing_how_it_works_steps: typeof relations_pages_blocks_landing_how_it_works_steps;
+  relations_pages_blocks_landing_how_it_works_feature_items_locales: typeof relations_pages_blocks_landing_how_it_works_feature_items_locales;
+  relations_pages_blocks_landing_how_it_works_feature_items: typeof relations_pages_blocks_landing_how_it_works_feature_items;
+  relations_pages_blocks_landing_how_it_works_locales: typeof relations_pages_blocks_landing_how_it_works_locales;
+  relations_pages_blocks_landing_how_it_works: typeof relations_pages_blocks_landing_how_it_works;
+  relations_pages_blocks_landing_audience_audience_cards_items_locales: typeof relations_pages_blocks_landing_audience_audience_cards_items_locales;
+  relations_pages_blocks_landing_audience_audience_cards_items: typeof relations_pages_blocks_landing_audience_audience_cards_items;
+  relations_pages_blocks_landing_audience_audience_cards_locales: typeof relations_pages_blocks_landing_audience_audience_cards_locales;
+  relations_pages_blocks_landing_audience_audience_cards: typeof relations_pages_blocks_landing_audience_audience_cards;
+  relations_pages_blocks_landing_audience_locales: typeof relations_pages_blocks_landing_audience_locales;
+  relations_pages_blocks_landing_audience: typeof relations_pages_blocks_landing_audience;
+  relations_pages_blocks_landing_vision_roadmap_cards_items_locales: typeof relations_pages_blocks_landing_vision_roadmap_cards_items_locales;
+  relations_pages_blocks_landing_vision_roadmap_cards_items: typeof relations_pages_blocks_landing_vision_roadmap_cards_items;
+  relations_pages_blocks_landing_vision_roadmap_cards_locales: typeof relations_pages_blocks_landing_vision_roadmap_cards_locales;
+  relations_pages_blocks_landing_vision_roadmap_cards: typeof relations_pages_blocks_landing_vision_roadmap_cards;
+  relations_pages_blocks_landing_vision_pillars_locales: typeof relations_pages_blocks_landing_vision_pillars_locales;
+  relations_pages_blocks_landing_vision_pillars: typeof relations_pages_blocks_landing_vision_pillars;
+  relations_pages_blocks_landing_vision_locales: typeof relations_pages_blocks_landing_vision_locales;
+  relations_pages_blocks_landing_vision: typeof relations_pages_blocks_landing_vision;
+  relations_pages_blocks_landing_impact_metric_cards_locales: typeof relations_pages_blocks_landing_impact_metric_cards_locales;
+  relations_pages_blocks_landing_impact_metric_cards: typeof relations_pages_blocks_landing_impact_metric_cards;
+  relations_pages_blocks_landing_impact_status_boxes_locales: typeof relations_pages_blocks_landing_impact_status_boxes_locales;
+  relations_pages_blocks_landing_impact_status_boxes: typeof relations_pages_blocks_landing_impact_status_boxes;
+  relations_pages_blocks_landing_impact_locales: typeof relations_pages_blocks_landing_impact_locales;
+  relations_pages_blocks_landing_impact: typeof relations_pages_blocks_landing_impact;
+  relations_pages_blocks_landing_cta_partner_cards_locales: typeof relations_pages_blocks_landing_cta_partner_cards_locales;
+  relations_pages_blocks_landing_cta_partner_cards: typeof relations_pages_blocks_landing_cta_partner_cards;
+  relations_pages_blocks_landing_cta_cta_box_links: typeof relations_pages_blocks_landing_cta_cta_box_links;
+  relations_pages_blocks_landing_cta_locales: typeof relations_pages_blocks_landing_cta_locales;
+  relations_pages_blocks_landing_cta: typeof relations_pages_blocks_landing_cta;
   relations_pages_locales: typeof relations_pages_locales;
   relations_pages_rels: typeof relations_pages_rels;
   relations_pages: typeof relations_pages;
@@ -2135,6 +6311,52 @@ type DatabaseSchema = {
   relations__pages_v_blocks_content: typeof relations__pages_v_blocks_content;
   relations__pages_v_blocks_media_block: typeof relations__pages_v_blocks_media_block;
   relations__pages_v_blocks_banner: typeof relations__pages_v_blocks_banner;
+  relations__pages_v_blocks_landing_hero_links: typeof relations__pages_v_blocks_landing_hero_links;
+  relations__pages_v_blocks_landing_hero_stats_locales: typeof relations__pages_v_blocks_landing_hero_stats_locales;
+  relations__pages_v_blocks_landing_hero_stats: typeof relations__pages_v_blocks_landing_hero_stats;
+  relations__pages_v_blocks_landing_hero_locales: typeof relations__pages_v_blocks_landing_hero_locales;
+  relations__pages_v_blocks_landing_hero: typeof relations__pages_v_blocks_landing_hero;
+  relations__pages_v_blocks_landing_problem_stat_cards_locales: typeof relations__pages_v_blocks_landing_problem_stat_cards_locales;
+  relations__pages_v_blocks_landing_problem_stat_cards: typeof relations__pages_v_blocks_landing_problem_stat_cards;
+  relations__pages_v_blocks_landing_problem_bullet_items_locales: typeof relations__pages_v_blocks_landing_problem_bullet_items_locales;
+  relations__pages_v_blocks_landing_problem_bullet_items: typeof relations__pages_v_blocks_landing_problem_bullet_items;
+  relations__pages_v_blocks_landing_problem_locales: typeof relations__pages_v_blocks_landing_problem_locales;
+  relations__pages_v_blocks_landing_problem: typeof relations__pages_v_blocks_landing_problem;
+  relations__pages_v_blocks_landing_solution_feature_cards_locales: typeof relations__pages_v_blocks_landing_solution_feature_cards_locales;
+  relations__pages_v_blocks_landing_solution_feature_cards: typeof relations__pages_v_blocks_landing_solution_feature_cards;
+  relations__pages_v_blocks_landing_solution_locales: typeof relations__pages_v_blocks_landing_solution_locales;
+  relations__pages_v_blocks_landing_solution: typeof relations__pages_v_blocks_landing_solution;
+  relations__pages_v_blocks_landing_how_it_works_steps_locales: typeof relations__pages_v_blocks_landing_how_it_works_steps_locales;
+  relations__pages_v_blocks_landing_how_it_works_steps: typeof relations__pages_v_blocks_landing_how_it_works_steps;
+  relations__pages_v_blocks_landing_how_it_works_feature_items_locales: typeof relations__pages_v_blocks_landing_how_it_works_feature_items_locales;
+  relations__pages_v_blocks_landing_how_it_works_feature_items: typeof relations__pages_v_blocks_landing_how_it_works_feature_items;
+  relations__pages_v_blocks_landing_how_it_works_locales: typeof relations__pages_v_blocks_landing_how_it_works_locales;
+  relations__pages_v_blocks_landing_how_it_works: typeof relations__pages_v_blocks_landing_how_it_works;
+  relations__pages_v_blocks_landing_audience_audience_cards_items_locales: typeof relations__pages_v_blocks_landing_audience_audience_cards_items_locales;
+  relations__pages_v_blocks_landing_audience_audience_cards_items: typeof relations__pages_v_blocks_landing_audience_audience_cards_items;
+  relations__pages_v_blocks_landing_audience_audience_cards_locales: typeof relations__pages_v_blocks_landing_audience_audience_cards_locales;
+  relations__pages_v_blocks_landing_audience_audience_cards: typeof relations__pages_v_blocks_landing_audience_audience_cards;
+  relations__pages_v_blocks_landing_audience_locales: typeof relations__pages_v_blocks_landing_audience_locales;
+  relations__pages_v_blocks_landing_audience: typeof relations__pages_v_blocks_landing_audience;
+  relations__pages_v_blocks_landing_vision_roadmap_cards_items_locales: typeof relations__pages_v_blocks_landing_vision_roadmap_cards_items_locales;
+  relations__pages_v_blocks_landing_vision_roadmap_cards_items: typeof relations__pages_v_blocks_landing_vision_roadmap_cards_items;
+  relations__pages_v_blocks_landing_vision_roadmap_cards_locales: typeof relations__pages_v_blocks_landing_vision_roadmap_cards_locales;
+  relations__pages_v_blocks_landing_vision_roadmap_cards: typeof relations__pages_v_blocks_landing_vision_roadmap_cards;
+  relations__pages_v_blocks_landing_vision_pillars_locales: typeof relations__pages_v_blocks_landing_vision_pillars_locales;
+  relations__pages_v_blocks_landing_vision_pillars: typeof relations__pages_v_blocks_landing_vision_pillars;
+  relations__pages_v_blocks_landing_vision_locales: typeof relations__pages_v_blocks_landing_vision_locales;
+  relations__pages_v_blocks_landing_vision: typeof relations__pages_v_blocks_landing_vision;
+  relations__pages_v_blocks_landing_impact_metric_cards_locales: typeof relations__pages_v_blocks_landing_impact_metric_cards_locales;
+  relations__pages_v_blocks_landing_impact_metric_cards: typeof relations__pages_v_blocks_landing_impact_metric_cards;
+  relations__pages_v_blocks_landing_impact_status_boxes_locales: typeof relations__pages_v_blocks_landing_impact_status_boxes_locales;
+  relations__pages_v_blocks_landing_impact_status_boxes: typeof relations__pages_v_blocks_landing_impact_status_boxes;
+  relations__pages_v_blocks_landing_impact_locales: typeof relations__pages_v_blocks_landing_impact_locales;
+  relations__pages_v_blocks_landing_impact: typeof relations__pages_v_blocks_landing_impact;
+  relations__pages_v_blocks_landing_cta_partner_cards_locales: typeof relations__pages_v_blocks_landing_cta_partner_cards_locales;
+  relations__pages_v_blocks_landing_cta_partner_cards: typeof relations__pages_v_blocks_landing_cta_partner_cards;
+  relations__pages_v_blocks_landing_cta_cta_box_links: typeof relations__pages_v_blocks_landing_cta_cta_box_links;
+  relations__pages_v_blocks_landing_cta_locales: typeof relations__pages_v_blocks_landing_cta_locales;
+  relations__pages_v_blocks_landing_cta: typeof relations__pages_v_blocks_landing_cta;
   relations__pages_v_locales: typeof relations__pages_v_locales;
   relations__pages_v_rels: typeof relations__pages_v_rels;
   relations__pages_v: typeof relations__pages_v;
@@ -2155,6 +6377,10 @@ type DatabaseSchema = {
   relations_footer_nav_items: typeof relations_footer_nav_items;
   relations_footer_rels: typeof relations_footer_rels;
   relations_footer: typeof relations_footer;
+  relations_landing_footer_nav_links: typeof relations_landing_footer_nav_links;
+  relations_landing_footer_locales: typeof relations_landing_footer_locales;
+  relations_landing_footer_rels: typeof relations_landing_footer_rels;
+  relations_landing_footer: typeof relations_landing_footer;
 };
 
 declare module "@payloadcms/db-vercel-postgres" {

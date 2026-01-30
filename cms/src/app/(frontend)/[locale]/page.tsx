@@ -1,12 +1,14 @@
 import { RenderBlocks } from "@/payload/blocks/RenderBlocks"
 import { DraftIndicator } from "@/components/DraftIndicator"
 import { LivePreviewListener } from "@/components/LivePreviewListener"
-import { Typography } from "@/components/ui/typography"
+import { LandingFooterBlock } from "@/payload/globals/LandingFooter/Component"
 import { RenderHero } from "@/payload/heros/RenderHero"
 import type { Locale } from "@/i18n"
 import { getLocaleFromParams } from "@/i18n"
 import { generateMeta } from "@/utils/generateMeta"
 import { getPayload } from "@/lib/getPayload"
+import { getCachedGlobal } from "@/utils/globals"
+import type { LandingFooter } from "@/payload-types"
 import type { Metadata } from "next"
 import { draftMode } from "next/headers"
 import { cache } from "react"
@@ -18,34 +20,22 @@ export default async function HomePage({ params }: HomePageProps) {
 
   if (!page) {
     return (
-      <main className="grid flex-1 place-content-center py-4 md:py-8">
-        <article className="container">
-          <div className="text-center">
-            <Typography variant="h1" className="mb-4">
-              Welcome!
-            </Typography>
-            <div className="max-w-md">
-              <Typography variant="muted">No homepage has been created yet.</Typography>
-              <Typography variant="muted">
-                Create a page with an empty slug in the CMS to set up your homepage.
-              </Typography>
-            </div>
-          </div>
-        </article>
+      <main>
+        <p>No home page found. Create a page with an empty slug in the admin panel.</p>
       </main>
     )
   }
 
   const { hero, layout } = page
+  const landingFooter = (await getCachedGlobal("landing-footer")) as LandingFooter
 
   return (
     <main>
-      <article className="container">
-        {draft && <LivePreviewListener />}
-        {page._status === "draft" && <DraftIndicator />}
-        <RenderHero {...hero} />
-        <RenderBlocks blocks={layout} />
-      </article>
+      {draft && <LivePreviewListener />}
+      {page._status === "draft" && <DraftIndicator />}
+      <RenderHero {...hero} />
+      <RenderBlocks blocks={layout} />
+      {landingFooter && <LandingFooterBlock {...landingFooter} />}
     </main>
   )
 }

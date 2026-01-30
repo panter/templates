@@ -117,10 +117,12 @@ export interface Config {
   globals: {
     header: Header;
     footer: Footer;
+    'landing-footer': LandingFooter;
   };
   globalsSelect: {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
+    'landing-footer': LandingFooterSelect<false> | LandingFooterSelect<true>;
   };
   locale: 'en' | 'de' | 'fr' | 'it';
   user: User & {
@@ -373,7 +375,20 @@ export interface Page {
       | null;
     media?: (number | null) | Media;
   };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | BannerBlock)[];
+  layout: (
+    | CallToActionBlock
+    | ContentBlock
+    | MediaBlock
+    | BannerBlock
+    | LandingHeroBlock
+    | LandingProblemBlock
+    | LandingSolutionBlock
+    | LandingHowItWorksBlock
+    | LandingAudienceBlock
+    | LandingVisionBlock
+    | LandingImpactBlock
+    | LandingCtaBlock
+  )[];
   meta?: {
     title?: string | null;
     /**
@@ -634,6 +649,476 @@ export interface BannerBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'banner';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingHeroBlock".
+ */
+export interface LandingHeroBlock {
+  badgeText?: string | null;
+  heading: string;
+  /**
+   * Text displayed with accent gradient styling
+   */
+  headingAccent?: string | null;
+  subtitle?: string | null;
+  links?:
+    | {
+        link: {
+          type?: ('reference' | 'custom') | null;
+          newTab?: boolean | null;
+          reference?: {
+            relationTo: 'pages';
+            value: number | Page;
+          } | null;
+          url?: string | null;
+          label: string;
+          /**
+           * Choose how the link should be rendered.
+           */
+          appearance?: ('default' | 'outline') | null;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  stats?:
+    | {
+        value: string;
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingHero';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingProblemBlock".
+ */
+export interface LandingProblemBlock {
+  heading: string;
+  subtitle?: string | null;
+  statCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        value: string;
+        label: string;
+        id?: string | null;
+      }[]
+    | null;
+  bulletItems?:
+    | {
+        boldText?: string | null;
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingProblem';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingSolutionBlock".
+ */
+export interface LandingSolutionBlock {
+  badgeText?: string | null;
+  heading: string;
+  subtitle?: string | null;
+  featureCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingSolution';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingHowItWorksBlock".
+ */
+export interface LandingHowItWorksBlock {
+  heading: string;
+  subtitle?: string | null;
+  steps?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  featureItems?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingHowItWorks';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingAudienceBlock".
+ */
+export interface LandingAudienceBlock {
+  heading: string;
+  subtitle?: string | null;
+  audienceCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        title: string;
+        items?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        footer?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingAudience';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingVisionBlock".
+ */
+export interface LandingVisionBlock {
+  heading: string;
+  subtitle?: string | null;
+  badgeText?: string | null;
+  roadmapCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        phase: string;
+        badge?: string | null;
+        title: string;
+        subtitle?: string | null;
+        items?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  pillarsHeading?: string | null;
+  pillars?:
+    | {
+        title: string;
+        description: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingVision';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingImpactBlock".
+ */
+export interface LandingImpactBlock {
+  heading: string;
+  subtitle?: string | null;
+  metricCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        value: string;
+        title: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  testimonial?: {
+    quote?: string | null;
+    authorName?: string | null;
+    authorRole?: string | null;
+    organization?: string | null;
+  };
+  statusBoxes?:
+    | {
+        label: string;
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingImpact';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingCtaBlock".
+ */
+export interface LandingCtaBlock {
+  heading: string;
+  subtitle?: string | null;
+  partnerCards?:
+    | {
+        icon?:
+          | (
+              | 'arrowRight'
+              | 'building'
+              | 'building2'
+              | 'camera'
+              | 'chartColumn'
+              | 'circleAlert'
+              | 'circleCheck'
+              | 'database'
+              | 'gitCompareArrows'
+              | 'globe'
+              | 'handshake'
+              | 'layers'
+              | 'lightbulb'
+              | 'plug'
+              | 'quote'
+              | 'recycle'
+              | 'rocket'
+              | 'shield'
+              | 'shoppingCart'
+              | 'sparkles'
+              | 'target'
+              | 'trendingUp'
+              | 'users'
+              | 'usersRound'
+            )
+          | null;
+        title: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  ctaBox?: {
+    heading?: string | null;
+    description?: string | null;
+    links?:
+      | {
+          link: {
+            type?: ('reference' | 'custom') | null;
+            newTab?: boolean | null;
+            reference?: {
+              relationTo: 'pages';
+              value: number | Page;
+            } | null;
+            url?: string | null;
+            label: string;
+            /**
+             * Choose how the link should be rendered.
+             */
+            appearance?: ('default' | 'outline') | null;
+          };
+          id?: string | null;
+        }[]
+      | null;
+  };
+  contactText?: string | null;
+  email?: string | null;
+  phone?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'landingCta';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -932,6 +1417,14 @@ export interface PagesSelect<T extends boolean = true> {
         content?: T | ContentBlockSelect<T>;
         mediaBlock?: T | MediaBlockSelect<T>;
         banner?: T | BannerBlockSelect<T>;
+        landingHero?: T | LandingHeroBlockSelect<T>;
+        landingProblem?: T | LandingProblemBlockSelect<T>;
+        landingSolution?: T | LandingSolutionBlockSelect<T>;
+        landingHowItWorks?: T | LandingHowItWorksBlockSelect<T>;
+        landingAudience?: T | LandingAudienceBlockSelect<T>;
+        landingVision?: T | LandingVisionBlockSelect<T>;
+        landingImpact?: T | LandingImpactBlockSelect<T>;
+        landingCta?: T | LandingCtaBlockSelect<T>;
       };
   meta?:
     | T
@@ -1013,6 +1506,245 @@ export interface MediaBlockSelect<T extends boolean = true> {
 export interface BannerBlockSelect<T extends boolean = true> {
   style?: T;
   content?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingHeroBlock_select".
+ */
+export interface LandingHeroBlockSelect<T extends boolean = true> {
+  badgeText?: T;
+  heading?: T;
+  headingAccent?: T;
+  subtitle?: T;
+  links?:
+    | T
+    | {
+        link?:
+          | T
+          | {
+              type?: T;
+              newTab?: T;
+              reference?: T;
+              url?: T;
+              label?: T;
+              appearance?: T;
+            };
+        id?: T;
+      };
+  stats?:
+    | T
+    | {
+        value?: T;
+        label?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingProblemBlock_select".
+ */
+export interface LandingProblemBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  statCards?:
+    | T
+    | {
+        icon?: T;
+        value?: T;
+        label?: T;
+        id?: T;
+      };
+  bulletItems?:
+    | T
+    | {
+        boldText?: T;
+        text?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingSolutionBlock_select".
+ */
+export interface LandingSolutionBlockSelect<T extends boolean = true> {
+  badgeText?: T;
+  heading?: T;
+  subtitle?: T;
+  featureCards?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingHowItWorksBlock_select".
+ */
+export interface LandingHowItWorksBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  steps?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  featureItems?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingAudienceBlock_select".
+ */
+export interface LandingAudienceBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  audienceCards?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        items?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        footer?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingVisionBlock_select".
+ */
+export interface LandingVisionBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  badgeText?: T;
+  roadmapCards?:
+    | T
+    | {
+        icon?: T;
+        phase?: T;
+        badge?: T;
+        title?: T;
+        subtitle?: T;
+        items?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  pillarsHeading?: T;
+  pillars?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingImpactBlock_select".
+ */
+export interface LandingImpactBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  metricCards?:
+    | T
+    | {
+        icon?: T;
+        value?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  testimonial?:
+    | T
+    | {
+        quote?: T;
+        authorName?: T;
+        authorRole?: T;
+        organization?: T;
+      };
+  statusBoxes?:
+    | T
+    | {
+        label?: T;
+        text?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LandingCtaBlock_select".
+ */
+export interface LandingCtaBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subtitle?: T;
+  partnerCards?:
+    | T
+    | {
+        icon?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  ctaBox?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        links?:
+          | T
+          | {
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                    appearance?: T;
+                  };
+              id?: T;
+            };
+      };
+  contactText?: T;
+  email?: T;
+  phone?: T;
   id?: T;
   blockName?: T;
 }
@@ -1244,6 +1976,61 @@ export interface Footer {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "landing-footer".
+ */
+export interface LandingFooter {
+  id: number;
+  brandName?: string | null;
+  brandIcon?:
+    | (
+        | 'arrowRight'
+        | 'building'
+        | 'building2'
+        | 'camera'
+        | 'chartColumn'
+        | 'circleAlert'
+        | 'circleCheck'
+        | 'database'
+        | 'gitCompareArrows'
+        | 'globe'
+        | 'handshake'
+        | 'layers'
+        | 'lightbulb'
+        | 'plug'
+        | 'quote'
+        | 'recycle'
+        | 'rocket'
+        | 'shield'
+        | 'shoppingCart'
+        | 'sparkles'
+        | 'target'
+        | 'trendingUp'
+        | 'users'
+        | 'usersRound'
+      )
+    | null;
+  navLinks?:
+    | {
+        link: {
+          type?: ('reference' | 'custom') | null;
+          newTab?: boolean | null;
+          reference?: {
+            relationTo: 'pages';
+            value: number | Page;
+          } | null;
+          url?: string | null;
+          label: string;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  copyrightText?: string | null;
+  tagline?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
@@ -1284,6 +2071,33 @@ export interface FooterSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "landing-footer_select".
+ */
+export interface LandingFooterSelect<T extends boolean = true> {
+  brandName?: T;
+  brandIcon?: T;
+  navLinks?:
+    | T
+    | {
+        link?:
+          | T
+          | {
+              type?: T;
+              newTab?: T;
+              reference?: T;
+              url?: T;
+              label?: T;
+            };
+        id?: T;
+      };
+  copyrightText?: T;
+  tagline?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

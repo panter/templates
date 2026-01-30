@@ -10,6 +10,7 @@ import { Media } from "./payload/collections/Media"
 import { Pages } from "./payload/collections/Pages"
 import { Footer } from "./payload/Footer/config"
 import { Header } from "./payload/Header/config"
+import { LandingFooter } from "./payload/globals/LandingFooter/config"
 import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
 import { plugins } from "./payload/plugins"
 import { getURL } from "./utils/getURL"
@@ -90,7 +91,7 @@ export default buildConfig({
   },
 
   collections: [Pages, Media],
-  globals: [Header, Footer],
+  globals: [Header, Footer, LandingFooter],
 
   serverURL: getURL(),
   cors: [getURL()],
