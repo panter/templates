@@ -3714,6 +3714,46 @@ export const media = pgTable(
   ],
 );
 
+export const payload_mcp_api_keys = pgTable(
+  "payload_mcp_api_keys",
+  {
+    id: serial("id").primaryKey(),
+    user: integer("user_id")
+      .notNull()
+      .references(() => users.id, {
+        onDelete: "set null",
+      }),
+    label: varchar("label"),
+    description: varchar("description"),
+    pages_find: boolean("pages_find").default(false),
+    pages_create: boolean("pages_create").default(false),
+    pages_update: boolean("pages_update").default(false),
+    pages_delete: boolean("pages_delete").default(false),
+    updatedAt: timestamp("updated_at", {
+      mode: "string",
+      withTimezone: true,
+      precision: 3,
+    })
+      .defaultNow()
+      .notNull(),
+    createdAt: timestamp("created_at", {
+      mode: "string",
+      withTimezone: true,
+      precision: 3,
+    })
+      .defaultNow()
+      .notNull(),
+    enableAPIKey: boolean("enable_a_p_i_key"),
+    apiKey: varchar("api_key"),
+    apiKeyIndex: varchar("api_key_index"),
+  },
+  (columns) => [
+    index("payload_mcp_api_keys_user_idx").on(columns.user),
+    index("payload_mcp_api_keys_updated_at_idx").on(columns.updatedAt),
+    index("payload_mcp_api_keys_created_at_idx").on(columns.createdAt),
+  ],
+);
+
 export const payload_kv = pgTable(
   "payload_kv",
   {
@@ -3901,6 +3941,7 @@ export const payload_locked_documents_rels = pgTable(
     "admin-invitationsID": integer("admin_invitations_id"),
     pagesID: integer("pages_id"),
     mediaID: integer("media_id"),
+    "payload-mcp-api-keysID": integer("payload_mcp_api_keys_id"),
     "payload-foldersID": integer("payload_folders_id"),
   },
   (columns) => [
@@ -3922,6 +3963,9 @@ export const payload_locked_documents_rels = pgTable(
     ),
     index("payload_locked_documents_rels_pages_id_idx").on(columns.pagesID),
     index("payload_locked_documents_rels_media_id_idx").on(columns.mediaID),
+    index("payload_locked_documents_rels_payload_mcp_api_keys_id_idx").on(
+      columns["payload-mcp-api-keysID"],
+    ),
     index("payload_locked_documents_rels_payload_folders_id_idx").on(
       columns["payload-foldersID"],
     ),
@@ -3964,6 +4008,11 @@ export const payload_locked_documents_rels = pgTable(
       columns: [columns["mediaID"]],
       foreignColumns: [media.id],
       name: "payload_locked_documents_rels_media_fk",
+    }).onDelete("cascade"),
+    foreignKey({
+      columns: [columns["payload-mcp-api-keysID"]],
+      foreignColumns: [payload_mcp_api_keys.id],
+      name: "payload_locked_documents_rels_payload_mcp_api_keys_fk",
     }).onDelete("cascade"),
     foreignKey({
       columns: [columns["payload-foldersID"]],
@@ -4009,12 +4058,16 @@ export const payload_preferences_rels = pgTable(
     parent: integer("parent_id").notNull(),
     path: varchar("path").notNull(),
     usersID: integer("users_id"),
+    "payload-mcp-api-keysID": integer("payload_mcp_api_keys_id"),
   },
   (columns) => [
     index("payload_preferences_rels_order_idx").on(columns.order),
     index("payload_preferences_rels_parent_idx").on(columns.parent),
     index("payload_preferences_rels_path_idx").on(columns.path),
     index("payload_preferences_rels_users_id_idx").on(columns.usersID),
+    index("payload_preferences_rels_payload_mcp_api_keys_id_idx").on(
+      columns["payload-mcp-api-keysID"],
+    ),
     foreignKey({
       columns: [columns["parent"]],
       foreignColumns: [payload_preferences.id],
@@ -4024,6 +4077,11 @@ export const payload_preferences_rels = pgTable(
       columns: [columns["usersID"]],
       foreignColumns: [users.id],
       name: "payload_preferences_rels_users_fk",
+    }).onDelete("cascade"),
+    foreignKey({
+      columns: [columns["payload-mcp-api-keysID"]],
+      foreignColumns: [payload_mcp_api_keys.id],
+      name: "payload_preferences_rels_payload_mcp_api_keys_fk",
     }).onDelete("cascade"),
   ],
 );
@@ -5812,6 +5870,16 @@ export const relations_media = relations(media, ({ one }) => ({
     relationName: "folder",
   }),
 }));
+export const relations_payload_mcp_api_keys = relations(
+  payload_mcp_api_keys,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [payload_mcp_api_keys.user],
+      references: [users.id],
+      relationName: "user",
+    }),
+  }),
+);
 export const relations_payload_kv = relations(payload_kv, () => ({}));
 export const relations_payload_jobs_log = relations(
   payload_jobs_log,
@@ -5894,6 +5962,11 @@ export const relations_payload_locked_documents_rels = relations(
       references: [media.id],
       relationName: "media",
     }),
+    "payload-mcp-api-keysID": one(payload_mcp_api_keys, {
+      fields: [payload_locked_documents_rels["payload-mcp-api-keysID"]],
+      references: [payload_mcp_api_keys.id],
+      relationName: "payload-mcp-api-keys",
+    }),
     "payload-foldersID": one(payload_folders, {
       fields: [payload_locked_documents_rels["payload-foldersID"]],
       references: [payload_folders.id],
@@ -5921,6 +5994,11 @@ export const relations_payload_preferences_rels = relations(
       fields: [payload_preferences_rels.usersID],
       references: [users.id],
       relationName: "users",
+    }),
+    "payload-mcp-api-keysID": one(payload_mcp_api_keys, {
+      fields: [payload_preferences_rels["payload-mcp-api-keysID"]],
+      references: [payload_mcp_api_keys.id],
+      relationName: "payload-mcp-api-keys",
     }),
   }),
 );
@@ -6222,6 +6300,7 @@ type DatabaseSchema = {
   _pages_v_locales: typeof _pages_v_locales;
   _pages_v_rels: typeof _pages_v_rels;
   media: typeof media;
+  payload_mcp_api_keys: typeof payload_mcp_api_keys;
   payload_kv: typeof payload_kv;
   payload_jobs_log: typeof payload_jobs_log;
   payload_jobs: typeof payload_jobs;
@@ -6361,6 +6440,7 @@ type DatabaseSchema = {
   relations__pages_v_rels: typeof relations__pages_v_rels;
   relations__pages_v: typeof relations__pages_v;
   relations_media: typeof relations_media;
+  relations_payload_mcp_api_keys: typeof relations_payload_mcp_api_keys;
   relations_payload_kv: typeof relations_payload_kv;
   relations_payload_jobs_log: typeof relations_payload_jobs_log;
   relations_payload_jobs: typeof relations_payload_jobs;

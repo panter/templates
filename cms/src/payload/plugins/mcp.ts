@@ -1,4 +1,4 @@
-import { mcpPlugin } from '@payloadcms/plugin-mcp'
+import { mcpPlugin } from "@payloadcms/plugin-mcp"
 
 export const mcp = mcpPlugin({
   collections: {
@@ -73,5 +73,5 @@ Icon options (used in icon fields): arrowRight, building, building2, camera, cha
 
 Link structure: { type: "reference" | "custom", newTab: boolean, reference: page relationship (when type=reference), url: string (when type=custom), label: string (required), appearance: "default" | "outline" }`,
     },
-  }
+  },
 })

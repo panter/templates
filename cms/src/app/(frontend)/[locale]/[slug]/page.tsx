@@ -29,7 +29,6 @@ export default async function Page({ params }: PageProps) {
       <article className="container">
         {draft && <LivePreviewListener />}
         {page._status === "draft" && <DraftIndicator />}
-        <h1>{page.title}</h1>
         <RenderHero {...hero} />
         <RenderBlocks blocks={layout} />
       </article>

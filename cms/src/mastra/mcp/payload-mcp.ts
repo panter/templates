@@ -1,4 +1,4 @@
-import { MCPClient } from "@mastra/mcp";
+import { MCPClient } from "@mastra/mcp"
 
 export const payloadMcpClient = new MCPClient({
   id: "payload-mcp-client",
@@ -6,12 +6,10 @@ export const payloadMcpClient = new MCPClient({
     payload: {
       requestInit: {
         headers: {
-          Authorization: `Bearer 74821881-5719-46a3-92d4-477e80784e57`,
+          Authorization: `Bearer 84ca0b7d-b2d3-4d2c-8ad8-cf675ae411cf`,
         },
       },
-      url: new URL(
-        `http://localhost:3000/api/mcp`,
-      ),
+      url: new URL(`http://localhost:3000/api/mcp`),
     },
   },
-});
+})

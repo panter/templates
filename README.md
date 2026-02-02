@@ -14,6 +14,15 @@ Everyone in this group can make changes which will be reviewed by others from th
 4. When the solution is "safe enough to try" we merge the changes
 5. Old projects are NOT required to be altered to meet new changes although new features must follow new rules
 
+# TODO
+
+1. Explain billing account - who should be added to billing (PO) and add credit card details and care about receipt pairing
+2. Add Panter translate setup info - create project in translate.panter.ch, add it to config
+3. "First steps" after deploying - emailing and creating main admin account, storing admin account in bitwarden, etc.
+4. Tech Lead must configure scheduling backups on Neon DB
+5. Set function region to correct one
+6. Set preview environment on \*.vercel.app URL
+
 # The Manifesto
 
 ## 1. Every project has a "Project Tech Lead"

@@ -1,83 +1,75 @@
-'use client';
+"use client"
 
-import { useEffect, useState } from 'react';
-import { DefaultChatTransport, ToolUIPart } from 'ai';
-import { useChat } from '@ai-sdk/react';
+import { useEffect, useState } from "react"
+import type { ToolUIPart } from "ai"
+import { DefaultChatTransport } from "ai"
+import { useChat } from "@ai-sdk/react"
 
 import {
   PromptInput,
   PromptInputBody,
   PromptInputTextarea,
-} from '@/components/ai-elements/prompt-input';
+} from "@/components/ai-elements/prompt-input"
 
 import {
   Conversation,
   ConversationContent,
   ConversationScrollButton,
-} from '@/components/ai-elements/conversation';
+} from "@/components/ai-elements/conversation"
 
-import { Message, MessageContent, MessageResponse } from '@/components/ai-elements/message';
+import { Message, MessageContent, MessageResponse } from "@/components/ai-elements/message"
 
-import {
-  Tool,
-  ToolHeader,
-  ToolContent,
-  ToolInput,
-  ToolOutput,
-} from '@/components/ai-elements/tool';
-
+import { Tool, ToolHeader, ToolContent, ToolInput, ToolOutput } from "@/components/ai-elements/tool"
 
 function Chat() {
-  const [input, setInput] = useState<string>('');
+  const [input, setInput] = useState<string>("")
 
   const { messages, setMessages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
-      api: '/api/chat',
+      api: "/api/chat",
     }),
-  });
+  })
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const res = await fetch('/api/chat');
-      const data = await res.json();
-      setMessages([...data]);
-    };
-    fetchMessages();
-  }, [setMessages]);
+      const res = await fetch("/api/chat")
+      const data = await res.json()
+      setMessages([...data])
+    }
+    fetchMessages()
+  }, [setMessages])
 
   const handleSubmit = async () => {
-    if (!input.trim()) return;
+    if (!input.trim()) return
 
-    sendMessage({ text: input });
-    setInput('');
-  };
+    sendMessage({ text: input })
+    setInput("")
+  }
 
   return (
-    <div className="w-full p-6 relative size-full h-screen">
-      <div className="flex flex-col h-full">
+    <div className="relative size-full h-screen w-full p-6">
+      <div className="flex h-full flex-col">
         <Conversation className="h-full">
           <ConversationContent>
             {messages.map((message) => (
               <div key={message.id}>
                 {message.parts?.map((part, i) => {
-                  if (part.type === 'text') {
+                  if (part.type === "text") {
                     return (
-                      <Message
-                        key={`${message.id}-${i}`}
-                        from={message.role}>
-                          <MessageContent>
-                            <MessageResponse>{part.text}</MessageResponse>
-                          </MessageContent>
+                      <Message key={`${message.id}-${i}`} from={message.role}>
+                        <MessageContent>
+                          <MessageResponse>{part.text}</MessageResponse>
+                        </MessageContent>
                       </Message>
-                    );
+                    )
                   }
 
-                  if (part.type?.startsWith('tool-')) {
+                  if (part.type?.startsWith("tool-")) {
                     return (
                       <Tool key={`${message.id}-${i}`}>
                         <ToolHeader
                           type={(part as ToolUIPart).type}
-                          state={(part as ToolUIPart).state || 'output-available'}
+                          state={(part as ToolUIPart).state || "output-available"}
                           className="cursor-pointer"
                         />
                         <ToolContent>
@@ -88,10 +80,10 @@ function Chat() {
                           />
                         </ToolContent>
                       </Tool>
-                    );
+                    )
                   }
 
-                  return null;
+                  return null
                 })}
               </div>
             ))}
@@ -106,13 +98,13 @@ function Chat() {
               className="md:leading-10"
               value={input}
               placeholder="Type your message..."
-              disabled={status !== 'ready'}
+              disabled={status !== "ready"}
             />
           </PromptInputBody>
         </PromptInput>
       </div>
     </div>
-  );
+  )
 }
 
-export default Chat;
+export default Chat

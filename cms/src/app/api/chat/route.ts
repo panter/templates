@@ -1,31 +1,31 @@
-import { handleChatStream } from '@mastra/ai-sdk';
-import { toAISdkV5Messages } from '@mastra/ai-sdk/ui'
-import { createUIMessageStreamResponse } from 'ai';
-import { mastra } from '@/mastra';
-import { NextResponse } from 'next/server';
+import { handleChatStream } from "@mastra/ai-sdk"
+import { toAISdkV5Messages } from "@mastra/ai-sdk/ui"
+import { createUIMessageStreamResponse } from "ai"
+import { mastra } from "@/mastra"
+import { NextResponse } from "next/server"
 
-const THREAD_ID = 'example-user-id';
-const RESOURCE_ID = 'weather-chat';
+const THREAD_ID = "example-user-id-1"
+const RESOURCE_ID = "weather-chat"
 
 export async function POST(req: Request) {
-  const params = await req.json();
+  const params = await req.json()
   const stream = await handleChatStream({
     mastra,
-    agentId: 'page-builder-agent',
+    agentId: "page-builder-agent",
     params: {
       ...params,
       memory: {
         ...params.memory,
         thread: THREAD_ID,
         resource: RESOURCE_ID,
-      }
+      },
     },
-  });
-  return createUIMessageStreamResponse({ stream });
+  })
+  return createUIMessageStreamResponse({ stream })
 }
 
 export async function GET() {
-  const memory = await mastra.getAgentById('page-builder-agent').getMemory()
+  const memory = await mastra.getAgentById("page-builder-agent").getMemory()
   let response = null
 
   try {
@@ -34,10 +34,10 @@ export async function GET() {
       resourceId: RESOURCE_ID,
     })
   } catch {
-    console.log('No previous messages found.')
+    console.log("No previous messages found.")
   }
 
-  const uiMessages = toAISdkV5Messages(response?.messages || []);
+  const uiMessages = toAISdkV5Messages(response?.messages || [])
 
   return NextResponse.json(uiMessages)
 }
