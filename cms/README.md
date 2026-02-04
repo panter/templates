@@ -28,6 +28,8 @@ Click the 'Deploy' button to spin up this template directly into Vercel hosting.
 
 Set up the following services and secrets and then once the app has been built and deployed you will be able to visit your site at the generated URL.
 
+Remember to set "Create database branch for deployment" for preview environment in order to have automatically created DB branch for pull request.
+
 ### Services
 
 This project uses the following services integrated into Vercel which you will need to click "Add" and "Connect" for:
