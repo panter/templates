@@ -38,6 +38,23 @@ export function collectionOrNull<T extends GeneratedTypes["collections"][Collect
   return collection
 }
 
+/**
+ * Safely extracts a populated PayloadCMS collection list.
+ * Returns empty array if the array is not populated, null, or undefined.
+ */
+export function collectionsOrEmpty<T extends GeneratedTypes["collections"][CollectionSlug]>(
+  collections: (T | number | null | undefined)[] | null | undefined,
+) {
+  if (!collections) return []
+
+  if (collectionOrNull(collections[0]) === null) {
+    // If the first item is not populated, assume none are populated
+    return []
+  }
+
+  return collections as T[]
+}
+
 export function asAllLocales(fieldWithAllLocales: unknown) {
   if (typeof fieldWithAllLocales !== "object" || fieldWithAllLocales === null) {
     return null
