@@ -1067,6 +1067,31 @@ export const media = pgTable(
   ],
 );
 
+export const panter_translate = pgTable(
+  "panter_translate",
+  {
+    id: serial("id").primaryKey(),
+    updatedAt: timestamp("updated_at", {
+      mode: "string",
+      withTimezone: true,
+      precision: 3,
+    })
+      .defaultNow()
+      .notNull(),
+    createdAt: timestamp("created_at", {
+      mode: "string",
+      withTimezone: true,
+      precision: 3,
+    })
+      .defaultNow()
+      .notNull(),
+  },
+  (columns) => [
+    index("panter_translate_updated_at_idx").on(columns.updatedAt),
+    index("panter_translate_created_at_idx").on(columns.createdAt),
+  ],
+);
+
 export const payload_kv = pgTable(
   "payload_kv",
   {
@@ -1254,6 +1279,7 @@ export const payload_locked_documents_rels = pgTable(
     "admin-invitationsID": integer("admin_invitations_id"),
     pagesID: integer("pages_id"),
     mediaID: integer("media_id"),
+    "panter-translateID": integer("panter_translate_id"),
     "payload-foldersID": integer("payload_folders_id"),
   },
   (columns) => [
@@ -1275,6 +1301,9 @@ export const payload_locked_documents_rels = pgTable(
     ),
     index("payload_locked_documents_rels_pages_id_idx").on(columns.pagesID),
     index("payload_locked_documents_rels_media_id_idx").on(columns.mediaID),
+    index("payload_locked_documents_rels_panter_translate_id_idx").on(
+      columns["panter-translateID"],
+    ),
     index("payload_locked_documents_rels_payload_folders_id_idx").on(
       columns["payload-foldersID"],
     ),
@@ -1317,6 +1346,11 @@ export const payload_locked_documents_rels = pgTable(
       columns: [columns["mediaID"]],
       foreignColumns: [media.id],
       name: "payload_locked_documents_rels_media_fk",
+    }).onDelete("cascade"),
+    foreignKey({
+      columns: [columns["panter-translateID"]],
+      foreignColumns: [panter_translate.id],
+      name: "payload_locked_documents_rels_panter_translate_fk",
     }).onDelete("cascade"),
     foreignKey({
       columns: [columns["payload-foldersID"]],
@@ -1853,6 +1887,10 @@ export const relations_media = relations(media, ({ one }) => ({
     relationName: "folder",
   }),
 }));
+export const relations_panter_translate = relations(
+  panter_translate,
+  () => ({}),
+);
 export const relations_payload_kv = relations(payload_kv, () => ({}));
 export const relations_payload_jobs_log = relations(
   payload_jobs_log,
@@ -1934,6 +1972,11 @@ export const relations_payload_locked_documents_rels = relations(
       fields: [payload_locked_documents_rels.mediaID],
       references: [media.id],
       relationName: "media",
+    }),
+    "panter-translateID": one(panter_translate, {
+      fields: [payload_locked_documents_rels["panter-translateID"]],
+      references: [panter_translate.id],
+      relationName: "panter-translate",
     }),
     "payload-foldersID": one(payload_folders, {
       fields: [payload_locked_documents_rels["payload-foldersID"]],
@@ -2096,6 +2139,7 @@ type DatabaseSchema = {
   _pages_v_locales: typeof _pages_v_locales;
   _pages_v_rels: typeof _pages_v_rels;
   media: typeof media;
+  panter_translate: typeof panter_translate;
   payload_kv: typeof payload_kv;
   payload_jobs_log: typeof payload_jobs_log;
   payload_jobs: typeof payload_jobs;
@@ -2139,6 +2183,7 @@ type DatabaseSchema = {
   relations__pages_v_rels: typeof relations__pages_v_rels;
   relations__pages_v: typeof relations__pages_v;
   relations_media: typeof relations_media;
+  relations_panter_translate: typeof relations_panter_translate;
   relations_payload_kv: typeof relations_payload_kv;
   relations_payload_jobs_log: typeof relations_payload_jobs_log;
   relations_payload_jobs: typeof relations_payload_jobs;
