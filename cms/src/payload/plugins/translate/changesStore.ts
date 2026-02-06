@@ -17,7 +17,8 @@ function loadFromStorage(): Record<FullKey, string> {
     const stored = localStorage.getItem(STORAGE_KEY)
     if (!stored) return {}
     return JSON.parse(stored) as Record<FullKey, string>
-  } catch {
+  } catch (error) {
+    console.error("Failed to load translate changes from localStorage:", error)
     return {}
   }
 }
