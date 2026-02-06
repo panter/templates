@@ -3,7 +3,9 @@ declare global {
     interface ProcessEnv {
       PAYLOAD_SECRET: string
       DATABASE_URI: string
-      VERCEL_PROJECT_PRODUCTION_URL: string
+      VERCEL_ENV: "production" | "preview" | "development"
+      VERCEL_BRANCH_URL: string | undefined
+      VERCEL_PROJECT_PRODUCTION_URL: string | undefined
       BETTER_AUTH_SECRET: string
       RESEND_API_KEY: string | undefined
       EMAIL_FROM_ADDRESS: string

@@ -12,7 +12,10 @@ export const getURL = () => {
     return `${protocol}//${domain}${port ? `:${port}` : ""}`
   }
 
-  return process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000"
+  const hostname =
+    process.env.VERCEL_ENV === "preview"
+      ? process.env.VERCEL_BRANCH_URL
+      : process.env.VERCEL_PROJECT_PRODUCTION_URL
+
+  return hostname ? `https://${hostname}` : "http://localhost:3000"
 }

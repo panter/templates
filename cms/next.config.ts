@@ -1,14 +1,11 @@
 import { translateConfig } from "@/i18n/config"
+import { getURL } from "@/utils/getURL"
 import { createNextIntlPlugin } from "@panter/translate/next-intl/plugin"
 import { withPayload } from "@payloadcms/next/withPayload"
 import withPlaiceholder from "@plaiceholder/next"
 import type { NextConfig } from "next"
 
-const SERVER_URL = new URL(
-  process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000",
-)
+const SERVER_URL = new URL(getURL())
 
 const nextConfig = {
   images: {
