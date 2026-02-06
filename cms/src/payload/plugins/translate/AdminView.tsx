@@ -89,7 +89,7 @@ async function getMessages(apiUrl: string, data: { project: string }) {
 function flatten(obj: any, parent: string = "", res: any = {}): Record<string, string> {
   for (const key in obj) {
     const propName = parent ? parent + "." + key : key
-    if (typeof obj[key] == "object") {
+    if (typeof obj[key] === "object") {
       flatten(obj[key], propName, res)
     } else {
       res[propName] = obj[key]
