@@ -1,8 +1,1890 @@
 {
-  "footer": {
-    "copyright": "© {currentYear} Your Company. All rights reserved."
+  "Common": {
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "saveAndTranslate": "Save and translate",
+      "savingAndTranslating": "Saving and translating...",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "close": "Close"
+    },
+    "validation": {
+      "fileSizeTooLarge": "File is too large. Please upload an image under 10MB.",
+      "invalidFileType": "Invalid file type. Please upload a PNG, JPEG, WebP, or AVIF image."
+    }
   },
-  "draft": {
-    "indicator": "Draft Mode: Changes are currently visible only to you. Complete your edits and publish via the administration panel to make this content public."
+  "HomePage": {
+    "metaData": {
+      "title": "Oazo",
+      "description": "Main Page"
+    }
+  },
+  "PropertyCardItemTag": {
+    "new": "New",
+    "active": "Active",
+    "inactive": "Inactive",
+    "inReview": "In Review",
+    "rejected": "Rejected",
+    "onboarding": "Onboarding"
+  },
+  "OverviewPage": {
+    "title": "Feeling home wherever you go.",
+    "searchButton": "Search",
+    "noPropertiesFound": {
+      "title": "No suitable accommodation found",
+      "description": "We couldn't find any suitable accommodation for your requirements. Please adjust your search criteria."
+    },
+    "metaData": {
+      "title": "Oazo - Your Home Away From Home",
+      "description": "Discover unique accommodations and become part of the Oazo community."
+    }
+  },
+  "ApprovalNotification": {
+    "title": "{firstName}, we have verified your profile. You can now make reservations. Enjoy!"
+  },
+  "WelcomeDialog": {
+    "title": "Welcome to Oazo Club!",
+    "description": "You can now explore our curated homes. To book, please complete your profile.",
+    "completeProfile": "Complete profile",
+    "exploreDestinations": "Explore destinations"
+  },
+  "ProfileCompletionCard": {
+    "title": "Complete your profile!",
+    "description": "{name}! To book your first accommodation, please complete your profile.",
+    "button": "Complete now"
+  },
+  "Header": {
+    "menu": {
+      "overviewDesktop": "All destinations",
+      "overview": "Explore",
+      "messages": "Messages",
+      "trips": "Trips",
+      "wishlist": "Wishlist",
+      "startAsHost": "Start as Host",
+      "inviteFriends": "Invite Friends",
+      "myProfile": "Account",
+      "login": "Login",
+      "logout": "Logout",
+      "hostDashboard": "Host Dashboard",
+      "hostProperties": "Manage Accommodations",
+      "menu": "Menu"
+    }
+  },
+  "MenuButton": {
+    "label": "Menu"
+  },
+  "Auth": {
+    "loginDialog": {
+      "title": "Login",
+      "welcome": "Welcome to Oazo",
+      "description": "Oazo is a community platform where you can only register through a friendship request. Login is exclusively available for already confirmed users.",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "backButton": "Back",
+      "loginButton": "Login",
+      "loggingIn": "Logging in...",
+      "forgotPasswordLink": "Forgot password?",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password"
+    },
+    "forgotPasswordDialog": {
+      "title": "Reset Password",
+      "description": "Enter your email address and we'll send you a link to reset your password.",
+      "backButton": "Back",
+      "sendButton": "Send Link",
+      "emailLabel": "Email"
+    },
+    "registration": {
+      "title": "Register",
+      "welcome": "Welcome to Oazo",
+      "loading": "Loading...",
+      "errorTitle": "Error",
+      "welcomeTitle": "Welcome to Oazo",
+      "welcomeDescription": "You will be redirected to registration shortly.",
+      "step1Title": "Personal Data",
+      "step2Title": "Create Password",
+      "firstNamePlaceholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Password",
+      "confirmPasswordPlaceholder": "Confirm Password",
+      "invitedBy": "Invited by",
+      "backButton": "Back",
+      "nextButton": "Next",
+      "registerButton": "Register",
+      "registering": "Registering...",
+      "success": {
+        "title1": "Hooray,",
+        "title2": "you're in!",
+        "description": "You can now explore accommodations in the Oazo community. Booking is only possible once you have completed your profile.",
+        "completeProfile": "Complete Profile",
+        "exploreDestinations": "Explore Destinations"
+      },
+      "validation": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 6 characters long",
+        "confirmPasswordRequired": "Please confirm your password",
+        "passwordsDoNotMatch": "Passwords do not match",
+        "termsRequired": "You must accept the Terms and Conditions and Privacy Policy",
+        "manierRequired": "You must accept the Oazo Maniero"
+      },
+      "acceptTerms": {
+        "label": "I agree to the <termsLink>terms and conditions</termsLink>."
+      },
+      "acceptManier": {
+        "label": "I have read and understood the <privacyLink>privacy policy</privacyLink> and the <manierLink>Oazo Maniero</manierLink>."
+      },
+      "errors": {
+        "registrationFailed": "Registration failed. Please try again.",
+        "inviteNotFound": "Invitation not found or expired",
+        "inviteExpired": "This invitation has expired",
+        "userExists": "A user with this email address already exists",
+        "autoLoginFailed": "Account was created, but automatic login failed. Please log in manually."
+      }
+    },
+    "resetPassword": {
+      "title": "Create New Password",
+      "description": "Enter your new password.",
+      "newPasswordLabel": "New Password",
+      "newPasswordPlaceholder": "At least 6 characters",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Repeat password",
+      "resetButton": "Reset Password",
+      "resetting": "Resetting...",
+      "successTitle": "Password successfully reset!",
+      "successDescription": "You can now log in with your new password.",
+      "backToHome": "Back to Home",
+      "loading": "Loading...",
+      "invalidToken": "The link is invalid or expired.",
+      "passwordMismatch": "The passwords do not match.",
+      "passwordTooShort": "The password must be at least 6 characters long."
+    },
+    "emailChange": {
+      "title": "Verify Email Address",
+      "verifying": "Verifying email address...",
+      "successTitle": "Email address successfully changed!",
+      "successDescription": "Your email address has been successfully changed. You have been automatically logged out. Please log in with your new email address.",
+      "errorTitle": "Verification failed",
+      "goToLogin": "Go to Login",
+      "backToSecurity": "Back to Security Settings"
+    },
+    "emailChangeInitiate": {
+      "errors": {
+        "userNotFound": "User not found",
+        "emailMustBeDifferent": "New email must be different from current email",
+        "emailAlreadyInUse": "Email address is already in use",
+        "emailAlreadyPending": "Email address is already pending verification",
+        "incorrectPassword": "Current password is incorrect",
+        "failed": "Failed to initiate email change"
+      },
+      "success": "Verification email sent to new address"
+    },
+    "errors": {
+      "loginFailed": "Login failed",
+      "unexpectedError": "An unexpected error occurred",
+      "forgotPasswordFailed": "Error sending email",
+      "resetPasswordFailed": "Error resetting password",
+      "invalidOrExpiredLink": "Invalid or expired verification link",
+      "linkExpired": "Verification link has expired. Please request a new one.",
+      "noPendingEmailChange": "No pending email change found",
+      "emailAlreadyInUse": "Email address is already in use",
+      "emailChangeVerificationFailed": "Failed to verify email change"
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters long",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordsDoNotMatch": "The passwords do not match"
+    },
+    "logout": "Logout"
+  },
+  "DateRangePicker": {
+    "label": "Dates",
+    "placeholder": "Add dates",
+    "reset": "Reset",
+    "save": "Save",
+    "nights": "{count, plural, =1{1 Night} other{# Nights}}",
+    "defaultTitle": "Your Travel Dates"
+  },
+  "AvailabilityCalendar": {
+    "title": "Availability",
+    "priceIn": "Price in {currency}"
+  },
+  "PropertyDetails": {
+    "guests": "{count, plural, =1{1 Guest} other{# Guests}}",
+    "bedrooms": "{count, plural, =1{1 Bedroom} other{# Bedrooms}}",
+    "bathrooms": "{count, plural, =1{1 Bathroom} other{# Bathrooms}}",
+    "reviews": "{count, plural, =1{1 Review} other{# Reviews}}"
+  },
+  "PropertyAmenities": {
+    "title": "What this accommodation offers you",
+    "showMore": "{count, plural, =1{All Amenities} other{All # Amenities}} to show"
+  },
+  "PropertyImages": {
+    "tags": {
+      "allImages": "All Images",
+      "new": "New"
+    }
+  },
+  "PropertyHost": {
+    "sendMessage": "Send Message",
+    "tripCount": "Number of Trips",
+    "memberYear": "Member since",
+    "yourHost": "Your Host",
+    "map": "The Location",
+    "viewProfile": "View Profile",
+    "cannotMessageYourself": "Cannot start conversation with yourself",
+    "mapCookieConsentTitle": "Google Maps cannot be displayed",
+    "mapCookieConsentDescription": "To view the Google Maps location, you need to accept marketing cookies.",
+    "mapCookieConsentButton": "Open cookie settings"
+  },
+  "PropertyCancelationPolicy": {
+    "title": "Cancellation Policy"
+  },
+  "PropertyTips": {
+    "title": "The recommendations from {hostName}"
+  },
+  "PropertyBedrooms": {
+    "title": "Where you'll sleep"
+  },
+  "PropertyGoodToKnow": {
+    "title": "What you need to know"
+  },
+  "PropertyGallery": {
+    "metaData": {
+      "title": "Property Gallery",
+      "description": "Explore all photos and images of {title} - View the complete photo gallery of this unique accommodation"
+    }
+  },
+  "DialogContent": {
+    "close": "Close"
+  },
+  "ResponsiveGuestPicker": {
+    "confirm": "Confirm",
+    "reset": "Reset",
+    "save": "Save",
+    "label": "Guests",
+    "placeholder": "Add guest",
+    "guests": "{count, plural, =1{1 Guest} other{# Guests}}",
+    "options": {
+      "adults": {
+        "label": "Adults",
+        "description": "Ages 13+"
+      },
+      "kids": {
+        "label": "Children",
+        "description": "Ages 2-12"
+      },
+      "infants": {
+        "label": "Infants",
+        "description": "Ages 0-2"
+      }
+    }
+  },
+  "BookingWidget": {
+    "price": "Price",
+    "cleaningFee": "Cleaning Fee",
+    "platformFee": "Platform Fee",
+    "total": "Total Amount",
+    "noDateSelected": {
+      "perNight": "per night"
+    },
+    "bookingDisabledForHost": "You cannot book your own accommodation.",
+    "profileIncomplete": "Complete your profile to make a reservation.",
+    "userInReview": "Your profile is currently being reviewed. We will let you know as soon as you can make reservations.",
+    "userRejected": "You are currently not authorized to make a reservation.",
+    "userCantBook": "Currently you cannot make a reservation.",
+    "completeProfileNow": "Complete Profile Now",
+    "notAvailable": "This accommodation is not available for your selected dates.",
+    "tooShort": "Your booking is too short. The minimum stay is {minNights} nights.",
+    "tooLong": "Your booking is too long. The maximum stay is {maxNights} nights.",
+    "tooManyGuests": "Too many guests selected. This property accommodates up to {maxGuests} guests (adults + children).",
+    "pricePerNight": "{nights, plural, =1{1 Night} other{# Nights}}",
+    "additionalGuestFee": "(+{price} CHF per additional guest)",
+    "noPaymentRequired": "You don't have to pay anything yet",
+    "reserve": "Inquire",
+    "remainingBalance": "{total} {currency} will be deducted from your Oazo Collection. Remaining balance: {remainingBalance} {currency}.",
+    "enterVoucherCode": "Enter voucher code",
+    "voucherPlaceholder": "Voucher code",
+    "applyVoucher": "Apply voucher code",
+    "voucherDiscount": "Voucher code",
+    "voucherMaxApplicable": "Maximum {amount} can be applied.",
+    "voucherApplied": "Voucher code applied",
+    "voucherMaxAppliedInfo": "Voucher code applied. Only {amount} could be applied. The cleaning fee must always be paid.",
+    "voucherError": {
+      "NOT_FOUND": "This voucher was not found",
+      "ALREADY_USED": "This voucher has already been redeemed",
+      "EXPIRED": "This voucher has expired",
+      "WRONG_USER": "This voucher belongs to another user",
+      "USER_NOT_APPROVED": "Your profile must be approved first"
+    },
+    "BookingBar": {
+      "priceFrom": "from",
+      "perNight": "per night",
+      "checkAvailability": "Check Availability"
+    },
+    "mobileBookingBar": {
+      "title": "Booking Request",
+      "priceFrom": "from",
+      "perNight": "per night",
+      "checkAvailability": "Check Availability"
+    }
+  },
+  "CreateBookingForm": {
+    "title": "Message to Host",
+    "description": "Before you continue, tell {firstName} about your trip and clarify any open questions.",
+    "placeholder": "Message to host",
+    "confirm": "Confirm",
+    "error": "An error occurred. Please try again.",
+    "paymentMethodError": "Error creating payment method",
+    "processing": "Processing...",
+    "initError": "Error initializing payment method",
+    "success": "Payment method successfully created",
+    "voucherCodeLabel": "Voucher Code (optional)",
+    "voucherCodePlaceholder": "e.g. ABC12DEF",
+    "voucherCodeHint": "Do you have a voucher code? Enter it here."
+  },
+  "CancellationPolicy": {
+    "cancellation": "Cancellation Policy"
+  },
+  "Footer": {
+    "contact": {
+      "title": "Contact",
+      "email": "Email"
+    },
+    "sitemap": {
+      "title": "Sitemap"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "firstNamePlaceholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailPlaceholder": "Enter email",
+      "submitButton": "Subscribe",
+      "description": "Were you also part of the Oazo Community? Subscribe to our newsletter and stay up to date."
+    },
+    "socialMedia": {
+      "title": "Follow us"
+    },
+    "legal": {
+      "title": "Legal Notice"
+    }
+  },
+  "PropertyBookPage": {
+    "title": "Confirm & Pay",
+    "confirmAndPay": "Confirm & Pay",
+    "next": "Next",
+    "back": "Back",
+    "messageToHostTitle": "Write a message to the host",
+    "notAvailable": "This accommodation is not available for your selected dates.",
+    "tooShort": "Your booking is too short. The minimum stay is {minNights} nights.",
+    "tooLong": "Your booking is too long. The maximum stay is {maxNights} nights.",
+    "tooManyGuests": "Too many guests selected. This property accommodates up to {maxGuests} guests (adults + children).",
+    "bookingDisabledForAll": "The booking function is not yet activated in this early phase – it will be enabled after the summer holidays.",
+    "hostCannotBook": "You cannot book your own accommodation."
+  },
+  "BookingPropertyDetails": {
+    "title": "Mountain Lodge"
+  },
+  "BookingTripDetails": {
+    "tripDetailsTitle": "Trip Details",
+    "adults": "{count, plural, =1{1 Adult} other{# Adults}}",
+    "kids": "{count, plural, =1{1 Child} other{# Children}}",
+    "infants": "{count, plural, =1{1 Infant} other{# Infants}}"
+  },
+  "MessageToHost": {
+    "title": "Write a message to the host",
+    "description": "Before you continue, tell Anne-Kathrin about your trip and clarify any open questions.",
+    "placeholder": "Example: 'Hello, my partner and I are traveling to a friend's wedding and your accommodation is right near the church.'"
+  },
+  "PaymentMethod": {
+    "title": "Payment Method",
+    "description": "Choose a payment method to confirm your booking.",
+    "visa": "Visa 8406",
+    "other": "Other Payment Method"
+  },
+  "PriceDetails": {
+    "title": "Total Amount",
+    "totalNights": "{count, plural, =1{1 Night} other{# Nights}}",
+    "cleaningFee": "Cleaning Fee",
+    "hostPlatformFee": "Platform Fee",
+    "voucherDiscount": "Voucher Code",
+    "total": "Total",
+    "paymentDate": "Payment execution on {date}",
+    "voucherError": {
+      "NOT_FOUND": "Invalid voucher code",
+      "EXPIRED": "This voucher has expired",
+      "ALREADY_USED": "This voucher has already been redeemed",
+      "WRONG_USER": "This voucher belongs to another user",
+      "USER_NOT_APPROVED": "Your profile must be approved first"
+    }
+  },
+  "VoucherInput": {
+    "title": "Voucher Code",
+    "placeholder": "Enter code",
+    "apply": "Apply",
+    "clear": "Remove"
+  },
+  "BookingConfirmation": {
+    "inquiry": {
+      "title": "Your booking request has been sent!",
+      "hostResponse": "{hostName} now has 48 hours to respond. Your credit card will not be charged yet."
+    },
+    "confirmed": {
+      "title": "Your booking has been confirmed!"
+    },
+    "reservationCode": "Your reservation code: {code}",
+    "viewConversation": "Send {hostName} a message now"
+  },
+  "CheckInOutSection": {
+    "checkIn": "Check-In",
+    "checkOut": "Check-Out"
+  },
+  "RateBooking": {
+    "rateButton": "Rate Your Trip"
+  },
+  "GuestBookingSummaryPage": {
+    "title": {
+      "inquiry": "Your Request",
+      "booking": "Your Booking",
+      "cancelled": "Your Booking"
+    },
+    "bookingDetails": "Booking Details",
+    "manageBooking": "Manage Booking",
+    "rateTrip": "Rate Your Trip",
+    "accommodation": "Your Accommodation",
+    "address": "Address",
+    "directions": "Directions",
+    "hostMessage": "Message to Host",
+    "contactHost": "Contact {hostName}",
+    "travelers": "Who's traveling",
+    "guest": "{count, plural, =1{1 Guest} other{# Guests}}",
+    "adults": "{count, plural, =1{1 Adult} other{# Adults}}",
+    "kids": "{count, plural, =1{1 Child} other{# Children}}",
+    "infants": "{count, plural, =1{1 Infant} other{# Infants}}",
+    "totalAmount": "Total Amount",
+    "reservationCode": "Reservation Code",
+    "cancellationPolicy": "{title} Cancellation Policy",
+    "refundPolicy": "If you cancel before {date}, you will receive a full refund.",
+    "learnMore": "Learn More",
+    "cancelBooking": "Cancel Booking",
+    "cancelBookingConfirmation": {
+      "title": "Really cancel booking?",
+      "description": "This action cannot be undone. All reserved payments will be automatically cancelled.",
+      "reasonLabel": "Reason for cancellation (required)",
+      "reasonPlaceholder": "Please provide the reason for cancellation...",
+      "reasonRequired": "Please provide a reason for cancellation",
+      "cancelButton": "Cancel",
+      "confirmButton": "Yes, cancel",
+      "cancelling": "Cancelling...",
+      "successMessage": "Booking successfully cancelled",
+      "errorMessage": "Error cancelling booking",
+      "unknownError": "Unknown error during cancellation"
+    },
+    "metaData": {
+      "title": "Booking Details",
+      "description": "Manage your booking request and all important details."
+    }
+  },
+  "BookingCardMessage": {
+    "accept": "Accept",
+    "accepting": "Accepting...",
+    "decline": "Decline",
+    "declining": "Declining...",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "persons": "{count, plural, =1{1 Person} other{# Persons}}",
+    "totalPrice": "Total price",
+    "status": {
+      "requested": "Request sent",
+      "accepted": "Confirmed",
+      "denied": "Declined",
+      "cancelled": "Cancelled",
+      "expired": "Expired"
+    }
+  },
+  "HostBookingSummaryPage": {
+    "title": "Booking Request Details",
+    "guestProfile": "To Profile",
+    "accommodation": "Accommodation",
+    "travelDates": "Travel Dates",
+    "travelers": "Who's traveling",
+    "adults": "{count, plural, =1{1 Adult} other{# Adults}}",
+    "kids": "{count, plural, =1{1 Child} other{# Children}}",
+    "infants": "{count, plural, =1{1 Infant} other{# Infants}}",
+    "totalAmount": "Total Amount",
+    "reservationCode": "Reservation Code",
+    "messages": "Messages",
+    "personalMessage": "Personal Message",
+    "reply": "Reply",
+    "accept": "Accept",
+    "decline": "Decline",
+    "cancel": "Cancel",
+    "denialReason": {
+      "title": "Reason for Decline",
+      "placeholder": "Please provide a reason for declining this booking request...",
+      "required": "A reason for decline is required",
+      "minLength": "Reason must be at least {count} characters long",
+      "maxLength": "Reason must be less than {count} characters",
+      "submitButton": "Decline Request",
+      "submitting": "Declining...",
+      "cancelButton": "Cancel"
+    },
+    "bookingCancelledSuccess": "Booking cancelled successfully",
+    "cancellationReason": {
+      "title": "Reason for Cancellation",
+      "placeholder": "Please provide a reason for canceling this booking...",
+      "required": "A reason for cancellation is required",
+      "minLength": "Reason must be at least {count} characters long",
+      "maxLength": "Reason must be less than {count} characters",
+      "submitButton": "Cancel Booking",
+      "submitting": "Cancelling...",
+      "cancelButton": "Cancel"
+    }
+  },
+  "GuestBookingsPage": {
+    "title": "Trips",
+    "pendingBookings": "Pending Bookings",
+    "upcomingBookings": "Upcoming Trips",
+    "pastTrips": "Past Trips",
+    "canceledTrips": "Canceled Trips",
+    "loadMore": "Load More",
+    "noBookings": {
+      "title": "No bookings yet",
+      "description": "You haven't made any bookings yet. Discover unique accommodations and plan your next trip.",
+      "exploreProperties": "Explore Properties"
+    },
+    "metaData": {
+      "title": "Trips",
+      "description": "Manage your trips."
+    }
+  },
+  "HostDashboardPage": {
+    "newRequests": "New Requests",
+    "details": "Details",
+    "yourProperties": "Your Accommodations",
+    "bookings": "Bookings",
+    "pastBookings": "Past Bookings",
+    "upcomingBookings": "Upcoming Bookings",
+    "cancelledBookings": "Cancelled Bookings",
+    "showCompletedBookings": "Show Completed Bookings",
+    "active": "Active",
+    "inactive": "Inactive",
+    "new": "New",
+    "noBookings": "You don't have any bookings yet",
+    "support": "Support",
+    "supportTextPre": "If you have questions or need support from the Oazo team, please send an email to",
+    "supportTextEmail": "support@oazohomes.com",
+    "metaData": {
+      "title": "Dashboard",
+      "description": "Manage your accommodations and bookings."
+    }
+  },
+  "HostPropertiesPage": {
+    "yourProperties": "Your Accommodations"
+  },
+  "PropertyTile": {
+    "dateRange": "{checkIn} - {checkOut}",
+    "guests": "{count, plural, =1{1 Guest} other{# Guests}}"
+  },
+  "Profile": {
+    "aboutMe": "About Me",
+    "verified": "Verified",
+    "trips": "Trips",
+    "memberSince": "Member since",
+    "sendMessage": "Send Message",
+    "accommodationsTitle": "Accommodations by {name}",
+    "reviewsTitle": "Reviews",
+    "showMoreReviews": "{count, plural, =1{All Reviews} other{All # Reviews}} to show",
+    "showMore": "Show More",
+    "livesIn": "Lives in",
+    "invitedBy": "Invited by",
+    "viewProfile": "To Profile",
+    "noLocation": "No location specified",
+    "noQuote": "No profile text specified"
+  },
+  "AccountMenu": {
+    "title": "Account",
+    "profile": "To Profile",
+    "personalData": "Personal Data",
+    "loginSecurity": "Login & Security",
+    "settings": "Settings",
+    "payments": "Payments",
+    "inviteFriends": "Invite Now",
+    "inviteFriendsDescription": "Give your trusted friends a club membership.",
+    "becomeHost": "Become a Host",
+    "becomeHostDescription": "Share your oasis as a host among like-minded people.",
+    "getStarted": "Get Started Now"
+  },
+  "Account": {
+    "personalData": {
+      "title": "Personal Data",
+      "profilePhoto": "Profile Photo",
+      "fullName": "Full Name",
+      "address": "Address",
+      "noAddress": "No information provided",
+      "mobileNumber": "Mobile Number",
+      "profileText": "Tell us something about yourself",
+      "profileTextDescription": "A complete profile builds trust – the basis of the Oazo Club. The more hosts learn about you, the more likely they are to confirm your booking, because they are opening their hearts to you.",
+      "deleteAccount": "Are you sure you want to delete your account?",
+      "occupation": "Occupation",
+      "completeProfile": {
+        "title": "Complete Your Profile",
+        "description": "Fill out your profile to be able to book properties.",
+        "button": "Complete Profile"
+      }
+    },
+    "security": {
+      "title": "Login & Security",
+      "emailAddress": "Email Address",
+      "password": "Password",
+      "passwordMask": "••••••••••"
+    },
+    "settings": {
+      "title": "Settings",
+      "preferredLanguage": "Preferred Language",
+      "currency": "Currency",
+      "successMessage": "Settings successfully updated",
+      "errorMessage": "Error saving settings",
+      "languages": {
+        "german": "German",
+        "english": "English"
+      },
+      "currencies": {
+        "chf": "Swiss Franc (CHF)",
+        "usd": "US Dollar (USD)",
+        "gbp": "British Pound (GBP)",
+        "eur": "Euro (EUR)"
+      }
+    },
+    "payments": {
+      "title": "Payments",
+      "tbd": "TBD"
+    },
+    "actions": {
+      "add": "Add",
+      "edit": "Edit",
+      "change": "change",
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "editableDataRow": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving...",
+      "noData": "No information provided",
+      "notVerified": "Not verified",
+      "verificationCodeSent": "Verification code sent to {phone}",
+      "enterVerificationCode": "Please enter the 6-digit code we sent to your number",
+      "verificationCodePlaceholder": "6-digit code",
+      "verify": "Verify",
+      "verifying": "Verifying...",
+      "resendCode": "Resend code",
+      "resending": "Resending...",
+      "verificationSuccess": "Phone number successfully verified",
+      "verificationError": "Invalid verification code",
+      "sendingVerificationCode": "Sending code..."
+    },
+    "editableTextareaRow": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving...",
+      "edit": "Edit",
+      "defaultPlaceholder": "Tell others something about yourself...",
+      "minLengthError": "Minimum {minLength} characters required"
+    },
+    "personalDataClient": {
+      "successMessage": "Data successfully updated",
+      "errorMessage": "Error saving data",
+      "verificationSuccess": "Phone number successfully verified",
+      "verificationError": "Invalid verification code",
+      "verificationCodeResent": "Verification code resent",
+      "fullNamePlaceholder": "First and Last Name",
+      "addressPlaceholder": "Enter address",
+      "mobileNumberPlaceholder": "Enter mobile number",
+      "profileTextPlaceholder": "Who are you?\nWhat do you do? How do you live?\nWhat do you love about travelling?\nWhat does slow travel mean to you?\nIf you have chosen a profile picture that does not show you, please mention in your profile text why you chose this particular picture.",
+      "profileTextMinLengthInfo": "Minimum 200 characters. Don't worry, your profile is not publicly visible.",
+      "occupationPlaceholder": "Enter occupation",
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "address": {
+        "addressLine1Placeholder": "Address line 1",
+        "addressLine2Placeholder": "Address line 2",
+        "postalCodePlaceholder": "Postal code",
+        "cityPlaceholder": "City",
+        "statePlaceholder": "State/Canton",
+        "countryPlaceholder": "Country"
+      }
+    },
+    "profilePictureDialog": {
+      "title": "Upload Profile Picture",
+      "description": "Choose a profile picture so others can recognize you better. We recommend using a clear photo of yourself."
+    },
+    "profilePictureUpload": {
+      "uploadText": "Click to upload or drag file here",
+      "fileTypes": "PNG, JPEG, JPG or WebP (max 10MB)",
+      "uploading": "Uploading...",
+      "successMessage": "Profile picture successfully uploaded!",
+      "errorMessage": "Error uploading profile picture"
+    },
+    "invite": {
+      "title": "Invite Friends",
+      "description": "Invite friends to Oazo and receive a bonus.",
+      "pageTitle": "Invite friends to Oazo Homes",
+      "pageDescription": "Invite friends to Oazo Homes. You can still invite {remaining, plural, =1{1 person} other{# people}}.",
+      "formTitle": "Invite Now",
+      "emailAddressLabel": "Email address",
+      "emailAddressPlaceholder": "Email address",
+      "addMoreButton": "Add More",
+      "personalReferenceLabel": "Personal Reference (Required)",
+      "personalReferencePlaceholder": "Hello! Join Oazo Homes...",
+      "sendButton": "Send",
+      "sendingButton": "Sending...",
+      "acceptedRequestsTitle": "Accepted Requests",
+      "pendingRequestsTitle": "Pending Requests",
+      "resendButton": "Resend",
+      "withdrawButton": "Withdraw",
+      "viewSentInvites": "View Sent Invites",
+      "formDescription": "Let friends join Oazo before they invite others.",
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "First Name",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "friend@example.com",
+      "messageLabel": "Personal Message (optional)",
+      "messagePlaceholder": "Hello! I thought you would love Oazo. It's a great platform for unique accommodations...",
+      "sendInvite": "Send Invitation",
+      "sending": "Sending...",
+      "sendError": "Error sending invitation",
+      "successTitle": "Invitation sent!",
+      "successDescription": "Your invitation was successfully sent.",
+      "inviteAnother": "Invite Another Person",
+      "howItWorksTitle": "How it works",
+      "step1Title": "Send Invitation",
+      "step1Description": "Send a personal invitation to your friends.",
+      "step2Title": "Friend Registers",
+      "step2Description": "Your friend receives an email and can register.",
+      "step3Title": "Receive Bonus",
+      "step3Description": "Once your friend makes their first booking, you receive a bonus.",
+      "sentInvitesTitle": "Sent Invitations",
+      "sentInvitesDescription": "Here you can see all your sent invitations and their status.",
+      "sendNewInvite": "Send New Invitation",
+      "noInvitesSent": "No invitations sent yet",
+      "noInvitesSentDescription": "You haven't invited any friends yet. Send your first invitation!",
+      "sendFirstInvite": "Send First Invitation",
+      "statusPending": "Pending",
+      "statusAccepted": "Accepted",
+      "statusExpired": "Expired",
+      "sentOn": "Sent on {date}",
+      "acceptedOn": "Accepted on {date}",
+      "yourMessage": "Your Message",
+      "resendInvite": "Resend",
+      "cancelInvite": "Cancel",
+      "disabledMessage": "The \"Invite Friends\" feature is currently disabled – it will be enabled after the summer holidays.",
+      "emailRemoveLabel": "Remove Email",
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "messageRequired": "Personal reference is required",
+        "messageTooLong": "Message must be at most 1000 characters long",
+        "atLeastOneEmail": "At least one email address is required",
+        "maxEmailsExceeded": "You can add a maximum of {max} email addresses at once. You have {remaining} invitations remaining."
+      },
+      "errors": {
+        "userExists": "User with email {email} already exists",
+        "inviteExists": "User with email {email} was already invited",
+        "sendFailed": "Error sending invitation to {email}",
+        "invalidEmail": "Invalid email address: {email}",
+        "loadingInvites": "Error loading invitations",
+        "resendFailed": "Error resending invitation",
+        "withdrawFailed": "Error withdrawing invitation",
+        "maxEmailsReached": "You have reached the maximum number of email invitations",
+        "quotaExhausted": "Your invitation quota has been exhausted"
+      },
+      "success": {
+        "inviteResent": "Invitation was resent",
+        "inviteWithdrawn": "Invitation was withdrawn"
+      },
+      "loading": "Loading..."
+    },
+    "inviteRequest": {
+      "resendButton": "Resend",
+      "withdrawButton": "Withdraw",
+      "invitedOn": "Invited on {date}",
+      "remindedOn": "Resent on {date}",
+      "hardBounce": "Email error",
+      "softBounce": "Delivery issue",
+      "rejected": "Rejected",
+      "buttonStates": {
+        "resending": "Resending...",
+        "withdrawing": "Withdrawing..."
+      }
+    }
+  },
+  "PropertyEditor": {
+    "editorTitle": "Edit Accommodation",
+    "mobileSheet": {
+      "close": "Close"
+    },
+    "tabs": {
+      "property": "Accommodation",
+      "stay": "Stay",
+      "calendar": "Calendar"
+    },
+    "tabDescriptions": {
+      "unterkunft": "Basic information and photos",
+      "aufenthalt": "Check-in/out and house rules",
+      "kalender": "Availability and prices"
+    },
+    "preview": "Preview",
+    "showProperty": "View Page",
+    "aiTranslation": {
+      "translating": "Translating...",
+      "error": "Translation failed"
+    },
+    "autoTranslate": {
+      "label": "Auto-translate on save",
+      "description": "Content is automatically translated between German and English",
+      "error": "Failed to update preference"
+    }
+  },
+  "PropertyBasicInfo": {
+    "selectSection": "Select a section",
+    "sections": {
+      "comingSoon": "This section will be available soon",
+      "translationSettings": {
+        "title": "Translation & Language Settings",
+        "description": "Define how the texts for your accommodation will be translated",
+        "statusOn": "Autotranslate: on",
+        "statusOff": "Autotranslate: off",
+        "toggleLabel": "Auto-translate on save",
+        "toggleDescriptionOn": "Content is automatically translated from primary to secondary language",
+        "toggleDescriptionOff": "Content is translated manually",
+        "primaryLanguage": {
+          "title": "Primary Language",
+          "description": "Define the primary language (Language in which you enter your texts)",
+          "english": "English",
+          "german": "German"
+        }
+      },
+      "photos": {
+        "title": "Photos",
+        "description": "{count, plural, =1{1 Photo uploaded} other{# Photos uploaded}}",
+        "uploadDescription": "Upload at least {min, plural, =1{1 Photo} other{# Photos}} to present your accommodation.",
+        "addPhoto": "Add Photo",
+        "fullscreenTitle": "Fullscreen View",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "confirmDelete": "Delete Permanently",
+        "deleting": "Deleting...",
+        "uploadSuccess": "Photo successfully uploaded",
+        "deleteSuccess": "Photo successfully deleted",
+        "reorderSuccess": "Photo order updated"
+      },
+      "publish": {
+        "title": "Accommodation Status"
+      },
+      "title": {
+        "title": "Title",
+        "description": "Add a title",
+        "detailDescription": "Create a meaningful title or get a suggestion.",
+        "placeholder": "e.g. Cozy Engadine House",
+        "characterCount": "{current, number}/{max, number}",
+        "updateSuccess": "Title successfully updated",
+        "updateError": "Error updating title",
+        "saving": "Saving...",
+        "savingAndTranslating": "Saving and translating...",
+        "save": "Save",
+        "emptyError": "Title cannot be empty"
+      },
+      "propertyType": {
+        "title": "Accommodation Type",
+        "description": "For {guests, plural, =1{1 Guest} other{# Guests}}",
+        "detailTitle": "Type of Accommodation",
+        "detailDescription": "Which of these options best describes your accommodation?",
+        "basicDetailsTitle": "Basic Accommodation Details",
+        "propertyTypeLabel": "Type",
+        "selectPlaceholder": "Select...",
+        "guestsLabel": "Guests",
+        "bedroomsLabel": "Bedrooms",
+        "bathroomsLabel": "Bathrooms/Toilets",
+        "saveButton": "Close",
+        "propertyTypes": {
+          "apartment": "Apartment",
+          "house": "House",
+          "villa": "Villa",
+          "chalet": "Chalet",
+          "loft": "Loft",
+          "studio": "Studio",
+          "penthouse": "Penthouse",
+          "vacation_home": "Vacation Home"
+        },
+        "updateSuccess": "Accommodation details successfully updated",
+        "updateError": "Error updating accommodation details"
+      },
+      "targetGroups": {
+        "title": "Suitable for",
+        "description": "Add target groups that best describe your accommodation",
+        "updateError": "Error updating target groups",
+        "updateSuccess": "Target groups successfully updated"
+      },
+      "amenities": {
+        "title": "Amenities",
+        "description": "{count, plural, =1{1 Amenity added} other{# Amenities added}}",
+        "detailDescription": "What amenities does your accommodation offer?",
+        "loading": "Loading amenities...",
+        "loadError": "Error loading amenities",
+        "updateSuccess": "Amenities successfully updated"
+      },
+      "goodToKnow": {
+        "title": "Good to Know",
+        "description": "Please provide a few points that tenants should know",
+        "placeholder": " e.g. the swimming pool is not very large / the nearest restaurants are 2km away / you will need a car to explore the area / etc.",
+        "updateError": "Error updating target groups",
+        "updateSuccess": "Target groups successfully updated",
+        "emptyError": "Good to know cannot be empty",
+        "helpText": "A good to know point builds trust and gives your accommodation a personal touch.",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "arrivalInformationPublic": {
+        "title": "Location & Arrival",
+        "description": "Describe the location and add general arrival information (please do not provide address data or details).",
+        "placeholder": "Describe the location and general arrival information for guests...",
+        "helpText": "Rough directions help guests plan their arrival.",
+        "updateSuccess": "Location & Arrival information successfully saved!",
+        "updateError": "Error updating location & arrival information",
+        "emptyError": "Location & Arrival information cannot be empty",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "description": {
+        "title": "Description",
+        "description": "Description added",
+        "noDescription": "Add a description",
+        "detailDescription": "Describe your accommodation and what makes it special.",
+        "placeholder": "Tell your guests what makes your accommodation special. Describe the location, amenities and what guests can expect...",
+        "helpText": "A good description helps guests understand if your accommodation is right for them.",
+        "updateSuccess": "Description successfully updated",
+        "emptyError": "Description cannot be empty",
+        "saving": "Saving...",
+        "savingAndTranslating": "Saving and translating...",
+        "save": "Save"
+      },
+      "quote": {
+        "title": "Host Quote",
+        "description": "Personal quote added",
+        "noQuote": "Add a personal quote",
+        "detailDescription": "Share a personal quote or message with your guests.",
+        "placeholder": "e.g. Welcome to our cozy home! We're excited to show you our favorite place...",
+        "helpText": "A personal quote builds trust and gives your accommodation a personal touch.",
+        "updateSuccess": "Quote successfully updated",
+        "emptyError": "Quote cannot be empty",
+        "saving": "Saving...",
+        "savingAndTranslating": "Saving and translating...",
+        "save": "Save"
+      },
+      "tips": {
+        "title": "Tips",
+        "description": "Add tips for your guests",
+        "detailDescription": "Share helpful tips and local recommendations with your guests.",
+        "placeholder": "e.g. Recommended restaurants nearby, local insider tips, public transportation...",
+        "helpText": "Helpful tips make your guests' stay unforgettable.",
+        "updateSuccess": "Tips successfully updated",
+        "emptyError": "Tips cannot be empty",
+        "saving": "Saving...",
+        "savingAndTranslating": "Saving and translating...",
+        "save": "Save",
+        "updateError": "Error updating tips"
+      },
+      "pricing": {
+        "title": "Pricing",
+        "description": "From {price} CHF per night",
+        "currency": "Currency",
+        "selectCurrency": "Select Currency",
+        "basePrice": "Base price per night",
+        "weekendPrice": "Weekend (Fri/Sat): price per night",
+        "lengthOfStay": "Length of Stay",
+        "minNights": "Min. Nights",
+        "maxNights": "Max. Nights",
+        "save": "Save",
+        "saving": "Saving...",
+        "saveSuccess": "Pricing successfully saved",
+        "saveError": "Error saving pricing",
+        "cleaningFee": "Cleaning Fee",
+        "guestBasedPricing": "Costs according to number of guests",
+        "baseOccupancy": "Base occupancy",
+        "additionalGuestPrice": "Price per additional person per night",
+        "validation": {
+          "currencyRequired": "Currency is required",
+          "basePriceMin": "Base price must be {min} or greater",
+          "weekendPriceMin": "Weekend price must be {min} or greater",
+          "cleaningFeeMin": "Cleaning fee must be {min} or greater",
+          "minNightsMin": "Min nights must be at least {min}",
+          "minNightsMax": "Max {max} nights",
+          "maxNightsMin": "Max nights must be at least {min}",
+          "maxNightsMax": "Max {max} nights",
+          "baseOccupancyMin": "Base occupancy must be at least {min}",
+          "additionalGuestPriceMin": "Additional guest price must be {min} or greater",
+          "maxNightsGreaterThanMin": "Max nights must be greater than or equal to min nights"
+        }
+      },
+      "cancellationPolicy": {
+        "title": "Cancellation Policy",
+        "description": "Cancellation policy selected",
+        "noPolicy": "Choose a cancellation policy",
+        "detailDescription": "Oazo offers you 3 types of cancellation options. Choose the one you feel most comfortable with.",
+        "save": "Close",
+        "saving": "Saving...",
+        "updateSuccess": "Cancellation policy successfully updated",
+        "updateError": "Error updating cancellation policy"
+      },
+      "address": {
+        "title": "Address",
+        "description": "Address added",
+        "noLocation": "Add address",
+        "detailDescription": "Enter the address of your accommodation. The exact address will only be shown to guests after booking.",
+        "placeholders": {
+          "streetAddress": "Street and house number",
+          "addressLine2": "Apartment, Suite, etc. (optional)",
+          "postalCode": "Postal code",
+          "city": "City",
+          "state": "State/Canton (optional)",
+          "selectCountry": "Select Country"
+        },
+        "save": "Save Address",
+        "saving": "Saving...",
+        "updateSuccess": "Address successfully updated",
+        "updateError": "Error updating address"
+      },
+      "bankAccount": {
+        "title": "Bank Account",
+        "todo": {
+          "description": "Add your bank account to receive payments."
+        },
+        "done": {
+          "description": "Your bank account is connected. You can now accept bookings."
+        },
+        "detailDescription": "Add your bank account to receive payments.",
+        "pending": {
+          "title": "Connecting...",
+          "description": "Please wait a moment while we set up your account."
+        },
+        "create": {
+          "title": "Setup Bank Account",
+          "description": "Setup a bank account to accept bookings.",
+          "button": "Start Setup"
+        },
+        "countrySelection": {
+          "label": "Country of your bank account",
+          "placeholder": "Please select a country",
+          "note": "If your country is not in the list, it is not yet supported. <supportLink>Contact support</supportLink> for more information."
+        },
+        "existing": {
+          "title": "Connected",
+          "description": "Your bank account is connected. You can now accept bookings."
+        },
+        "somethingWentWrong": "Something went wrong. Please try again later.",
+        "noCountrySet": "You have not set a country in your profile. Please add a country to setup your bank account."
+      },
+      "bedRooms": {
+        "title": "Sleeping Options",
+        "description": "{count, plural, =0 {No rooms} =1 {1 room} other {# rooms}}",
+        "detailDescription": "Please add the rooms with an image of the sleeping options",
+        "addRoom": "Add room",
+        "roomNumber": "Room {number}",
+        "titleLabel": "Room name",
+        "titlePlaceholder": "e.g. Living room, Bedroom 1",
+        "descriptionLabel": "Sleeping options",
+        "descriptionPlaceholder": "e.g. 1 comfortable sofa bed for 2",
+        "deleteRoom": "Delete room",
+        "uploadImage": "Add image",
+        "deleteImage": "Remove image",
+        "updateSuccess": "Changes saved",
+        "validation": {
+          "titleRequired": "Room name is required",
+          "descriptionRequired": "Sleeping options is required",
+          "imageRequired": "Image is required"
+        }
+      },
+      "notifications": {
+        "title": "Notifications",
+        "description": "Manage SMS notifications",
+        "detailDescription": "You have 48 hours to respond to a booking request. Enable SMS notifications so you never miss a request.",
+        "smsOnNewBooking": "SMS on new booking request",
+        "smsOnNewBookingDescription": "Receive an SMS when a guest submits a booking request.",
+        "noVerifiedPhone": "Verify your phone number in your <accountLink>account settings</accountLink> to enable SMS notifications.",
+        "updateSuccess": "Notification settings saved",
+        "updateError": "Error saving notification settings"
+      }
+    },
+    "publication": {
+      "ready": "Ready for Publication",
+      "readyDescription": "Your accommodation is complete and can be published.",
+      "notReady": "Not Published",
+      "notReadyDescription": "Your accommodation will not appear in search results and cannot be booked. Complete your information and publish your accommodation to accept bookings.",
+      "incompleteAlert": "You can only list your accommodation once you have completed all the information in the accommodation",
+      "activeTitle": "Active",
+      "activeDescription": "Your listing appears in search results and can be booked by guests.",
+      "inactiveTitle": "Not Published",
+      "inactiveDescription": "Your listing does not appear in search results and cannot be booked. You can pause your accommodation.",
+      "toast": {
+        "success": "Accommodation status successfully updated",
+        "error": "Error updating accommodation status"
+      },
+      "review": {
+        "requestReview": "Request Approval",
+        "requestReviewDescription": "Submit your listing for review before it can be published.",
+        "requestReviewButton": "Request Approval",
+        "requesting": "Submitting...",
+        "readyForReview": "Ready for Review",
+        "readyForReviewDescription": "Your listing is complete and can be submitted for review.",
+        "inReview": "In Review",
+        "inReviewDescription": "Your listing is currently being reviewed by our team. You will be notified once the review is complete.",
+        "approved": "Your listing has been approved! You can now publish it.",
+        "rejected": "Rejected",
+        "rejectedDescription": "Your listing was rejected. Please revise it and submit again.",
+        "rejectionReason": "Reason for Rejection",
+        "toast": {
+          "requestSuccess": "Your listing has been submitted for review",
+          "requestError": "Error submitting for review"
+        }
+      }
+    },
+    "actions": {
+      "close": "Close"
+    }
+  },
+  "PropertyStaySettings": {
+    "title": "Stay Settings",
+    "description": "Here the stay settings for your accommodation are managed. This feature will be available soon and will help you optimize your guests' experience.",
+    "upcomingFeatures": "Planned Features",
+    "features": {
+      "checkInOut": "Check-in and Check-out Times",
+      "houseRules": "House Rules and Guidelines",
+      "checkInInstructions": "Check-in Instructions",
+      "wifiInfo": "WiFi Access Details",
+      "arrivalInfo": "Arrival Information",
+      "guestTips": "Tips for Guests"
+    },
+    "whyImportant": {
+      "title": "Why these settings are important",
+      "description": "Clear stay guidelines help your guests feel comfortable and ensure a smooth experience.",
+      "button": "Coming Soon"
+    }
+  },
+  "PropertyStayInfo": {
+    "selectSection": "Select a section",
+    "sections": {
+      "checkinCheckout": {
+        "title": "Check-In & Check-Out Times",
+        "description": "Add information.",
+        "detailDescription": "Set the check-in and check-out times for your guests.",
+        "checkinTitle": "Check-In",
+        "checkoutTitle": "Check-Out",
+        "checkinFromLabel": "From",
+        "checkinUntilLabel": "Until",
+        "checkoutFromLabel": "From",
+        "checkoutUntilLabel": "Until",
+        "selectTime": "Select Time",
+        "selectTimePlaceholder": "Select a time",
+        "checkinTimeTitle": "Check-In Time",
+        "checkoutTimeTitle": "Check-Out Time",
+        "updateSuccess": "Check-in/Check-out times successfully updated",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "checkinMethod": {
+        "title": "Check-In Method",
+        "description": "Add information."
+      },
+      "checkoutMethod": {
+        "title": "Check-Out Method",
+        "description": "Add information."
+      },
+      "propertyDescription": {
+        "title": "Directions",
+        "description": "Add information."
+      },
+      "wifiAccess": {
+        "title": "WiFi Access Details",
+        "description": "Add information."
+      },
+      "houseRules": {
+        "title": "Rules",
+        "description": "Add information."
+      }
+    }
+  },
+  "CheckinMethodSection": {
+    "title": "Check-In Method",
+    "description": "Describe how guests can check in",
+    "detailDescription": "Explain to your guests step by step how the check-in process works.",
+    "placeholder": "Describe how guests should check in...",
+    "helpText": "Give clear instructions for a smooth check-in.",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "savingAndTranslating": "Saving and translating..."
+    },
+    "messages": {
+      "saveSuccess": "Check-in method successfully saved!",
+      "saveError": "Error saving check-in method",
+      "emptyError": "Check-in method cannot be empty"
+    }
+  },
+  "CheckoutMethodSection": {
+    "title": "Check-Out Method",
+    "description": "Describe how guests should check out",
+    "detailDescription": "Explain to your guests what to consider during check-out.",
+    "placeholder": "Describe how guests should check out...",
+    "helpText": "Give clear instructions for a smooth check-out.",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "savingAndTranslating": "Saving and translating..."
+    },
+    "messages": {
+      "saveSuccess": "Check-out method successfully saved!",
+      "saveError": "Error saving check-out method",
+      "emptyError": "Check-out method cannot be empty"
+    }
+  },
+  "PropertyDescriptionSection": {
+    "title": "Directions",
+    "description": "Please provide detailed directions on how to get there and, if known, the geographical coordinates (latitude and longitude).\nAs links cannot be inserted, all information should be included in the text.\nThis information will be sent to your guests by email before their arrival.",
+    "detailDescription": "Help your guests find your accommodation easily.",
+    "placeholder": "Add directions and arrival information for guests...",
+    "helpText": "Detailed instructions help guests with arrival.",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "savingAndTranslating": "Saving and translating..."
+    },
+    "messages": {
+      "saveSuccess": "Arrival information successfully saved!",
+      "saveError": "Error saving arrival information",
+      "emptyError": "Arrival information cannot be empty"
+    }
+  },
+  "WifiAccessSection": {
+    "title": "WiFi Access Details",
+    "description": "Provide WiFi network name and password for guests",
+    "detailDescription": "Give your guests all the necessary information for WiFi access.",
+    "placeholder": "Network name: MyWiFi\nPassword: password123\nAdditional instructions...",
+    "helpText": "Clear WiFi information improves the guest experience.",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "savingAndTranslating": "Saving and translating..."
+    },
+    "messages": {
+      "saveSuccess": "WiFi information successfully saved!",
+      "saveError": "Error saving WiFi information",
+      "emptyError": "WiFi information cannot be empty"
+    }
+  },
+  "HouseRulesSection": {
+    "title": "House Rules",
+    "description": "Set clear rules and expectations for your guests",
+    "detailDescription": "Define important rules for harmonious coexistence.",
+    "placeholder": "• No smoking\n• No pets\n• Quiet hours: 10:00 PM - 8:00 AM\n• Maximum 4 guests...",
+    "helpText": "Clear house rules create a pleasant environment for everyone.",
+    "actions": {
+      "save": "Save",
+      "saving": "Saving...",
+      "savingAndTranslating": "Saving and translating..."
+    },
+    "messages": {
+      "saveSuccess": "House rules successfully saved!",
+      "saveError": "Error saving house rules",
+      "emptyError": "House rules cannot be empty"
+    }
+  },
+  "StripePaymentMethod": {
+    "title": "Payment Method",
+    "description": "Choose a payment method to pay for your booking.",
+    "paymentMethodError": "Error creating payment method",
+    "initError": "Error initializing payment method",
+    "processing": "Processing..."
+  },
+  "StripePaymentMethodForm": {
+    "addPaymentMethod": "Add Payment Method",
+    "processing": "Processing...",
+    "success": "Payment method successfully added",
+    "error": "Error creating payment method"
+  },
+  "PaymentsPage": {
+    "title": "Payments",
+    "noBookings": "No bookings found",
+    "metaData": {
+      "title": "Payments",
+      "description": "Manage your payments and invoices."
+    }
+  },
+  "BookingInvoices": {
+    "reservationCode": "Reservation code: {reservationCode}",
+    "viewBooking": "View Booking",
+    "invoice": "Invoice #{index}",
+    "dueDate": "Due on {dueDate}",
+    "status": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "reserved": "Reserved",
+      "cancelled": "Cancelled",
+      "refunded": "Refunded"
+    },
+    "numberOfPayments": "Payments {numberOfPayments}"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "button": "Back to Home",
+    "metaData": {
+      "title": "Oazo - Page Not Found",
+      "description": "The page you're looking for doesn't exist."
+    }
+  },
+  "NewsletterSignup": {
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "Email Address",
+    "submitButton": "Subscribe",
+    "successMessage": "Please check your email and confirm your subscription.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "validation": {
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required"
+    }
+  },
+  "Page": {
+    "metaData": {
+      "title": "Oazo - Your Home Away From Home",
+      "description": "Discover unique accommodations and become part of the Oazo community."
+    }
+  },
+  "PropertyEditPage": {
+    "metaData": {
+      "title": "Edit Accommodation",
+      "description": "Edit your accommodation and make it available for guests."
+    }
+  },
+  "InvitePage": {
+    "notAuthorized": "Not authorized to use this function",
+    "metaData": {
+      "title": "Invite Friends",
+      "description": "Invite your friends to bring them to Oazo."
+    }
+  },
+  "PersonalDataPage": {
+    "metaData": {
+      "title": "Personal Data",
+      "description": "Edit your personal data."
+    }
+  },
+  "ProfilePage": {
+    "metaData": {
+      "title": "Profile",
+      "description": "Take a look at your profile."
+    }
+  },
+  "SecurityPage": {
+    "metaData": {
+      "title": "Security",
+      "description": "Manage your security settings."
+    }
+  },
+  "SettingsPage": {
+    "metaData": {
+      "title": "Settings",
+      "description": "Manage your settings."
+    }
+  },
+  "AccountPage": {
+    "metaData": {
+      "title": "Account",
+      "description": "Manage your account and settings."
+    }
+  },
+  "ResetPasswordPage": {
+    "metaData": {
+      "title": "Reset Password",
+      "description": "Reset your password."
+    }
+  },
+  "MessageInput": {
+    "placeholder": "Type your message... (Press Enter to send, Shift+Enter for new line)",
+    "sendButton": "Send",
+    "sendingButton": "Sending...",
+    "characterCount": "{count, number}/{limit, number} characters",
+    "errorMessage": "Failed to send message"
+  },
+  "SecurityClient": {
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "passwordMask": "••••••••••",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "newEmail": "New Email Address",
+    "confirmPassword": "Confirm Password",
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "change": "change",
+      "saving": "Saving...",
+      "cancelPending": "Cancel",
+      "cancelling": "Cancelling..."
+    },
+    "validation": {
+      "emailRequired": "Email address is required",
+      "passwordRequired": "Password is required",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "passwordTooShort": "New password must be at least 6 characters long"
+    },
+    "messages": {
+      "passwordUpdateSuccess": "Password successfully updated",
+      "passwordUpdateError": "Error updating password",
+      "emailChangeInitiated": "Verification email has been sent to your new address. Please check your inbox.",
+      "emailChangeError": "Error changing email address",
+      "pendingEmailChange": "You have a pending email change to {email}. Please check your inbox.",
+      "pendingEmailChangeTitle": "Pending Email Verification",
+      "pendingEmailChangeDescription": "A verification email has been sent to {email}. Please check your inbox and click the link to complete the email change.",
+      "emailChangeCancelled": "Email change has been cancelled"
+    }
+  },
+  "Email": {
+    "userApprovedMail": {
+      "subject": "Your profile has been successfully reviewed!",
+      "templateName": "profile-approved-en"
+    },
+    "invoice": {
+      "creditCard": "Credit Card",
+      "positionsTable": {
+        "description": "Position",
+        "amount": "Amount",
+        "total": "Total",
+        "cleaningFee": "Cleaning Fee",
+        "guestPlatformFee": "Platform Fee",
+        "night": "Night",
+        "nightMulti": "Night (Part {number} of {total})",
+        "guestPlatformFeeMulti": "Platform Fee (Part {number} of {total})",
+        "cleaningFeeMulti": "Cleaning Fee",
+        "voucherDiscount": "Voucher Code",
+        "voucherDiscountMulti": "Voucher Code"
+      }
+    },
+    "paymentReceiptGuest": {
+      "subject": "Your invoice",
+      "subjectMulti": "Your invoice {number} of {total}",
+      "templateName": "payment-receipt-guest-en"
+    },
+    "paymentReservationFailedGuest": {
+      "subject": "Payment reservation failed",
+      "templateName": "payment-reservation-failed-en"
+    },
+    "paymentReservationFailedReminderGuest": {
+      "subject": "Reminder: Payment reservation failed",
+      "templateName": "payment-reservation-failed-reminder-en"
+    },
+    "inviteEmail": {
+      "subject": "{inviterName} has invited you to join the Oazo Club.",
+      "templateName": "community-invitation-en"
+    },
+    "inviteReminder": {
+      "subject": "Reminder: {inviterName} has invited you to join the Oazo Club.",
+      "templateName": "community-invitation-reminder-en"
+    },
+    "voucherEmail": {
+      "subject": "Your {amount} Oazo voucher is here!",
+      "templateName": "voucher-en",
+      "noExpirationDate": "No expiration date"
+    },
+    "bookingRequestGuest": {
+      "subject": "Your booking request has been sent!",
+      "templateName": "booking-request-guest-en"
+    },
+    "bookingRequestHost": {
+      "subject": "New booking request",
+      "templateName": "booking-request-host-en"
+    },
+    "bookingRequestAccepted": {
+      "subject": "Your booking request has been accepted!",
+      "templateName": "booking-request-confirmed-guest-en"
+    },
+    "bookingRequestDenied": {
+      "subject": "Your booking request has been declined!",
+      "templateName": "booking-request-denied-guest-en"
+    },
+    "bookingCancelledByGuestGuest": {
+      "subject": "Your booking has been cancelled",
+      "templateName": "booking-cancellation-by-guest-copy-guest-en"
+    },
+    "bookingCancelledByGuestHost": {
+      "subject": "Your booking has been cancelled",
+      "templateName": "booking-cancellation-by-guest-info-host-en"
+    },
+    "bookingCancelledByHostHost": {
+      "subject": "You have cancelled the booking",
+      "templateName": "booking-cancellation-by-host-copy-host-en"
+    },
+    "bookingCancelledByHostGuest": {
+      "subject": "Your booking has been cancelled",
+      "templateName": "booking-cancellation-by-host-info-guest-en"
+    },
+    "bookingCancelledBySystemHost": {
+      "subject": "Booking was automatically cancelled",
+      "templateName": "booking-cancellation-by-system-info-host-en",
+      "reasons": {
+        "paymentFailed": "We had to cancel the booking from {guestName} because we were unable to charge the credit card. The reserved days were released on the platform."
+      }
+    },
+    "bookingCancelledBySystemGuest": {
+      "subject": "Your booking was automatically cancelled",
+      "templateName": "booking-cancellation-by-system-info-guest-en",
+      "reasons": {
+        "paymentFailed": "We were unable to charge the final amount for your stay in {propertyLocation} despite multiple attempts."
+      }
+    },
+    "passwordReset": {
+      "subject": "Reset your password - Oazo",
+      "templateName": "password-forgotten-en"
+    },
+    "emailChangeVerification": {
+      "subject": "Verify your new email address",
+      "templateName": "email-change-verification-en"
+    },
+    "emailChangeNotification": {
+      "subject": "Email change attempt",
+      "templateName": "email-change-notification-en"
+    },
+    "messaging": {
+      "subject": "New Message",
+      "templateName": "messaging-en"
+    },
+    "checkInInfoGuest": {
+      "subject": "Your Check-In Information",
+      "templateName": "check-in-info-guest-en"
+    },
+    "calendarSyncFailed": {
+      "subject": "Calendar sync issue for {propertyTitle}",
+      "templateName": "calendar-sync-failed-en"
+    },
+    "payoutHost": {
+      "subject": "Your payout is on its way!",
+      "templateName": "payout-host-en"
+    },
+    "systemMessages": {
+      "bookingAccepted": "Booking request accepted",
+      "bookingDenied": "Booking request denied",
+      "bookingDeniedWithReason": "Booking request denied. Reason: {reason}",
+      "bookingExpired": "Booking request expired"
+    },
+    "paymentDescription": {
+      "none": "No payment information is available for this booking.",
+      "single": "Your credit card will be charged {price} on {date}.",
+      "multiple": "Your credit card will be charged {firstPrice} on {firstDate} and {secondPrice} on {secondDate}."
+    },
+    "refundInformation": {
+      "nothingPaid": "You haven't paid anything yet. Therefore, canceling your booking is free of charge.",
+      "paymentsNotRefunded": "According to the cancellation policy, the following payments will not be refunded:",
+      "paymentItem": "{amount} {currency} on {date}",
+      "noPaymentsForRefund": "You haven't paid anything yet",
+      "onePaymentForRefund": "Your payment of {amount} {currency} from {date} will be refunded within the next few days",
+      "oneOfTwoPaymentsForRefund": "Your deposit of {amount} {currency} from {date} will be refunded within the next few days",
+      "twoOfTwoPaymentsForRefund": "Your payments of {amount1} {currency1} from {date1} and {amount2} {currency2} from {date2} will be refunded within the next few days",
+      "genericPaymentItem": "{amount} {currency} from {date}",
+      "genericRefundMessage": "Your payments ({payments}) will be refunded within the next few days"
+    },
+    "guests": "{adults, plural, =1{1 adult} other{# adults}}, {kids, plural, =1{1 child} other{# children}}, {infants, plural, =1{1 infant} other{# infants}}",
+    "denialReason": {
+      "default": "The booking request was denied."
+    },
+    "cancellationReason": {
+      "default": "Your booking has been cancelled."
+    },
+    "publicationRejected": {
+      "subject": "Your publication has been rejected",
+      "templateName": "publication-rejected-en"
+    },
+    "publicationApproved": {
+      "subject": "Your publication has been approved",
+      "templateName": "publication-approved-en"
+    }
+  },
+  "Sms": {
+    "bookingRequestHost": {
+      "body": "{guestName} has requested to book {propertyTitle} from {fromDate} to {toDate}. You have 48h to respond. {link}"
+    }
+  },
+  "PropertyCalendar": {
+    "title": "Calendar and prices",
+    "description": "Manage the availability and prices of your property",
+    "loading": "Loading calendar...",
+    "error": "Error loading calendar",
+    "tryAgain": "Try Again",
+    "messages": "Messages"
+  },
+  "PricingCalendar": {
+    "legend": {
+      "available": "Available",
+      "booked": "Booked",
+      "blocked": "Blocked",
+      "customPrice": "Custom Price",
+      "passed": "Passed",
+      "selected": "Selected"
+    },
+    "selection": {
+      "count": "{count, plural, =1{# day selected} other{# days selected}}",
+      "multiSelectMode": "(Multi-select mode)",
+      "clearSelection": "Clear selection",
+      "multiSelectInstructions": "Click to select • Shift+click to extend range • Ctrl/Cmd+click to toggle individual days"
+    }
+  },
+  "PriceEditModal": {
+    "title": "Edit Price",
+    "titleMultiple": "{count} days",
+    "titleWithBlocking": "Manage Day",
+    "titleMultipleWithBlocking": "Manage {count} Days",
+    "currentPrice": "Current price: {price} {currency}",
+    "currentPriceRange": "Current prices: {minPrice}-{maxPrice} {currency}",
+    "defaultPrice": "Default price: {price} {currency}",
+    "price": "Price",
+    "blockDays": "Block days",
+    "blockDaysDescription": "Blocked days will be unavailable to guests",
+    "resetToDefault": "Reset",
+    "save": "Save",
+    "saving": "Saving...",
+    "errors": {
+      "invalidPrice": "Invalid price",
+      "updateFailed": "Error saving"
+    }
+  },
+  "CalendarDay": {
+    "blocked": "Blocked"
+  },
+  "UserProfilePage": {
+    "metaData": {
+      "title": "Profile of {name}",
+      "description": "Take a look at the profile of {name}."
+    }
+  },
+  "CancelledBooking": {
+    "title": "Your Booking",
+    "description": "Your booking for {property} has been cancelled.",
+    "cancelledByYou": "Your booking was cancelled by you",
+    "cancelledByHost": "Your booking was cancelled by {name}",
+    "cancelledBySystem": "Your booking was cancelled by the system",
+    "cancelledOn": "Cancelled on",
+    "cancelledBy": "Cancelled by",
+    "cancelledByType": {
+      "guest": "You",
+      "host": "Host",
+      "system": "System",
+      "guestWithName": "By {name} (Guest)",
+      "hostWithName": "By {name} (Host)",
+      "systemWithName": "By System"
+    },
+    "cancellationReason": "Cancellation reason",
+    "originalBookingDetails": "Original Booking Details",
+    "checkIn": "Check-In",
+    "checkOut": "Check-Out",
+    "guests": "Guests",
+    "adults": "Adults",
+    "children": "Children",
+    "infants": "Infants",
+    "totalAmount": "Total Amount",
+    "refundInformation": "Refund Information",
+    "fullRefundMessage": "You will receive a full refund for this booking. Processing may take 5-10 business days.",
+    "partialRefundMessage": "Based on the cancellation policy, you may receive a partial refund. Please check your email for more details.",
+    "reservationCode": "Reservation Code"
+  },
+  "ConversationList": {
+    "title": "Conversations",
+    "noConversations": "No conversations yet"
+  },
+  "ConversationListItem": {
+    "newBookingReceived": "New booking received"
+  },
+  "PropertyCalendarConfig": {
+    "title": "Connect Calendars",
+    "description": "Sync all of your hosting calendars so they automatically stay up to date.",
+    "outgoingCalendar": "Outgoing Calendar",
+    "connectedCalendars": "Connected Calendars",
+    "connectNewCalendar": "Connect New Calendar",
+    "calendarName": "Calendar Name",
+    "calendarUrl": "Calendar URL",
+    "calendarNamePlaceholder": "Enter calendar name",
+    "calendarUrlPlaceholder": "Enter calendar URL",
+    "addCalendar": "Add Calendar",
+    "adding": "Adding...",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing...",
+    "noCalendarsConnected": "No calendars connected yet.",
+    "lastSync": "Last sync: {date}",
+    "syncError": "Error during last sync",
+    "calendarSynced": "Calendar successfully synced",
+    "removeCalendarDialog": {
+      "title": "Are you sure?",
+      "description": "This will remove the calendar {label}. This action cannot be undone.",
+      "cancel": "Cancel",
+      "continue": "Continue"
+    },
+    "validation": {
+      "labelRequired": "Label is required",
+      "urlRequired": "Valid URL is required"
+    }
+  },
+  "InvoiceList": {
+    "title": "Payment Status",
+    "description": "Overview of all payment installments",
+    "failedAlert": "Payment issue detected",
+    "failedDescription": "{count, plural, =1{# invoice} other{# invoices}} require your attention",
+    "updatePayment": "Update Payment Method",
+    "retryPayment": "Retry Payment",
+    "invoice": "Invoice #{number}",
+    "dueDate": "Due: {date}",
+    "amount": "{amount}",
+    "lastAttempt": "Last attempt: {date}",
+    "totalAmount": "Total Amount",
+    "paidAmount": "Already Paid",
+    "remainingAmount": "Remaining",
+    "statuses": {
+      "paid": "Paid",
+      "reserved": "Reserved",
+      "pending": "Pending",
+      "failed": "Failed",
+      "cancelled": "Cancelled",
+      "overdue": "Overdue",
+      "refunded": "Refunded"
+    },
+    "modal": {
+      "title": "Update Payment Method",
+      "description": "Update your payment method to retry failed invoices",
+      "failedInvoicesCount": "{count, plural, =1{# invoice needs to be retried} other{# invoices need to be retried}}",
+      "totalToReserve": "Total to reserve: {amount}",
+      "invoicesToRetry": "Invoices to retry",
+      "invoiceItem": "Invoice due {date}",
+      "noPaymentMethod": "Please add a payment method first",
+      "processing": "Processing...",
+      "confirm": "Retry Payments",
+      "cancel": "Cancel",
+      "success": "All payments successfully reserved",
+      "paymentMethodUpdated": "Payment method updated successfully",
+      "partialSuccess": "{successful} succeeded, {failed} failed",
+      "allInvoicesRetried": "{count, plural, =1{# invoice} other{# invoices}} successfully retried",
+      "someInvoicesFailed": "{successful} succeeded, {failed} failed",
+      "error": "Failed to update payment method"
+    }
+  },
+  "OnboardingWizard": {
+    "title": "Complete Your Profile",
+    "common": {
+      "skip": "Skip",
+      "back": "Back",
+      "next": "Next",
+      "complete": "Complete",
+      "saving": "Saving...",
+      "stepCounter": "Step {stepNumber}"
+    },
+    "step1": {
+      "title": "Profile Photo",
+      "description": "Add a profile photo so others can recognize you.",
+      "uploadText": "Drag & drop or click to upload",
+      "fileTypes": "PNG, JPG, JPEG or WebP (max. 10MB)",
+      "selectFile": "Select File",
+      "uploading": "Uploading...",
+      "addPhoto": "Add photo",
+      "success": "Profile photo uploaded successfully",
+      "error": "Error uploading profile photo"
+    },
+    "step2": {
+      "title": "Address",
+      "description": "Where do you live? This information helps us show you relevant offers.",
+      "success": "Address saved successfully",
+      "error": "Error saving address",
+      "validation": {
+        "addressRequired": "Address is required",
+        "postalCodeRequired": "Postal code is required",
+        "cityRequired": "City is required",
+        "countryRequired": "Country is required"
+      }
+    },
+    "step3": {
+      "title": "Mobile Number",
+      "description": "Enter your mobile number to verify it.",
+      "placeholder": "+1 234 567 8900",
+      "success": "Mobile number saved successfully",
+      "error": "Error saving mobile number",
+      "validation": {
+        "phoneRequired": "Phone number is required",
+        "phoneInvalid": "Please enter a valid phone number"
+      }
+    },
+    "step3b": {
+      "title": "Verify Mobile Number",
+      "description": "Enter the 6-digit code we sent to your phone via SMS.",
+      "placeholder": "123456",
+      "resendButton": "Resend code",
+      "resending": "Sending...",
+      "success": "Mobile number verified successfully",
+      "error": "Invalid verification code",
+      "resendSuccess": "Code sent successfully",
+      "resendError": "Error sending code",
+      "validation": {
+        "codeInvalid": "Verification code must be 6 digits"
+      }
+    },
+    "step4": {
+      "title": "Occupation",
+      "description": "What do you do for a living?",
+      "placeholder": "e.g. Software Developer, Teacher, Student",
+      "success": "Occupation saved successfully",
+      "error": "Error saving occupation",
+      "validation": {
+        "occupationRequired": "Occupation is required",
+        "occupationTooLong": "Occupation is too long (max 70 characters)"
+      }
+    },
+    "step5": {
+      "title": "About You",
+      "description": "Tell us about yourself. What makes you unique?",
+      "placeholder": "Who are you?\nWhat do you do? How do you live?\nWhat do you love about travelling?\nWhat does slow travel mean to you?\nIf you have chosen a profile picture that does not show you, please mention in your profile text why you chose this particular picture.",
+      "minLengthInfo": "Minimum 200 characters. Don't worry, your profile is not publicly visible.",
+      "success": "Profile saved successfully",
+      "error": "Error saving profile",
+      "validation": {
+        "bioRequired": "Bio is required (minimum {minLength} characters)",
+        "bioTooLong": "Bio is too long (max {maxLength} characters)"
+      }
+    },
+    "success": {
+      "title": "Profile Completed!",
+      "subtitle": "Your profile is now complete. You can now book properties.",
+      "legalNote": "Note: Your profile will be reviewed by Oazo to ensure the safety of our community.",
+      "viewProfile": "View Profile",
+      "exploreDestinations": "Explore Destinations"
+    }
+  },
+  "BookingGuestCount": {
+    "adults": "{count, plural, =1{1 Adult} other{# Adults}}",
+    "kids": "{count, plural, =1{1 Child} other{# Children}}",
+    "infants": "{count, plural, =1{1 Infant} other{# Infants}}"
   }
 }
