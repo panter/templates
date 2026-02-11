@@ -123,9 +123,7 @@ export interface Config {
     footer: FooterSelect<false> | FooterSelect<true>;
   };
   locale: 'en' | 'de' | 'fr' | 'it';
-  user: User & {
-    collection: 'users';
-  };
+  user: User;
   jobs: {
     tasks: {
       processPayment: TaskProcessPayment;
@@ -206,6 +204,7 @@ export interface User {
     hasNextPage?: boolean;
     totalDocs?: number;
   };
+  collection: 'users';
 }
 /**
  * Accounts are used to store user accounts for authentication providers

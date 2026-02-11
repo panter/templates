@@ -6116,6 +6116,7 @@
       "schema": "public",
       "values": [
         "inline",
+        "processPayment",
         "schedulePublish"
       ]
     },
@@ -6132,6 +6133,7 @@
       "schema": "public",
       "values": [
         "inline",
+        "processPayment",
         "schedulePublish"
       ]
     },
@@ -6169,6 +6171,6 @@
     "tables": {},
     "columns": {}
   },
-  "id": "7bb80186-f34c-49df-91df-aa7335e60e42",
+  "id": "c3981d89-33e0-43bc-976f-81cacb71280a",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }
