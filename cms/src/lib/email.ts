@@ -34,46 +34,42 @@ export async function sendEmail(
   return result
 }
 
-const send = getSendFunction()
+async function send(options: CreateEmailOptions, request?: CreateEmailRequestOptions) {
+  const canSendEmail = !!process.env.RESEND_API_KEY
 
-type SendFunction = Resend["emails"]["send"]
+  if (canSendEmail) {
+    const resend = new Resend(process.env.RESEND_API_KEY)
+    return await resend.emails.send(options, request)
+  } else {
+    const payload = await getPayload()
 
-function getSendFunction(): SendFunction {
-  if (!process.env.RESEND_API_KEY) {
-    return async (...args) => {
-      const payload = await getPayload()
+    payload.logger.warn(
+      "RESEND_API_KEY not set, emails will not be sent. Set RESEND_API_KEY to enable email sending.",
+    )
 
-      payload.logger.warn(
-        "RESEND_API_KEY not set, emails will not be sent. Set RESEND_API_KEY to enable email sending.",
-      )
+    const html = await render(options.react)
+    const text = toPlainText(html)
 
-      const html = await render(args[0].react)
-      const text = toPlainText(html)
+    payload.logger.info(
+      {
+        to: options.to,
+        replyTo: options.replyTo,
+        from: options.from,
+        subject: options.subject,
+        cc: options.cc,
+        bcc: options.bcc,
+        tags: options.tags,
+        attachments: options.attachments?.map((att) => att.filename),
+      },
+      `Email message: \n${text}`,
+    )
 
-      payload.logger.info(
-        {
-          to: args[0].to,
-          replyTo: args[0].replyTo,
-          from: args[0].from,
-          subject: args[0].subject,
-          cc: args[0].cc,
-          bcc: args[0].bcc,
-          tags: args[0].tags,
-          attachments: args[0].attachments?.map((att) => att.filename),
-        },
-        `Email message: \n${text}`,
-      )
-
-      return {
-        error: null,
-        headers: null,
-        data: {
-          id: "dummy-id",
-        },
-      }
+    return {
+      error: null,
+      headers: null,
+      data: {
+        id: "dummy-id",
+      },
     }
   }
-
-  const resend = new Resend(process.env.RESEND_API_KEY)
-  return resend.emails.send
 }
