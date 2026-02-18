@@ -8,6 +8,5 @@ export const translateConfig: TranslateConfig = {
   locales: [...ALL_LOCALE_CODES],
   // NOTE: create your own project at: https://translate.panter.ch/admin/collections/projects/create
   project: "pan-template-cms",
-  devServer: false,
   enabled: process.env.NODE_ENV !== "production",
 }
