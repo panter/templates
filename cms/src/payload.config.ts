@@ -6,14 +6,15 @@ import type { PayloadRequest } from "payload"
 import { buildConfig } from "payload"
 import sharp from "sharp"
 import { fileURLToPath } from "url"
+import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
+import { createLogger } from "./logger"
 import { Media } from "./payload/collections/Media"
 import { Pages } from "./payload/collections/Pages"
 import { Footer } from "./payload/Footer/config"
 import { Header } from "./payload/Header/config"
-import { ALL_LOCALE_CODES, DEFAULT_LOCALE } from "./i18n/config"
 import { plugins } from "./payload/plugins"
-import { getURL } from "./utils/getURL"
 import { processPaymentTask } from "./payload/tasks/processPayment"
+import { getURL } from "./utils/getURL"
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -83,6 +84,8 @@ export default buildConfig({
     // feel free to set to true in development with a local db or with your database branch
     push: false,
   }),
+
+  logger: createLogger(),
 
   localization: {
     defaultLocale: DEFAULT_LOCALE,
