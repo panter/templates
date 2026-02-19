@@ -20,7 +20,7 @@
     "@c15t/nextjs": "^1.8.2",
     "@c15t/translations": "^1.8.0",
     "@hookform/resolvers": "^5.2.2",
-    "@panter/translate": "^0.0.45",
+    "@panter/translate": "^0.0.54",
     "@payloadcms/db-vercel-postgres": "3.76.0",
     "@payloadcms/live-preview-react": "3.76.0",
     "@payloadcms/next": "3.76.0",
