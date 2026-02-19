@@ -96,7 +96,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@next/eslint-plugin-next": "^15.5.9",
-    "@react-email/preview-server": "5.1.1",
+    "@react-email/preview-server": "5.2.8",
     "@types/node": "^24.10.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",

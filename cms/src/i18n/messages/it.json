@@ -4,5 +4,40 @@
   },
   "draft": {
     "indicator": "Modalità bozza: le modifiche sono attualmente visibili solo a te. Completa le modifiche e pubblica tramite il pannello di amministrazione per rendere pubblico questo contenuto."
+  },
+  "emails": {
+    "inviteUser": {
+      "preview": "Sei stato invitato a unirti alla nostra piattaforma",
+      "title": "Sei stato <strong>invitato</strong>",
+      "hello": "Ciao,",
+      "youHaveBeenInvited": "Sei stato invitato a unirti alla nostra piattaforma. Siamo entusiasti di averti a bordo!",
+      "clickTheButtonBelow": "Fai clic sul pulsante qui sotto per accettare l'invito e creare il tuo account.",
+      "acceptInvitation": "Accetta invito",
+      "orCopyAndPaste": "oppure copia e incolla questo URL nel tuo browser: ",
+      "notExpectingThisEmail": "Se non ti aspettavi questo invito, puoi ignorare questa email. Nessun account verrà creato a meno che tu non faccia clic sul link sopra.",
+      "questions": "Se hai domande o hai bisogno di assistenza, non esitare a contattare il nostro team di supporto."
+    },
+    "resetPassword": {
+      "preview": "Reimposta la tua password",
+      "title": "Reimposta la tua password",
+      "hello": "Ciao {name},",
+      "requestReceived": "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account associato a <strong>{email}</strong>.",
+      "buttonText": "Reimposta password",
+      "orCopyAndPaste": "oppure copia e incolla questo URL nel tuo browser: ",
+      "expirationNotice": "<strong>Importante:</strong> Questo link scadrà tra 1 ora per motivi di sicurezza.",
+      "didntRequest": "Se non hai richiesto la reimpostazione della password, puoi ignorare questa email. La tua password non verrà modificata a meno che tu non faccia clic sul link sopra e ne crei una nuova.",
+      "securityWarning": "Per motivi di sicurezza, non condividere mai questo link con nessuno. Se hai dubbi sulla sicurezza del tuo account, contatta il supporto."
+    },
+    "userVerification": {
+      "preview": "Verifica il tuo indirizzo email",
+      "title": "Verifica il tuo indirizzo email",
+      "hello": "Ciao {name},",
+      "thankYou": "Grazie per esserti registrato! Verifica il tuo indirizzo email <strong>{email}</strong> per completare la registrazione e attivare il tuo account.",
+      "buttonText": "Verifica indirizzo email",
+      "orCopyAndPaste": "oppure copia e incolla questo URL nel tuo browser: ",
+      "expirationNotice": "<strong>Importante:</strong> Questo link di verifica scadrà tra 24 ore per motivi di sicurezza.",
+      "didntCreate": "Se non hai creato un account, puoi ignorare questa email. Nessun account verrà attivato a meno che tu non faccia clic sul link di verifica sopra.",
+      "needHelp": "Se hai problemi a verificare la tua email o hai bisogno di assistenza, contatta il nostro team di supporto."
+    }
   }
 }

@@ -4,5 +4,40 @@
   },
   "draft": {
     "indicator": "Draft Mode: Changes are currently visible only to you. Complete your edits and publish via the administration panel to make this content public."
+  },
+  "emails": {
+    "inviteUser": {
+      "preview": "You've been invited to join our platform",
+      "title": "You've been <strong>invited</strong>",
+      "hello": "Hello,",
+      "youHaveBeenInvited": "You've been invited to join our platform. We're excited to have you on board!",
+      "clickTheButtonBelow": "Click the button below to accept your invitation and create your account.",
+      "acceptInvitation": "Accept Invitation",
+      "orCopyAndPaste": "or copy and paste this URL into your browser: ",
+      "notExpectingThisEmail": "If you weren't expecting this invitation, you can safely ignore this email. No account will be created unless you click the link above.",
+      "questions": "If you have any questions or need assistance, please don't hesitate to contact our support team."
+    },
+    "resetPassword": {
+      "preview": "Reset your password",
+      "title": "Reset your password",
+      "hello": "Hello {name},",
+      "requestReceived": "We received a request to reset the password for your account associated with <strong>{email}</strong>.",
+      "buttonText": "Reset Password",
+      "orCopyAndPaste": "or copy and paste this URL into your browser: ",
+      "expirationNotice": "<strong>Important:</strong> This link will expire in 1 hour for security reasons.",
+      "didntRequest": "If you didn't request a password reset, you can safely ignore this email. Your password will not be changed unless you click the link above and create a new one.",
+      "securityWarning": "For security reasons, never share this link with anyone. If you're concerned about your account's safety, please contact support."
+    },
+    "userVerification": {
+      "preview": "Verify your email address",
+      "title": "Verify your email address",
+      "hello": "Hello {name},",
+      "thankYou": "Thank you for signing up! Please verify your email address <strong>{email}</strong> to complete your registration and activate your account.",
+      "buttonText": "Verify Email Address",
+      "orCopyAndPaste": "or copy and paste this URL into your browser: ",
+      "expirationNotice": "<strong>Important:</strong> This verification link will expire in 24 hours for security reasons.",
+      "didntCreate": "If you didn't create an account, you can safely ignore this email. No account will be activated unless you click the verification link above.",
+      "needHelp": "If you're having trouble verifying your email or need assistance, please contact our support team."
+    }
   }
 }

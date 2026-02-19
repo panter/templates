@@ -1,10 +1,13 @@
 import type { Locale } from "@/i18n"
 import type { PrimitiveType } from "react-intl"
 import { createIntl } from "react-intl"
-import type messages from "./messages/en.json"
+import type messages from "../i18n/messages/de.json"
 
-type NamespaceKeys = keyof typeof messages
-type MessageKeys<NamespaceKey extends NamespaceKeys> = keyof (typeof messages)[NamespaceKey]
+type EmailsKey = "emails"
+type EmailMessages = (typeof messages)[EmailsKey]
+
+type NamespaceKeys = keyof EmailMessages
+type MessageKeys<NamespaceKey extends NamespaceKeys> = keyof EmailMessages[NamespaceKey]
 
 export async function getEmailMessages<NamespaceKey extends NamespaceKeys>(
   locale: Locale,
@@ -35,7 +38,9 @@ export async function getEmailMessages<NamespaceKey extends NamespaceKeys>(
 
 async function importMessages(locale: Locale, namespace: NamespaceKeys) {
   try {
-    return await import(`./messages/${locale}.json`).then((module) => module[namespace])
+    return await import(`../i18n/messages/${locale}.json`).then(
+      (module) => module["emails"][namespace],
+    )
   } catch {
     return {}
   }
