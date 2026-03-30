@@ -18,7 +18,7 @@ export const betterAuthPlugins = [
       throw new Error("Magic link email not implemented")
     },
   }),
-  admin(),
+  admin({ allowImpersonatingAdmins: true }),
   multiSession(),
   nextCookies(),
 ] satisfies BetterAuthPluginType[]
@@ -100,8 +100,6 @@ export const betterAuthOptions = {
 
 export type ConstructedBetterAuthOptions = typeof betterAuthOptions
 
-// TODO: impersonate feature is not working: https://github.com/payload-auth/payload-auth/issues/128
-
 export const betterAuthPluginOptions = {
   debug: {
     logTables: false,
@@ -111,7 +109,6 @@ export const betterAuthPluginOptions = {
   // admin: {
   //   loginMethods: ["passkey"],
   // },
-  disableDefaultPayloadAuth: true,
   hidePluginCollections: false,
   users: {
     slug: "users",
